@@ -4,6 +4,7 @@ Algoritmos más usados en las pruebas técnicas
 ## Índice
 1. [BFS](#bfs) - *Breadth First Search*
 2. [DFS](#dfs) - *Depth First Search*
+3. [Dijkstra](#dijkstra) - Shortest Path
 
 ## BFS
 
@@ -44,3 +45,11 @@ Los puentes en grafos son 2 nodos conectados de tal manera que para llegar a cad
 Si se quiere resolver un ‘puzzle’ o un laberinto, se puede resolver a través de DFS; los pasos de la solución pueden ser representados por nodos, donde cada nodo es dependiente del nodo predecesor. Es decir, cada paso de la solución del puzzle depende del anterior paso.
 
 A veces será importante conocer qué tan conectados están ciertas actividades o componentes a fin de disminuir la dependencia de actividades o acoplamiento de componentes. Ésto con el objetivo de organizar en una mejor forma las actividades o agrupar de mejor modo los componentes porque así será más entendible el sistema; ésto también se puede resolver a través del algoritmo DFS.
+
+## Dijkstra
+
+https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/
+
+Con el algoritmo de Dijkstra, puedes encontrar la ruta más corta o el camino más corto entre los nodos de un grafo. Específicamente, puedes encontrar el camino más corto desde un nodo (llamado el nodo de origen) a todos los otros nodos del grafo, generando un árbol del camino más corto.
+
+Este algoritmo es usado por los dispositivos GPS para encontrar el camino más corto entre la ubicación actual y el destino del usuario. Tiene amplias aplicaciones en la industria, especialmente en aquellas áreas que requieren modelar redes.
