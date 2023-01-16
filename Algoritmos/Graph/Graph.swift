@@ -7,30 +7,32 @@
 
 import Foundation
 
-public class Node {
+class Node: Equatable {
     var identifier: String
     var edges = [Edge]()
     var visited = false
+    var distance: Int = Int.max
     var previous: Node?
 
     var description: String {
         var edgesString = String()
         edges.forEach{  edgesString.append("\n    " + $0.description)}
-        return "{ Node, identifier: \(identifier.description), visited: \(visited) \(edgesString)}"
+        return "{ Node, identifier: \(identifier.description), distance: \(distance) visited: \(visited) \(edgesString)}"
     }
 
-    public init(visited: Bool, identifier: String, edges: [Edge]) {
+    init(visited: Bool, identifier: String, edges: [Edge]) {
         self.visited = visited
         self.identifier = identifier
         self.edges = edges
     }
 
-    public static func == (lhs: Node, rhs: Node) -> Bool {
+    static func == (lhs: Node, rhs: Node) -> Bool {
         return lhs.identifier == rhs.identifier
     }
+
 }
 
-public class Edge {
+class Edge {
     var from: Node
     var to: Node
     var weight: Int
@@ -40,17 +42,17 @@ public class Edge {
 
     }
 
-    public init(to: Node, from: Node, weight: Int) {
+    init(to: Node, from: Node, weight: Int) {
         self.from = from
         self.to = to
         self.weight = weight
     }
 }
 
-public class Graph {
+class Graph {
     var nodes: [Node] = []
 
-    public init(edges: [(String, String)]) {
+    init(edges: [(String, String, Int)]) {
         var nodeNames = Set<String>()
 
         edges.forEach { edge in
@@ -64,10 +66,10 @@ public class Graph {
             nodes.append(newNode)
         }
 
-        for (from, to) in edges {
+        for (from, to, weight) in edges {
             if let fromNode = getNode(value: from) {
                 if let toNode = getNode(value: to) {
-                    let forwardEdge = Edge(to: toNode, from: fromNode, weight: 1)
+                    let forwardEdge = Edge(to: toNode, from: fromNode, weight: weight)
 
                     fromNode.edges.append(forwardEdge)
                 }
@@ -75,7 +77,11 @@ public class Graph {
         }
     }
 
-    public func getNode(value: String) -> Node? {
+    convenience init(edges: [(String, String)]) {
+        self.init(edges: edges.map { ($0.0, $0.1, 1) })
+    }
+
+    func getNode(value: String) -> Node? {
         nodes.first { $0.identifier == value }
     }
 }
