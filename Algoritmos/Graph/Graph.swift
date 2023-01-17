@@ -30,6 +30,17 @@ class Node: Equatable {
         return lhs.identifier == rhs.identifier
     }
 
+    func weightTo(node: Node) -> Int {
+        if self == node {
+            return 0
+        }
+        
+        if let edge = edges.first(where: { $0.to == node }) {
+            return edge.weight
+        }
+
+        return Int.max
+    }
 }
 
 class Edge {

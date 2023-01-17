@@ -5,6 +5,7 @@ Algoritmos más usados en las pruebas técnicas
 1. [BFS](#bfs) - *Breadth First Search*
 2. [DFS](#dfs) - *Depth First Search*
 3. [Dijkstra](#dijkstra) - Shortest Path
+4. [Floyd Warshall](#floydwarshall)
 
 ## BFS
 
@@ -53,3 +54,16 @@ https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/
 Con el algoritmo de Dijkstra, puedes encontrar la ruta más corta o el camino más corto entre los nodos de un grafo. Específicamente, puedes encontrar el camino más corto desde un nodo (llamado el nodo de origen) a todos los otros nodos del grafo, generando un árbol del camino más corto.
 
 Este algoritmo es usado por los dispositivos GPS para encontrar el camino más corto entre la ubicación actual y el destino del usuario. Tiene amplias aplicaciones en la industria, especialmente en aquellas áreas que requieren modelar redes.
+
+## Floyd Warshall
+
+https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/
+
+El algoritmo de Floyd-Warshall puede ser utilizado para resolver los siguientes problemas, entre otros:
+
+Camino mínimo en grafos dirigidos (algoritmo de Floyd).
+Cierre transitivo en grafos dirigidos (algoritmo de Warshall). Es la formulación original del algoritmo de Warshall. El grafo es un grafo no ponderado y representado por una matriz booleana de adyacencia. Entonces la operación de adición es reemplazada por la conjunción lógica(AND) y la operación menor por la disyunción lógica (OR).
+Encontrar una expresión regular dada por un lenguaje regular aceptado por un autómata finito (algoritmo de Kleene).
+Inversión de matrices de números reales (algoritmo de Gauss-Jordan).
+Ruta óptima. En esta aplicación es interesante encontrar el camino del flujo máximo entre 2 vértices. Esto significa que en lugar de tomar los mínimos con el pseudocodigo anterior, se coge el máximo. Los pesos de las aristas representan las limitaciones del flujo. Los pesos de los caminos representan cuellos de botella; por ello, la operación de adición anterior es reemplazada por la operación mínimo.
+Comprobar si un grafo no dirigido es bipartito.
