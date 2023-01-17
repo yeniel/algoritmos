@@ -14,7 +14,7 @@ Algoritmos más usados en las pruebas técnicas
 
 [Explanation](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 
-[Playground](Algoritmos/Playgrounds/BFS.playground/Content.swift)
+[Playground](Algoritmos/Playgrounds/BFS.playground/Contents.swift)
 
 Aplicaciones:
 
@@ -37,7 +37,7 @@ Aplicaciones:
 
 [Explanation](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
 
-[Playground](Algoritmos/Playgrounds/DFS.playground/Content.swift)
+[Playground](Algoritmos/Playgrounds/DFS.playground/Contents.swift)
 
 Aplicaciones:
 
@@ -58,7 +58,7 @@ Aplicaciones:
 
 [Explanation](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
 
-[Playground](Algoritmos/Playgrounds/Dijkstra.playground/Content.swift)
+[Playground](Algoritmos/Playgrounds/Dijkstra.playground/Contents.swift)
 
 Aplicaciones:
 
@@ -70,7 +70,7 @@ Aplicaciones:
 
 [Explanation](https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/)
 
-[Playground](Algoritmos/Playgrounds/FloydWarshall.playground/Content.swift)
+[Playground](Algoritmos/Playgrounds/FloydWarshall.playground/Contents.swift)
 
 Aplicaciones:
 
@@ -85,7 +85,7 @@ Aplicaciones:
 
 [Explanation](https://www.geeksforgeeks.org/introduction-to-disjoint-set-data-structure-or-union-find-algorithm/)
 
-[Playground](Algoritmos/Playgrounds/UnionFind.playground/Content.swift)
+[Playground](Algoritmos/Playgrounds/UnionFind.playground/Contents.swift)
 
 Aplicaciones:
 
