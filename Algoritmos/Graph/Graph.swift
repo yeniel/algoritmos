@@ -62,6 +62,7 @@ class Edge {
 
 class Graph {
     var nodes: [Node] = []
+    var edges: [Edge] = []
 
     init(edges: [(String, String, Int)]) {
         var nodeNames = Set<String>()
@@ -83,6 +84,7 @@ class Graph {
                     let forwardEdge = Edge(to: toNode, from: fromNode, weight: weight)
 
                     fromNode.edges.append(forwardEdge)
+                    self.edges.append(forwardEdge)
                 }
             }
         }
