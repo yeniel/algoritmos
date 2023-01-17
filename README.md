@@ -12,7 +12,9 @@ Algoritmos más usados en las pruebas técnicas
 ## Graph
 ### BFS
 
-https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
+[Explanation](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
+
+[Playground](Algoritmos/Playgrounds/BFS.playground/Content.swift)
 
 Aplicaciones:
 
@@ -33,7 +35,9 @@ Aplicaciones:
 
 ### DFS
 
-https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
+[Explanation](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
+
+[Playground](Algoritmos/Playgrounds/DFS.playground/Content.swift)
 
 Aplicaciones:
 
@@ -52,7 +56,9 @@ Aplicaciones:
 
 ### Dijkstra
 
-https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/
+[Explanation](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
+
+[Playground](Algoritmos/Playgrounds/Dijkstra.playground/Content.swift)
 
 Aplicaciones:
 
@@ -62,7 +68,9 @@ Aplicaciones:
 
 ### Floyd Warshall
 
-https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/
+[Explanation](https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/)
+
+[Playground](Algoritmos/Playgrounds/FloydWarshall.playground/Content.swift)
 
 Aplicaciones:
 
@@ -75,7 +83,9 @@ Aplicaciones:
 
 ### Union-Find
 
-https://www.geeksforgeeks.org/introduction-to-disjoint-set-data-structure-or-union-find-algorithm/
+[Explanation](https://www.geeksforgeeks.org/introduction-to-disjoint-set-data-structure-or-union-find-algorithm/)
+
+[Playground](Algoritmos/Playgrounds/UnionFind.playground/Content.swift)
 
 Aplicaciones:
 
