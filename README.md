@@ -2,7 +2,7 @@
 Algoritmos más usados en las pruebas técnicas
 
 ## Índice
-1. [Graph](#graph)
+* [Graph](#graph)
 	1. [BFS](#bfs) - *Breadth First Search*
 	2. [DFS](#dfs) - *Depth First Search*
 	3. [Dijkstra](#dijkstra) - Shortest Path
