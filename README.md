@@ -1,6 +1,8 @@
 # Algoritmos
 Algoritmos más usados en las pruebas técnicas
 
+https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
+
 ## Índice
 1. [Graph](#graph)
 	1.	[BFS](#bfs) - *Breadth First Search*
