@@ -28,8 +28,9 @@ extension UndirectedGraph {
 
             for adjacent in minVertice.adjacents {
                 let arcWeight = arcWeight(vertice1: minVertice, vertice2: adjacent)
+                let adjacentHeap = heap.first(where: { $0 == adjacent })
 
-                if heap.contains(adjacent) && arcWeight < adjacent.key {
+                if let adjacentHeap = adjacentHeap, arcWeight < adjacentHeap.key {
                     let adjacentIndex = heap.firstIndex(of: adjacent) ?? 0
 
                     heap[adjacentIndex].key = arcWeight
@@ -59,7 +60,7 @@ let v6 = Vertice(id: "6")
 let v7 = Vertice(id: "7")
 let v8 = Vertice(id: "8")
 
-let graphVertices = [v0, v1, v2, v3, v4, v5, v6, v6, v7, v8]
+let graphVertices = [v0, v1, v2, v3, v4, v5, v6, v7, v8]
 
 let graphArcs = [
     Arc(firstVertice: v0, secondVertice: v1, weight: 4),
