@@ -13,6 +13,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	6.	[Prim](#prim)
 	7.	[Kruskal](#kruskal)
 	8.	[Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
+	9.	[Topological Sorting](#topologicalsorting)
 
 ## Graph
 ### BFS
@@ -128,3 +129,16 @@ Aplicaciones:
 
 - Same as Prim
 
+### Topological Sorting
+
+[Explanation](https://www.geeksforgeeks.org/topological-sorting/)
+[Playground](Algoritmos/Playgrounds/TopologicalSorting.playground/Contents.swift)
+
+- Topological Sorting is mainly used for scheduling jobs from the given dependencies among jobs. 
+- In computer science, applications of this type arise in:
+- Instruction scheduling
+- Ordering of formula cell evaluation when recomputing formula values in spreadsheets
+- Logic synthesis
+- Determining the order of compilation tasks to perform in make files
+- Data serialization
+- Resolving symbol dependencies in linkers
