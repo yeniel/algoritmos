@@ -8,12 +8,12 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	1.	[BFS](#bfs) - *Breadth First Search*
 	2.	[DFS](#dfs) - *Depth First Search*
 	3.	[Dijkstra](#dijkstra) - Shortest Path
-	4.	[Floyd Warshall](#floydwarshall)
+	4.	[Floyd Warshall](#floyd-warshall)
 	5.	[Union-Find](#union-find)
 	6.	[Prim](#prim)
 	7.	[Kruskal](#kruskal)
 	8.	[Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
-	9.	[Topological Sorting](#topologicalsorting)
+	9.	[Topological Sorting](#topological-sorting)
 
 ## Graph
 ### BFS
