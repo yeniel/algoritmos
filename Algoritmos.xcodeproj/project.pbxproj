@@ -38,6 +38,7 @@
 /* Begin PBXFileReference section */
 		FE1224E72976C92800E2AD5D /* FloydWarshall.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FloydWarshall.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEC4B3D4297749EF0067124B /* UnionFind.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = UnionFind.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FED4BB272979A72600CDB0F5 /* Kruskal.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Kruskal.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEE8BFBB2975E8DD0017DFDC /* Algoritmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algoritmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE8BFBE2975E8DD0017DFDC /* AlgoritmosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoritmosApp.swift; sourceTree = "<group>"; };
 		FEE8BFC02975E8DD0017DFDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +82,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FED4BB282979A73400CDB0F5 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				FEE8BFEA2975EA750017DFDC /* BFS.playground */,
+				FEE8BFED2975EC2E0017DFDC /* DFS.playground */,
+				FEE8BFEE2975F1D60017DFDC /* Dijkstra.playground */,
+				FE1224E72976C92800E2AD5D /* FloydWarshall.playground */,
+				FEC4B3D4297749EF0067124B /* UnionFind.playground */,
+				FEEDB42929785D2D00B4D4BC /* Prim.playground */,
+				FED4BB272979A72600CDB0F5 /* Kruskal.playground */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
 		FEE8BFB22975E8DC0017DFDC = {
 			isa = PBXGroup;
 			children = (
@@ -151,12 +166,7 @@
 		FEE8BFE92975EA510017DFDC /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				FEE8BFEA2975EA750017DFDC /* BFS.playground */,
-				FEE8BFED2975EC2E0017DFDC /* DFS.playground */,
-				FEE8BFEE2975F1D60017DFDC /* Dijkstra.playground */,
-				FE1224E72976C92800E2AD5D /* FloydWarshall.playground */,
-				FEC4B3D4297749EF0067124B /* UnionFind.playground */,
-				FEEDB42929785D2D00B4D4BC /* Prim.playground */,
+				FED4BB282979A73400CDB0F5 /* Graph */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";

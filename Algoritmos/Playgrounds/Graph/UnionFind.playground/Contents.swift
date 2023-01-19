@@ -1,24 +1,6 @@
 import UIKit
 
 extension UndirectedGraph {
-    // Find the subset of a vertice
-    func find(parent: [String: Vertice], vertice: Vertice) -> Vertice {
-        guard let parentVertice = parent[vertice.id] else {
-            return vertice
-        }
-
-        if parentVertice == vertice {
-            return vertice
-        }
-
-        return find(parent: parent, vertice: parentVertice)
-    }
-
-    // Union to subsets
-    func union(parent: inout [String: Vertice], subsetX: Vertice, subsetY: Vertice) {
-        parent[subsetX.id] = subsetY
-    }
-
     func isCylce() -> Bool {
         var parent: [String: Vertice] = [:]
 
@@ -36,6 +18,24 @@ extension UndirectedGraph {
         }
 
         return false
+    }
+
+    // Find the subset of a vertice
+    func find(parent: [String: Vertice], vertice: Vertice) -> Vertice {
+        guard let parentVertice = parent[vertice.id] else {
+            return vertice
+        }
+
+        if parentVertice == vertice {
+            return vertice
+        }
+
+        return find(parent: parent, vertice: parentVertice)
+    }
+
+    // Union to subsets
+    func union(parent: inout [String: Vertice], subsetX: Vertice, subsetY: Vertice) {
+        parent[subsetX.id] = subsetY
     }
 }
 

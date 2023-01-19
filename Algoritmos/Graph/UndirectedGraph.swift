@@ -31,6 +31,22 @@ class UndirectedGraph {
         }
     }
 
+    convenience init(arcs: [Arc]) {
+        var vertices: [Vertice] = []
+
+        for arc in arcs {
+            if !vertices.contains(arc.firstVertice) {
+                vertices.append(arc.firstVertice)
+            }
+
+            if !vertices.contains(arc.secondVertice) {
+                vertices.append(arc.secondVertice)
+            }
+        }
+
+        self.init(vertices: vertices, arcs: arcs)
+    }
+
     func arcWeight(vertice1: Vertice, vertice2: Vertice) -> Int {
         let arc = arcs.first(where: {
             ($0.firstVertice == vertice1 && $0.secondVertice == vertice2)
@@ -62,17 +78,33 @@ struct Vertice: Identifiable, Equatable {
         return "{ Vertice, id: \(id), adjacents: \(adjacentsDescription)}"
     }
 
-    static func ==(lhs: Vertice, rhs: Vertice) -> Bool {
+    static func == (lhs: Vertice, rhs: Vertice) -> Bool {
         return lhs.id == rhs.id
     }
 }
 
-struct Arc {
+struct Arc: Comparable {
     let firstVertice: Vertice
     let secondVertice: Vertice
-    var weight: Int?
+    var weight: Int
+
+    init(firstVertice: Vertice, secondVertice: Vertice, weight: Int) {
+        self.firstVertice = firstVertice
+        self.secondVertice = secondVertice
+        self.weight = weight
+    }
+
+    init(firstVertice: Vertice, secondVertice: Vertice) {
+        self.firstVertice = firstVertice
+        self.secondVertice = secondVertice
+        self.weight = 0
+    }
 
     var description: String {
-        "\(firstVertice.id) - \(secondVertice.id): \(String(weight ?? 0))"
+        "\(firstVertice.id) - \(secondVertice.id): \(String(weight))"
+    }
+
+    static func < (lhs: Arc, rhs: Arc) -> Bool {
+        lhs.weight < rhs.weight
     }
 }

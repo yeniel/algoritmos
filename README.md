@@ -11,6 +11,8 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	4.	[Floyd Warshall](#floydwarshall)
 	5.	[Union-Find](#union-find)
 	6.	[Prim](#prim)
+	7.	[Kruskal](#kruskal)
+	8.	[Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
 ## Graph
 ### BFS
@@ -98,6 +100,9 @@ Aplicaciones:
 
 ### Prim
 
+[Explanation](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)
+[Playground](Algoritmos/Playgrounds/Prim.playground/Contents.swift)
+
 Aplicaciones:
 
 - Ahorrar recursos, su aplicación más común es la implementación de cables de redes, de servidores, de postes de luz entre otros.
@@ -114,4 +119,12 @@ Aplicaciones:
 - Learning salient features for real-time face verification 
 - Reducing data storage in sequencing amino acids in a protein 
 - Model locality of particle interactions in turbulent fluid flows 
-- Autoconfig protocol for Ethernet bridging to avoid cycles in a network 
+- Autoconfig protocol for Ethernet bridging to avoid cycles in a network
+
+### Kruskal
+
+[Explanation](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
+[Playground](Algoritmos/Playgrounds/Kruskal.playground/Contents.swift)
+
+- Same as Prim
+

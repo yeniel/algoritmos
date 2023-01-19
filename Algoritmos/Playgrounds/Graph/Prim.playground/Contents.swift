@@ -45,7 +45,7 @@ extension UndirectedGraph {
         let primAdjacents = head.adjacents.filter { primVertices.contains($0) }
         let primArcs = primAdjacents.map { arcOf(vertice1: head, vertice2: $0)! }
 
-        return primArcs.min { $0.weight ?? 0 < $1.weight ?? 0 }
+        return primArcs.min { $0.weight < $1.weight }
     }
 }
 
