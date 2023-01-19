@@ -35,7 +35,6 @@ extension UndirectedGraph {
 
                     heap[adjacentIndex].key = arcWeight
                 }
-
             }
         }
 

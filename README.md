@@ -103,3 +103,15 @@ Aplicaciones:
 - Ahorrar recursos, su aplicación más común es la implementación de cables de redes, de servidores, de postes de luz entre otros.
 
 - Hallar el «árbol recubridor mínimo», en un grafo conexo no dirigido.
+
+- The standard application is to a problem like phone network design. You have a business with several offices; you want to lease phone lines to connect them up with each other, and the phone company charges different amounts of money to connect different pairs of cities. You want a set of lines that connects all your offices with a minimum total cost. It should be a spanning tree, since if a network isn’t a tree you can always remove some edges and save money. 
+
+- A less obvious application is that the minimum spanning tree can be used to approximately solve the traveling salesman problem. A convenient formal way of defining this problem is to find the shortest path that visits each point at least once. Note that if you have a path visiting all points exactly once, it’s a special kind of tree. For instance in the example above, twelve of sixteen spanning trees are actually paths. If you have a path visiting some vertices more than once, you can always drop some edges to get a tree. So in general the MST weight is less than the TSP weight, because it’s a minimization over a strictly larger set. On the other hand, if you draw a path tracing around the minimum spanning tree, you trace each edge twice and visit all points, so the TSP weight is less than twice the MST weight. Therefore this tour is within a factor of two of optimal. 
+
+- Max bottleneck paths 
+- LDPC codes for error correction 
+- Image registration with Renyi entropy 
+- Learning salient features for real-time face verification 
+- Reducing data storage in sequencing amino acids in a protein 
+- Model locality of particle interactions in turbulent fluid flows 
+- Autoconfig protocol for Ethernet bridging to avoid cycles in a network 
