@@ -102,6 +102,7 @@ Aplicaciones:
 ### Prim
 
 [Explanation](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)
+
 [Playground](Algoritmos/Playgrounds/Prim.playground/Contents.swift)
 
 Aplicaciones:
@@ -125,6 +126,7 @@ Aplicaciones:
 ### Kruskal
 
 [Explanation](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
+
 [Playground](Algoritmos/Playgrounds/Kruskal.playground/Contents.swift)
 
 - Same as Prim
@@ -132,6 +134,7 @@ Aplicaciones:
 ### Topological Sorting
 
 [Explanation](https://www.geeksforgeeks.org/topological-sorting/)
+
 [Playground](Algoritmos/Playgrounds/TopologicalSorting.playground/Contents.swift)
 
 - Topological Sorting is mainly used for scheduling jobs from the given dependencies among jobs. 
