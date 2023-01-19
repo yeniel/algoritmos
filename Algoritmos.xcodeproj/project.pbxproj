@@ -52,7 +52,7 @@
 		FEE8BFEB2975EA960017DFDC /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		FEE8BFED2975EC2E0017DFDC /* DFS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DFS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEE8BFEE2975F1D60017DFDC /* Dijkstra.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dijkstra.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		FEEDB42929785D2D00B4D4BC /* PrimMST.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PrimMST.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FEEDB42929785D2D00B4D4BC /* Prim.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Prim.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEEDB42A297879EF00B4D4BC /* UndirectedGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndirectedGraph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,7 @@
 				FEE8BFEE2975F1D60017DFDC /* Dijkstra.playground */,
 				FE1224E72976C92800E2AD5D /* FloydWarshall.playground */,
 				FEC4B3D4297749EF0067124B /* UnionFind.playground */,
-				FEEDB42929785D2D00B4D4BC /* PrimMST.playground */,
+				FEEDB42929785D2D00B4D4BC /* Prim.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";

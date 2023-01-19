@@ -1,7 +1,7 @@
 import UIKit
 
 extension UndirectedGraph {
-    func primMST() -> UndirectedGraph {
+    func prim() -> UndirectedGraph {
         let emptyGraph = UndirectedGraph(vertices: [], arcs: [])
         var primVertices: [Vertice] = []
         var primArcs: [Arc] = []
@@ -80,6 +80,6 @@ let graphArcs = [
 
 let graph = UndirectedGraph(vertices: graphVertices, arcs: graphArcs)
 
-let primMSTGraph = graph.primMST()
+let primMSTGraph = graph.prim()
 
 primMSTGraph.arcs.forEach { print($0.description) }
