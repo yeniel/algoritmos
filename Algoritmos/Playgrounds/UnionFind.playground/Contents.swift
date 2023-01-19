@@ -1,32 +1,32 @@
 import UIKit
 
-extension Graph {
-    // Find the subset of a node
-    func find(parent: [String: Node], node: Node) -> Node {
-        guard let parentNode = parent[node.identifier] else {
-            return node
+extension UndirectedGraph {
+    // Find the subset of a vertice
+    func find(parent: [String: Vertice], vertice: Vertice) -> Vertice {
+        guard let parentVertice = parent[vertice.id] else {
+            return vertice
         }
 
-        if parentNode == node {
-            return node
+        if parentVertice == vertice {
+            return vertice
         }
 
-        return find(parent: parent, node: parentNode)
+        return find(parent: parent, vertice: parentVertice)
     }
 
     // Union to subsets
-    func union(parent: inout [String: Node], subsetX: Node, subsetY: Node) {
-        parent[subsetX.identifier] = subsetY
+    func union(parent: inout [String: Vertice], subsetX: Vertice, subsetY: Vertice) {
+        parent[subsetX.id] = subsetY
     }
 
     func isCylce() -> Bool {
-        var parent: [String: Node] = [:]
+        var parent: [String: Vertice] = [:]
 
-        nodes.forEach { parent[$0.identifier] = $0 }
+        vertices.forEach { parent[$0.id] = $0 }
 
-        for edge in edges {
-            let subsetX = find(parent: parent, node: edge.from)
-            let subsetY = find(parent: parent, node: edge.to)
+        for arc in arcs {
+            let subsetX = find(parent: parent, vertice: arc.firstVertice)
+            let subsetY = find(parent: parent, vertice: arc.secondVertice)
 
             if subsetX == subsetY {
                 return true
@@ -39,13 +39,19 @@ extension Graph {
     }
 }
 
-let edges = [
-    ("0", "1"),
-    ("1", "2"),
-    ("0", "2")
+let v0 = Vertice(id: "0")
+let v1 = Vertice(id: "1")
+let v2 = Vertice(id: "2")
+
+let vertices = [v0, v1, v2]
+
+let arcs = [
+    Arc(firstVertice: v0, secondVertice: v1),
+    Arc(firstVertice: v1, secondVertice: v2),
+    Arc(firstVertice: v0, secondVertice: v2)
 ]
 
-let graph = Graph(edges: edges)
+let graph = UndirectedGraph(vertices: vertices, arcs: arcs)
 
 if graph.isCylce() {
     print("Graph contains cycle")

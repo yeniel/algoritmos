@@ -3,7 +3,7 @@ import UIKit
 extension Graph {
     func visit(node: Node) {
         node.visited = true
-        print(node.identifier)
+        print(node.id)
 
         node.edges.forEach {
             if !$0.to.visited {

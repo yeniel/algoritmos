@@ -10,6 +10,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	3.	[Dijkstra](#dijkstra) - Shortest Path
 	4.	[Floyd Warshall](#floydwarshall)
 	5.	[Union-Find](#union-find)
+	6.	[Prim](#prim)
 
 ## Graph
 ### BFS
@@ -94,3 +95,11 @@ Aplicaciones:
 - Implementando Algoritmo de Kruskal para encontrar el árbol de expansión mínimo de un graph.
 
 - Ciclo de detección en un graph no dirigido
+
+### Prim
+
+Aplicaciones:
+
+- Ahorrar recursos, su aplicación más común es la implementación de cables de redes, de servidores, de postes de luz entre otros.
+
+- Hallar el «árbol recubridor mínimo», en un grafo conexo no dirigido.

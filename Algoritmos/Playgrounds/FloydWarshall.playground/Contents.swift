@@ -5,10 +5,10 @@ extension Graph {
         var graph = [String: [String: Int]]()
 
         nodes.forEach { row in
-            graph[row.identifier] = [String: Int]()
+            graph[row.id] = [String: Int]()
 
             nodes.forEach { col in
-                graph[row.identifier]?[col.identifier] = row.weightTo(node: col)
+                graph[row.id]?[col.id] = row.weightTo(node: col)
             }
         }
 

@@ -15,7 +15,7 @@ extension Graph {
             // print("\nCURRENT NODE: ")
             // print(currentNode.description)
 
-            toVisit = toVisit.filter{ $0.identifier != currentNode.identifier }
+            toVisit = toVisit.filter{ $0.id != currentNode.id }
 
             currentNode.visited = true
 
@@ -136,4 +136,4 @@ var edges = [
 let graph = Graph(edges: edges)
 let route: [Node] = graph.dijkstra(from: "0", to: "5")
 
-route.forEach { print($0.identifier) }
+route.forEach { print($0.id) }

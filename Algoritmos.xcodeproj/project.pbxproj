@@ -15,6 +15,7 @@
 		FEE8BFDA2975E8DF0017DFDC /* AlgoritmosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE8BFD92975E8DF0017DFDC /* AlgoritmosUITests.swift */; };
 		FEE8BFDC2975E8DF0017DFDC /* AlgoritmosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE8BFDB2975E8DF0017DFDC /* AlgoritmosUITestsLaunchTests.swift */; };
 		FEE8BFEC2975EA960017DFDC /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE8BFEB2975EA960017DFDC /* Graph.swift */; };
+		FEEDB42B297879EF00B4D4BC /* UndirectedGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDB42A297879EF00B4D4BC /* UndirectedGraph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		FEE8BFED2975EC2E0017DFDC /* DFS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DFS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEE8BFEE2975F1D60017DFDC /* Dijkstra.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dijkstra.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEEDB42929785D2D00B4D4BC /* PrimMST.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PrimMST.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FEEDB42A297879EF00B4D4BC /* UndirectedGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndirectedGraph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				FEE8BFEB2975EA960017DFDC /* Graph.swift */,
+				FEEDB42A297879EF00B4D4BC /* UndirectedGraph.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEE8BFEC2975EA960017DFDC /* Graph.swift in Sources */,
+				FEEDB42B297879EF00B4D4BC /* UndirectedGraph.swift in Sources */,
 				FEE8BFC12975E8DD0017DFDC /* ContentView.swift in Sources */,
 				FEE8BFBF2975E8DD0017DFDC /* AlgoritmosApp.swift in Sources */,
 			);
