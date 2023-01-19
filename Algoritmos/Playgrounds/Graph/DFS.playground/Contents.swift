@@ -13,7 +13,7 @@ extension Graph {
     }
 
     func dfs(startNode: String) {
-        guard let node = getNode(value: startNode) else {
+        guard let node = getNode(id: startNode) else {
             return
         }
 
@@ -21,16 +21,20 @@ extension Graph {
     }
 }
 
-var edges = [
-    ("A", "B"),
-    ("A", "C"),
-    ("B", "C"),
-    ("C", "A"),
-    ("C", "D"),
-    ("D", "D")
-]
+var graph = Graph()
 
-var graph = Graph(edges: edges)
+graph.addNode(id: "0")
+graph.addNode(id: "1")
+graph.addNode(id: "2")
+graph.addNode(id: "3")
 
-graph.dfs(startNode: "C")
+graph.addEdge(from: "0", to: "1")
+graph.addEdge(from: "0", to: "2")
+graph.addEdge(from: "1", to: "2")
+graph.addEdge(from: "2", to: "0")
+graph.addEdge(from: "2", to: "3")
+graph.addEdge(from: "3", to: "3")
+
+graph.dfs(startNode: "2")
+print("Output should be 2 0 1 3")
 

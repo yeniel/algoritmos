@@ -11,38 +11,27 @@ class Graph {
     var nodes: [Node] = []
     var edges: [Edge] = []
 
-    init(edges: [(String, String, Int)]) {
-        var nodeNames = Set<String>()
-
-        edges.forEach { edge in
-            nodeNames.insert(String(edge.0))
-            nodeNames.insert(String(edge.1))
-        }
-
-        for node in nodeNames {
-            let newNode = Node(id: node, visited: false, edges: [])
-
-            nodes.append(newNode)
-        }
-
-        for (from, to, weight) in edges {
-            if let fromNode = getNode(value: from) {
-                if let toNode = getNode(value: to) {
-                    let forwardEdge = Edge(to: toNode, from: fromNode, weight: weight)
-
-                    fromNode.edges.append(forwardEdge)
-                    self.edges.append(forwardEdge)
-                }
-            }
-        }
+    func addNode(id: String, visited: Bool = false, edges: [Edge] = []) {
+        nodes.append(Node(id: id, visited: visited, edges: edges))
     }
 
-    convenience init(edges: [(String, String)]) {
-        self.init(edges: edges.map { ($0.0, $0.1, 1) })
+    func addEdge(from: String, to: String, weight: Int = 0) {
+        guard let fromNode = getNode(id: from) else {
+            return
+        }
+
+        guard let toNode = getNode(id: to) else {
+            return
+        }
+
+        let edge = Edge(from: fromNode, to: toNode, weight: weight)
+
+        fromNode.edges.append(edge)
+        edges.append(edge)
     }
 
-    func getNode(value: String) -> Node? {
-        nodes.first { $0.id == value }
+    func getNode(id: String) -> Node? {
+        nodes.first { $0.id == id }
     }
 }
 
@@ -94,7 +83,7 @@ class Edge {
 
     }
 
-    init(to: Node, from: Node, weight: Int) {
+    init(from: Node, to: Node, weight: Int) {
         self.from = from
         self.to = to
         self.weight = weight

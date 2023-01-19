@@ -92,3 +92,13 @@ let graph = UndirectedGraph(vertices: graphVertices, arcs: graphArcs)
 let kruskalMSTGraph = graph.kruskal()
 
 kruskalMSTGraph.arcs.forEach { print($0.description) }
+
+print("Output should be:")
+print("6 - 7: 1")
+print("2 - 8: 2")
+print("5 - 6: 2")
+print("0 - 1: 4")
+print("2 - 5: 4")
+print("2 - 3: 7")
+print("0 - 7: 8")
+print("3 - 4: 9")

@@ -58,3 +58,5 @@ if graph.isCylce() {
 } else {
     print("Graph doesn't contain cycle")
 }
+
+print("Output should be Graph contains cycle")

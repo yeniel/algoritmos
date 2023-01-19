@@ -83,3 +83,13 @@ let graph = UndirectedGraph(vertices: graphVertices, arcs: graphArcs)
 let primMSTGraph = graph.prim()
 
 primMSTGraph.arcs.forEach { print($0.description) }
+
+print("Output should be:")
+print("0 - 1: 4")
+print("1 - 2: 8")
+print("2 - 8: 2")
+print("2 - 5: 4")
+print("5 - 6: 2")
+print("6 - 7: 1")
+print("2 - 3: 7")
+print("3 - 4: 9")

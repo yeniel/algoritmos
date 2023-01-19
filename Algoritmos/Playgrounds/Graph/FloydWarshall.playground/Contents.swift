@@ -47,9 +47,41 @@ var edges = [
     ("2", "3", 1)
 ]
 
-let graph = Graph(edges: edges)
+var graph = Graph()
+
+graph.addNode(id: "0")
+graph.addNode(id: "1")
+graph.addNode(id: "2")
+graph.addNode(id: "3")
+
+graph.addEdge(from: "0", to: "2", weight: 10)
+graph.addEdge(from: "0", to: "1", weight: 5)
+graph.addEdge(from: "1", to: "2", weight: 3)
+graph.addEdge(from: "2", to: "3", weight: 1)
 
 let floydMarshallDistances = graph.floydWarshall()
 
-print(floydMarshallDistances)
+floydMarshallDistances.forEach {
+    print($0)
+}
 
+print("Output should be:")
+print("0 - 0: 0")
+print("0 - 1: 5")
+print("0 - 2: 8")
+print("0 - 3: 9")
+
+print("1 - 0: Int.max")
+print("1 - 1: 0")
+print("1 - 2: 3")
+print("1 - 3: 4")
+
+print("2 - 0: Int.max")
+print("2 - 1: Int.max")
+print("2 - 2: 0")
+print("2 - 3: 1")
+
+print("3 - 0: Int.max")
+print("3 - 1: Int.max")
+print("3 - 2: Int.max")
+print("3 - 3: 0")

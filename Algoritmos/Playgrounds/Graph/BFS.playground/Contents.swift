@@ -2,7 +2,7 @@ import UIKit
 
 extension Graph {
     public func bfs(startNode: String) {
-        guard let start = getNode(value: startNode) else {
+        guard let start = getNode(id: startNode) else {
             return
         }
         var queue: [Node] = []
@@ -25,15 +25,20 @@ extension Graph {
     }
 }
 
-var edges = [
-    ("A", "B"),
-    ("B", "A"),
-    ("B", "C"),
-    ("C", "A"),
-    ("A", "D"),
-    ("D", "D")
-]
+var graph = Graph()
 
-var graph = Graph(edges: edges)
+graph.addNode(id: "0")
+graph.addNode(id: "1")
+graph.addNode(id: "2")
+graph.addNode(id: "3")
 
-graph.bfs(startNode: "A")
+graph.addEdge(from: "0", to: "1")
+graph.addEdge(from: "0", to: "2")
+graph.addEdge(from: "1", to: "2")
+graph.addEdge(from: "2", to: "0")
+graph.addEdge(from: "2", to: "3")
+graph.addEdge(from: "3", to: "3")
+
+graph.bfs(startNode: "2")
+
+print("Output should be 2 0 3 1")
