@@ -12,9 +12,11 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	5.	[Union-Find](#union-find)
 	6.	[Prim](#prim)
 	7.	[Kruskal](#kruskal)
-	8.	[Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
-	9.	[Topological Sorting](#topological-sorting)
-	10. [Boggle](#boggle)
+	8.	[Topological Sorting](#topological-sorting)
+	9. [Boggle](#boggle)
+	10. 
+
+[Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
 ## Graph
 ### BFS
@@ -22,8 +24,6 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 [Explanation](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 
 [Playground](Algoritmos/Playgrounds/BFS.playground/Contents.swift)
-
-Aplicaciones:
 
 - Encontrar el camino más corto entre 2 nodos, medido por el número de nodos conectados
 - Probar si un grafo de nodos es bipartito (si se puede dividir en 2 conjuntos)
@@ -46,8 +46,6 @@ Aplicaciones:
 
 [Playground](Algoritmos/Playgrounds/DFS.playground/Contents.swift)
 
-Aplicaciones:
-
 - Encontrar nodos conectados en un grafo
 - Ordenamiento topológico en un grafo acíclico dirigido
 - Encontrar puentes en un grafo de nodos
@@ -67,8 +65,6 @@ Aplicaciones:
 
 [Playground](Algoritmos/Playgrounds/Dijkstra.playground/Contents.swift)
 
-Aplicaciones:
-
 - Con el algoritmo de Dijkstra, puedes encontrar la ruta más corta o el camino más corto entre los nodos de un grafo. Específicamente, puedes encontrar el camino más corto desde un nodo (llamado el nodo de origen) a todos los otros nodos del grafo, generando un árbol del camino más corto.
 
 - Este algoritmo es usado por los dispositivos GPS para encontrar el camino más corto entre la ubicación actual y el destino del usuario. Tiene amplias aplicaciones en la industria, especialmente en aquellas áreas que requieren modelar redes.
@@ -78,8 +74,6 @@ Aplicaciones:
 [Explanation](https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/)
 
 [Playground](Algoritmos/Playgrounds/FloydWarshall.playground/Contents.swift)
-
-Aplicaciones:
 
 - Camino mínimo en grafos dirigidos (algoritmo de Floyd).
 - Cierre transitivo en grafos dirigidos (algoritmo de Warshall). Es la formulación original del algoritmo de Warshall. El grafo es un grafo no ponderado y representado por una matriz booleana de adyacencia. Entonces la operación de adición es reemplazada por la conjunción lógica(AND) y la operación menor por la disyunción lógica (OR).
@@ -94,8 +88,6 @@ Aplicaciones:
 
 [Playground](Algoritmos/Playgrounds/UnionFind.playground/Contents.swift)
 
-Aplicaciones:
-
 - Implementando Algoritmo de Kruskal para encontrar el árbol de expansión mínimo de un graph.
 
 - Ciclo de detección en un graph no dirigido
@@ -105,8 +97,6 @@ Aplicaciones:
 [Explanation](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)
 
 [Playground](Algoritmos/Playgrounds/Prim.playground/Contents.swift)
-
-Aplicaciones:
 
 - Ahorrar recursos, su aplicación más común es la implementación de cables de redes, de servidores, de postes de luz entre otros.
 
@@ -153,3 +143,4 @@ Aplicaciones:
 
 [Playground](Algoritmos/Playgrounds/Boggle.playground/Contents.swift)
 
+- Find anagrams
