@@ -14,6 +14,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	7.	[Kruskal](#kruskal)
 	8.	[Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 	9.	[Topological Sorting](#topological-sorting)
+	10. [Boggle](#boggle)
 
 ## Graph
 ### BFS
@@ -145,3 +146,10 @@ Aplicaciones:
 - Determining the order of compilation tasks to perform in make files
 - Data serialization
 - Resolving symbol dependencies in linkers
+
+### Boggle
+
+[Explanation](https://www.geeksforgeeks.org/boggle-find-possible-words-board-characters/)
+
+[Playground](Algoritmos/Playgrounds/Boggle.playground/Contents.swift)
+

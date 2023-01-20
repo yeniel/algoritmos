@@ -11,8 +11,8 @@ class Graph {
     var nodes: [Node] = []
     var edges: [Edge] = []
 
-    func addNode(id: String, visited: Bool = false, edges: [Edge] = []) {
-        nodes.append(Node(id: id, visited: visited, edges: edges))
+    func addNode(id: String, visited: Bool = false, edges: [Edge] = [], value: String = "") {
+        nodes.append(Node(id: id, visited: visited, edges: edges, value: value))
     }
 
     func addEdge(from: String, to: String, weight: Int = 0) {
@@ -33,6 +33,22 @@ class Graph {
     func getNode(id: String) -> Node? {
         nodes.first { $0.id == id }
     }
+
+    func visit(node: Node) {
+        getNode(id: node.id)?.visited = true
+    }
+
+    func unVisit(node: Node) {
+        getNode(id: node.id)?.visited = false
+    }
+
+    func visited(node: Node) -> Bool {
+        getNode(id: node.id)?.visited ?? false
+    }
+
+    func notVisited(node: Node) -> Bool {
+        !(getNode(id: node.id)?.visited ?? false)
+    }
 }
 
 class Node: Equatable, Identifiable {
@@ -41,11 +57,13 @@ class Node: Equatable, Identifiable {
     var visited = false
     var distance: Int = Int.max
     var previous: Node?
+    var value: String
 
-    init(id: String, visited: Bool, edges: [Edge]) {
+    init(id: String, visited: Bool, edges: [Edge], value: String = "") {
         self.id = id
         self.visited = visited
         self.edges = edges
+        self.value = value
     }
 
     var description: String {

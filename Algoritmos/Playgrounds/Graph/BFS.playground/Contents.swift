@@ -7,7 +7,7 @@ extension Graph {
         }
         var queue: [Node] = []
 
-        start.visited = true
+        visit(node: start)
         queue.append(start)
 
         while !queue.isEmpty {
@@ -16,8 +16,8 @@ extension Graph {
             print(node.id)
 
             node.edges.forEach {
-                if !$0.to.visited {
-                    $0.to.visited = true
+                if notVisited(node: $0.to) {
+                    visit(node: $0.to)
                     queue.append($0.to)
                 }
             }

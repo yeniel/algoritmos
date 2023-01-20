@@ -4,7 +4,7 @@ extension Graph {
     func addDistancesToTheGraph(from: Node, to: Node) {
         var currentNode = from
 
-        currentNode.visited = true
+        visit(node: currentNode)
         currentNode.distance = 0
 
         var toVisit = [Node]()
@@ -17,7 +17,7 @@ extension Graph {
 
             toVisit = toVisit.filter{ $0.id != currentNode.id }
 
-            currentNode.visited = true
+            visit(node: currentNode)
 
             // Go to each adjacent vertex and update the path length
 
@@ -30,13 +30,13 @@ extension Graph {
 
                     toVisit.append(connectedEdge.to)
 
-                    if (connectedEdge.to.visited) {
-                        connectedEdge.to.visited = false
+                    if visited(node: connectedEdge.to) {
+                        unVisit(node: connectedEdge.to)
                     }
                 }
             }
 
-            currentNode.visited = true
+            visit(node: currentNode)
 
             //set current node to the smallest vertex
 

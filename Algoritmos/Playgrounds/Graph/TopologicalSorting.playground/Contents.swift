@@ -14,10 +14,10 @@ extension Graph {
     }
 
     func topologicalSortUtil(node: Node, stack: inout [Node]) {
-        node.visited = true
+        visit(node: node)
 
         node.edges.forEach { edge in
-            if !edge.to.visited {
+            if notVisited(node: edge.to) {
                 topologicalSortUtil(node: edge.to, stack: &stack)
             }
         }
