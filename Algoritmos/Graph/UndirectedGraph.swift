@@ -62,6 +62,13 @@ class UndirectedGraph {
             || $0.firstVertice == vertice2 && $0.secondVertice == vertice1
         })
     }
+
+    func arcOf(verticeId1: String, verticeId2: String) -> Arc? {
+        arcs.first(where: {
+            $0.firstVertice.id == verticeId1 && $0.secondVertice.id == verticeId2
+            || $0.firstVertice.id == verticeId2 && $0.secondVertice.id == verticeId1
+        })
+    }
 }
 
 struct Vertice: Identifiable, Equatable {

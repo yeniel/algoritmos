@@ -4,7 +4,7 @@ extension UndirectedGraph {
     func prim() -> UndirectedGraph {
         let emptyGraph = UndirectedGraph(vertices: [], arcs: [])
         var primVertices: [Vertice] = []
-        var primArcs: [Arc] = []
+        var parents: [String: Vertice] = [:]
         var heap = Array(vertices)
 
         guard var rootVertice = vertices.first else {
@@ -18,11 +18,11 @@ extension UndirectedGraph {
             guard let minVertice = (heap.min { $0.key < $1.key }) else {
                 continue
             }
-
+            /*
             if let primArc = primArc(primVertices: primVertices, head: minVertice) {
                 primArcs.append(primArc)
             }
-
+            */
             primVertices.append(minVertice)
             heap.removeAll(where: { $0 == minVertice })
 
@@ -34,11 +34,17 @@ extension UndirectedGraph {
                     let adjacentIndex = heap.firstIndex(of: adjacent) ?? 0
 
                     heap[adjacentIndex].key = arcWeight
+                    parents[adjacent.id] = minVertice
                 }
             }
         }
 
-        return UndirectedGraph(vertices: vertices, arcs: primArcs)
+        let primGraph = UndirectedGraph(
+            vertices: vertices,
+            arcs: parents.map { arcOf(verticeId1: $0.key, verticeId2: $0.value.id)! }
+        )
+
+        return primGraph
     }
 
     func primArc(primVertices: [Vertice], head: Vertice) -> Arc? {
@@ -80,16 +86,16 @@ let graphArcs = [
 
 let graph = UndirectedGraph(vertices: graphVertices, arcs: graphArcs)
 
-let primMSTGraph = graph.prim()
+let primArcs = graph.prim().arcs.sorted(by: { $0.firstVertice.id < $1.firstVertice.id })
 
-primMSTGraph.arcs.forEach { print($0.description) }
+primArcs.forEach { print($0.description) }
 
 print("Output should be:")
 print("0 - 1: 4")
 print("1 - 2: 8")
+print("2 - 3: 7")
 print("2 - 8: 2")
 print("2 - 5: 4")
+print("3 - 4: 9")
 print("5 - 6: 2")
 print("6 - 7: 1")
-print("2 - 3: 7")
-print("3 - 4: 9")
