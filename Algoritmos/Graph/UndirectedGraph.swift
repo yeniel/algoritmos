@@ -8,73 +8,98 @@
 import Foundation
 
 class UndirectedGraph {
-    var vertices: [Vertice]
-    let arcs: [Arc]
+    var vertices: [Vertice] = []
+    var arcs: [Arc] = []
 
-    init(vertices: [Vertice], arcs: [Arc]) {
-        self.vertices = vertices
-        self.arcs = arcs
-
-        for arc in arcs {
-            let firstVerticeIndex = vertices.firstIndex(of: arc.firstVertice) ?? 0
-            let secondVerticeIndex = vertices.firstIndex(of: arc.secondVertice) ?? 0
-
-            if !vertices[firstVerticeIndex].adjacents.contains(arc.secondVertice) {
-                self.vertices[firstVerticeIndex].adjacents.append(arc.secondVertice)
-                self.vertices[firstVerticeIndex].arcs.append(arc)
-            }
-
-            if !vertices[secondVerticeIndex].adjacents.contains(arc.firstVertice) {
-                self.vertices[secondVerticeIndex].adjacents.append(arc.firstVertice)
-                self.vertices[secondVerticeIndex].arcs.append(arc)
-            }
-        }
+    init(arcs: [Arc]) {
+        arcs.forEach { addArc(v1: $0.v1, v2: $0.v2, weight: $0.weight)}
     }
 
-    convenience init(arcs: [Arc]) {
-        var vertices: [Vertice] = []
+    @discardableResult func addVertice(id: String) -> Vertice {
+        guard let vertice = findVertice(id: id) else {
+            let newVertice = Vertice(id: id)
 
-        for arc in arcs {
-            if !vertices.contains(arc.firstVertice) {
-                vertices.append(arc.firstVertice)
-            }
+            vertices.append(newVertice)
 
-            if !vertices.contains(arc.secondVertice) {
-                vertices.append(arc.secondVertice)
-            }
+            return newVertice
         }
 
-        self.init(vertices: vertices, arcs: arcs)
+        return vertice
     }
 
-    func arcWeight(vertice1: Vertice, vertice2: Vertice) -> Int {
-        let arc = arcs.first(where: {
-            ($0.firstVertice == vertice1 && $0.secondVertice == vertice2)
-            || ($0.firstVertice == vertice2 && $0.secondVertice == vertice1)
-        })
+    func addArc(v1 id1: String, v2 id2: String, weight: Int = 0) {
+        let v1 = addVertice(id: id1)
+        let v2 = addVertice(id: id2)
+        let arc = Arc(v1: id1, v2: id2, weight: weight)
+
+        if let v1Index = indexOf(vertice: v1) {
+            vertices[v1Index].adjacents.insert(id2)
+            vertices[v1Index].arcs.append(arc)
+        }
+
+        if let v2Index = indexOf(vertice: v2) {
+            vertices[v2Index].adjacents.insert(id1)
+            vertices[v2Index].arcs.append(arc)
+        }
+
+        arcs.append(arc)
+    }
+
+    func findVertice(id: String) -> Vertice? {
+        vertices.first(where: { $0.id == id })
+    }
+
+    func indexOf(vertice: Vertice) -> Int? {
+        vertices.firstIndex(of: vertice)
+    }
+
+    func arcWeight(v1: String, v2: String) -> Int {
+        let arc = arcOf(v1: v1, v2: v2)
 
         return arc?.weight ?? Int.max
     }
 
-    func arcOf(vertice1: Vertice, vertice2: Vertice) -> Arc? {
+    func arcOf(v1: String, v2: String) -> Arc? {
         arcs.first(where: {
-            $0.firstVertice == vertice1 && $0.secondVertice == vertice2
-            || $0.firstVertice == vertice2 && $0.secondVertice == vertice1
+            ($0.v1 == v1 && $0.v2 == v2)
+            || ($0.v1 == v2 && $0.v2 == v1)
         })
     }
 
-    func arcOf(verticeId1: String, verticeId2: String) -> Arc? {
-        arcs.first(where: {
-            $0.firstVertice.id == verticeId1 && $0.secondVertice.id == verticeId2
-            || $0.firstVertice.id == verticeId2 && $0.secondVertice.id == verticeId1
-        })
+    func visit(vertice: Vertice) {
+        if let index = vertices.firstIndex(of: vertice) {
+            vertices[index].visited = true
+        }
+    }
+
+    func unVisit(vertice: Vertice) {
+        if let index = vertices.firstIndex(of: vertice) {
+            vertices[index].visited = false
+        }
+    }
+
+    func visited(vertice id: String) -> Bool {
+        guard let vertice = findVertice(id: id) else {
+            return false
+        }
+
+        return vertice.visited
+    }
+
+    func notVisited(vertice id: String) -> Bool {
+        guard let vertice = findVertice(id: id) else {
+            return false
+        }
+
+        return !vertice.visited
     }
 }
 
 struct Vertice: Identifiable, Equatable {
     let id: String
-    var adjacents: [Vertice] = []
+    var adjacents: Set<String> = Set<String>()
     var arcs: [Arc] = []
+    var visited = false
     var key: Int = Int.max
 
     var description: String {
@@ -82,7 +107,7 @@ struct Vertice: Identifiable, Equatable {
 
         adjacents.forEach { adjacentsDescription.append("\n    \($0.description)") }
 
-        return "{ Vertice, id: \(id), adjacents: \(adjacentsDescription)}"
+        return "Vertice: \(id), Adjacents: \(adjacents.joined(separator: ", "))"
     }
 
     static func == (lhs: Vertice, rhs: Vertice) -> Bool {
@@ -91,24 +116,18 @@ struct Vertice: Identifiable, Equatable {
 }
 
 struct Arc: Comparable {
-    let firstVertice: Vertice
-    let secondVertice: Vertice
+    let v1: String
+    let v2: String
     var weight: Int
 
-    init(firstVertice: Vertice, secondVertice: Vertice, weight: Int) {
-        self.firstVertice = firstVertice
-        self.secondVertice = secondVertice
+    init(v1: String, v2: String, weight: Int = 0) {
+        self.v1 = v1
+        self.v2 = v2
         self.weight = weight
     }
 
-    init(firstVertice: Vertice, secondVertice: Vertice) {
-        self.firstVertice = firstVertice
-        self.secondVertice = secondVertice
-        self.weight = 0
-    }
-
     var description: String {
-        "\(firstVertice.id) - \(secondVertice.id): \(String(weight))"
+        "\(v1) - \(v2): \(String(weight))"
     }
 
     static func < (lhs: Arc, rhs: Arc) -> Bool {

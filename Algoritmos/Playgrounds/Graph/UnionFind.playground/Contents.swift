@@ -2,13 +2,13 @@ import UIKit
 
 extension UndirectedGraph {
     func isCylce() -> Bool {
-        var parent: [String: Vertice] = [:]
+        var parent: [String: String] = [:]
 
-        vertices.forEach { parent[$0.id] = $0 }
+        vertices.forEach { parent[$0.id] = $0.id }
 
         for arc in arcs {
-            let subsetX = find(parent: parent, vertice: arc.firstVertice)
-            let subsetY = find(parent: parent, vertice: arc.secondVertice)
+            let subsetX = find(parent: parent, vertice: arc.v1)
+            let subsetY = find(parent: parent, vertice: arc.v2)
 
             if subsetX == subsetY {
                 return true
@@ -21,8 +21,8 @@ extension UndirectedGraph {
     }
 
     // Find the subset of a vertice
-    func find(parent: [String: Vertice], vertice: Vertice) -> Vertice {
-        guard let parentVertice = parent[vertice.id] else {
+    func find(parent: [String: String], vertice: String) -> String {
+        guard let parentVertice = parent[vertice] else {
             return vertice
         }
 
@@ -34,24 +34,18 @@ extension UndirectedGraph {
     }
 
     // Union to subsets
-    func union(parent: inout [String: Vertice], subsetX: Vertice, subsetY: Vertice) {
-        parent[subsetX.id] = subsetY
+    func union(parent: inout [String: String], subsetX: String, subsetY: String) {
+        parent[subsetX] = subsetY
     }
 }
 
-let v0 = Vertice(id: "0")
-let v1 = Vertice(id: "1")
-let v2 = Vertice(id: "2")
-
-let vertices = [v0, v1, v2]
-
 let arcs = [
-    Arc(firstVertice: v0, secondVertice: v1),
-    Arc(firstVertice: v1, secondVertice: v2),
-    Arc(firstVertice: v0, secondVertice: v2)
+    Arc(v1: "0", v2: "1"),
+    Arc(v1: "1", v2: "2"),
+    Arc(v1: "0", v2: "2")
 ]
 
-let graph = UndirectedGraph(vertices: vertices, arcs: arcs)
+let graph = UndirectedGraph(arcs: arcs)
 
 if graph.isCylce() {
     print("Graph contains cycle")

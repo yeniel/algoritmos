@@ -35,19 +35,31 @@ class Graph {
     }
 
     func visit(node: Node) {
-        getNode(id: node.id)?.visited = true
+        if let index = nodes.firstIndex(of: node) {
+            nodes[index].visited = true
+        }
     }
 
     func unVisit(node: Node) {
-        getNode(id: node.id)?.visited = false
+        if let index = nodes.firstIndex(of: node) {
+            nodes[index].visited = false
+        }
     }
 
     func visited(node: Node) -> Bool {
-        getNode(id: node.id)?.visited ?? false
+        guard let node = getNode(id: node.id) else {
+            return false
+        }
+
+        return node.visited
     }
 
     func notVisited(node: Node) -> Bool {
-        !(getNode(id: node.id)?.visited ?? false)
+        guard let node = getNode(id: node.id) else {
+            return false
+        }
+
+        return !node.visited
     }
 }
 
