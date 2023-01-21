@@ -13,8 +13,8 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	6.	[Prim](#prim)
 	7.	[Kruskal](#kruskal)
 	8.	[Topological Sorting](#topological-sorting)
-	9. [Boggle](#boggle)
-	10. 
+	9.	[Boggle](#boggle)
+	10.	[Bridges](#bridges)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -144,3 +144,11 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 [Playground](Algoritmos/Playgrounds/Boggle.playground/Contents.swift)
 
 - Find anagrams
+
+### Bridges
+
+[Explanation](https://www.geeksforgeeks.org/bridge-in-a-graph/)
+
+[Playground](Algoritmos/Playgrounds/Bridges.playground/Contents.swift)
+
+- A vertex in an undirected connected graph is an articulation point (or cut vertex) if removing it (and edges through it) disconnects the graph. Articulation points (Bridges) represent vulnerabilities in a connected network – single points whose failure would split the network into 2 or more components. They are useful for designing reliable networks. For a disconnected undirected graph, an articulation point is a vertex removal which increases the number of connected components.
