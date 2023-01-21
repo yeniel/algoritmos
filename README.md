@@ -1,5 +1,5 @@
-# Algoritmos
-Algoritmos más usados en las pruebas técnicas
+# Algorithms
+In this repository “Top 10 coding problems of important topics with their solutions ” are written in Swift Playgrounds. If you are preparing for a coding interview, going through these problems is a must.
 
 https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
