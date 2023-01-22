@@ -17,6 +17,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	10.	[Bridges](#bridges)
 2. [Linked List](#linked-list)
 	1.	[Sorted Insert](#sorted-insert)
+	2.	[Delete](#delete)	
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -140,3 +141,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Sorted Insert
 
 | [Explanation](https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/) | [Playground](Algoritmos/Playgrounds/LinkedList/SortedInsert.playground/Contents.swift) |
+
+### Delete
+
+| [Explanation](https://www.geeksforgeeks.org/delete-a-given-node-in-linked-list-under-given-constraints/) | [Playground](Algoritmos/Playgrounds/LinkedList/DeleteNode.playground/Contents.swift) |

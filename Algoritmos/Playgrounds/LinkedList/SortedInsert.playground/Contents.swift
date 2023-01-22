@@ -1,7 +1,7 @@
 import UIKit
 
 extension LinkedList {
-    func sortedInsert(newNode: ListNode) {
+    func sortedInsert(node newNode: ListNode) {
         guard let head = head else {
             insertFirst(newNode: newNode)
             return
@@ -30,11 +30,12 @@ extension LinkedList {
 
 let linkedList = LinkedList()
 
-linkedList.sortedInsert(newNode: ListNode(id: "5"))
-linkedList.sortedInsert(newNode: ListNode(id: "10"))
-linkedList.sortedInsert(newNode: ListNode(id: "7"))
-linkedList.sortedInsert(newNode: ListNode(id: "3"))
-linkedList.sortedInsert(newNode: ListNode(id: "1"))
-linkedList.sortedInsert(newNode: ListNode(id: "9"))
+linkedList.sortedInsert(node: ListNode(id: "5"))
+linkedList.sortedInsert(node: ListNode(id: "10"))
+linkedList.sortedInsert(node: ListNode(id: "7"))
+linkedList.sortedInsert(node: ListNode(id: "3"))
+linkedList.sortedInsert(node: ListNode(id: "1"))
+linkedList.sortedInsert(node: ListNode(id: "9"))
 
 print(linkedList.description)
+print("Outout should be: 1, 3, 5, 7, 9, 10")
