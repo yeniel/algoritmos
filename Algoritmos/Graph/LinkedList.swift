@@ -27,17 +27,19 @@ class LinkedList<T: Comparable> {
     }
 }
 
-extension LinkedList<String> : CustomStringConvertible {
+extension LinkedList: CustomStringConvertible where T: CustomStringConvertible {
     var description: String {
-        var current = head
-        var result = ""
+        guard var current = head else {
+            return "Empty"
+        }
+        var result = current.value.description
 
-        while let safeCurrent = current {
-            result += safeCurrent.value.description + ", "
-            current = safeCurrent.next
+        while let next = current.next {
+            result +=  ", " + next.value.description
+            current = next
         }
 
-        return String(result.prefix(result.count - 1))
+        return result
     }
 }
 
@@ -52,7 +54,7 @@ class ListNode<T: Comparable>: Identifiable, Equatable, Comparable {
     }
 
     static func == <T: Comparable>(lhs: ListNode<T>, rhs: ListNode<T>) -> Bool {
-        return lhs.id == rhs.id
+        return lhs.value == rhs.value
     }
 
     static func < <T: Comparable>(lhs: ListNode<T>, rhs: ListNode<T>) -> Bool {
@@ -60,6 +62,6 @@ class ListNode<T: Comparable>: Identifiable, Equatable, Comparable {
     }
 }
 
-extension ListNode<String>: CustomStringConvertible {
+extension ListNode: CustomStringConvertible where T: CustomStringConvertible {
     var description: String { value.description }
 }
