@@ -13,7 +13,7 @@ extension Graph {
 
         while (!toVisit.isEmpty) {
             // print("\nCURRENT NODE: ")
-            // print(currentNode.description)
+            // print(currentNode)
 
             toVisit = toVisit.filter{ $0.id != currentNode.id }
 
@@ -41,7 +41,7 @@ extension Graph {
             //set current node to the smallest vertex
 
             // print("\nCANDIDATES: ")
-            // toVisit.forEach { print($0.description + "\n") }
+            // toVisit.forEach { print($0") }
 
             if !toVisit.isEmpty {
                 guard let minNode = toVisit.min(by: { (a, b) -> Bool in
@@ -51,10 +51,10 @@ extension Graph {
                 }
 
                 // print("MIN Node")
-                // print(minNode.description)
+                // print(minNode)
 
                 // print("\nEDGES:")
-                // currentNode.edges.forEach { print($0.description) }
+                // currentNode.edges.forEach { print($0) }
                 currentNode = minNode
             }
 
@@ -74,13 +74,13 @@ extension Graph {
             return []
         }
 
-        // print("From Node: \(fromNode.description)")
-        // print("To Node: \(toNode.description)")
+        // print("From Node: \(fromNode)")
+        // print("To Node: \(toNode)")
 
         addDistancesToTheGraph(from: fromNode, to: toNode)
 
         // print("FINAL GRAPH")
-        // nodes.forEach { print("\($0.description) \n") }
+        // nodes.forEach { print("\($0)") }
 
         let visitedNodes = nodes.filter { $0.visited }
         var route: [Node] = []

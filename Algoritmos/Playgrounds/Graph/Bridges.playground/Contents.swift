@@ -105,7 +105,7 @@ print("Bridges of graph1")
 
 let bridges1 = graph1.bridges()
 
-bridges1.forEach { print("\($0.description)") }
+bridges1.forEach { print("\($0)") }
 
 print("Output should be:")
 print("3 - 4: 0")
@@ -115,7 +115,7 @@ print("\nBridges of graph2")
 
 let bridges2 = graph2.bridges()
 
-bridges2.forEach { print("\($0.description)") }
+bridges2.forEach { print("\($0)") }
 
 print("Output should be:")
 print("2 - 3: 0")
@@ -126,7 +126,7 @@ print("\nBridges of graph3")
 
 let bridges3 = graph3.bridges()
 
-bridges3.forEach { print("\($0.description)") }
+bridges3.forEach { print("\($0)") }
 
 print("Output should be:")
 print("1 - 6: 0")

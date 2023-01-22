@@ -1,7 +1,7 @@
 import UIKit
 
 extension LinkedList {
-    func deleteNode(withValue valueToDelete: Int) -> String {
+    func deleteNode(withValue valueToDelete: T) -> String {
         guard var current = head else {
             return "Can't delete the node, the list is empty"
         }
@@ -38,13 +38,13 @@ extension LinkedList {
         return "Node deleted"
     }
 
-    func push(node newNode: ListNode) {
+    func push(node newNode: ListNode<T>) {
         newNode.next = head
         head = newNode
     }
 }
 
-let linkedList = LinkedList()
+let linkedList = LinkedList<Int>()
 var result: String
 
 print("Deleting in empty list")
@@ -52,14 +52,14 @@ result = linkedList.deleteNode(withValue: 10)
 print(result)
 print("Output should be: Can't delete the node, the list is empty")
 
-linkedList.push(node: ListNode(id: "3"))
-linkedList.push(node: ListNode(id: "2"))
-linkedList.push(node: ListNode(id: "6"))
-linkedList.push(node: ListNode(id: "5"))
-linkedList.push(node: ListNode(id: "11"))
-linkedList.push(node: ListNode(id: "10"))
-linkedList.push(node: ListNode(id: "15"))
-linkedList.push(node: ListNode(id: "12"))
+linkedList.push(node: ListNode(value: 3))
+linkedList.push(node: ListNode(value: 2))
+linkedList.push(node: ListNode(value: 6))
+linkedList.push(node: ListNode(value: 5))
+linkedList.push(node: ListNode(value: 11))
+linkedList.push(node: ListNode(value: 10))
+linkedList.push(node: ListNode(value: 15))
+linkedList.push(node: ListNode(value: 12))
 
 print("\nDeleting node 10")
 result = linkedList.deleteNode(withValue: 10)

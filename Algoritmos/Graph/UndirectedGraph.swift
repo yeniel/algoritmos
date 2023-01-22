@@ -7,9 +7,21 @@
 
 import Foundation
 
-class UndirectedGraph {
+class UndirectedGraph: CustomStringConvertible {
     var vertices: [Vertice] = []
     var arcs: [Arc] = []
+
+    var description: String {
+        var result = ""
+
+        result += "VERTICES\n"
+        vertices.forEach { result += $0.description + "\n" }
+
+        result += "ARCS\n"
+        arcs.forEach { result += $0.description + "\n" }
+
+        return result
+    }
 
     init(arcs: [Arc]) {
         arcs.forEach { addArc(v1: $0.v1, v2: $0.v2, weight: $0.weight)}
@@ -95,7 +107,7 @@ class UndirectedGraph {
     }
 }
 
-struct Vertice: Identifiable, Equatable {
+struct Vertice: Identifiable, Equatable, CustomStringConvertible {
     let id: String
     var adjacents: Set<String> = Set<String>()
     var arcs: [Arc] = []
@@ -107,7 +119,7 @@ struct Vertice: Identifiable, Equatable {
 
         adjacents.forEach { adjacentsDescription.append("\n    \($0.description)") }
 
-        return "Vertice: \(id), Adjacents: \(adjacents.joined(separator: ", "))"
+        return "Vertice - {\(id), Adjacents: \(adjacents.joined(separator: ", "))}"
     }
 
     static func == (lhs: Vertice, rhs: Vertice) -> Bool {
@@ -115,7 +127,7 @@ struct Vertice: Identifiable, Equatable {
     }
 }
 
-struct Arc: Comparable {
+struct Arc: Comparable, CustomStringConvertible {
     let v1: String
     let v2: String
     var weight: Int

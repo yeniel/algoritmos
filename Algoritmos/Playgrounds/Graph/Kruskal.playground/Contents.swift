@@ -75,7 +75,7 @@ let graph = UndirectedGraph(arcs: graphArcs)
 
 let kruskalMSTGraph = graph.kruskal()
 
-kruskalMSTGraph.arcs.forEach { print($0.description) }
+kruskalMSTGraph.arcs.forEach { print($0) }
 
 print("Output should be:")
 print("6 - 7: 1")

@@ -64,7 +64,7 @@ let graph = UndirectedGraph(arcs: graphArcs)
 
 let primArcs = graph.prim().arcs.sorted(by: { $0.v1 < $1.v1 })
 
-primArcs.forEach { print($0.description) }
+primArcs.forEach { print($0) }
 
 print("Output should be:")
 print("0 - 1: 4")

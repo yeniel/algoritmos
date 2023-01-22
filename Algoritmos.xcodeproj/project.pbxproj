@@ -39,6 +39,7 @@
 /* Begin PBXFileReference section */
 		FE1224E72976C92800E2AD5D /* FloydWarshall.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FloydWarshall.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEC4B3D4297749EF0067124B /* UnionFind.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = UnionFind.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FECEA08F297DD0920074F639 /* Compare.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Compare.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FED456482979E9CF00C26B5D /* TopologicalSorting.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TopologicalSorting.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FED4BB272979A72600CDB0F5 /* Kruskal.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Kruskal.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FED61A44297B025400612035 /* Boggle.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Boggle.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -188,6 +189,7 @@
 			children = (
 				FEF527F3297D5D45006B0D93 /* SortedInsert.playground */,
 				FEDA3420297D951600F5D28F /* DeleteNode.playground */,
+				FECEA08F297DD0920074F639 /* Compare.playground */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";

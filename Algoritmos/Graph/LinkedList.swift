@@ -7,15 +7,33 @@
 
 import Foundation
 
-class LinkedList {
-    var head: ListNode?
+class LinkedList<T: Comparable> {
+    var head: ListNode<T>?
 
+    func append(value: T) {
+        let node = ListNode(value: value)
+
+        guard var current = head else {
+            head = node
+
+            return
+        }
+
+        while let next = current.next {
+            current = next
+        }
+
+        current.next = node
+    }
+}
+
+extension LinkedList<String> : CustomStringConvertible {
     var description: String {
         var current = head
         var result = ""
 
         while let safeCurrent = current {
-            result += String(safeCurrent.value) + ", "
+            result += safeCurrent.value.description + ", "
             current = safeCurrent.next
         }
 
@@ -23,26 +41,25 @@ class LinkedList {
     }
 }
 
-class ListNode: Identifiable, Equatable, Comparable {
-    let id: String
-    let value: Int
+class ListNode<T: Comparable>: Identifiable, Equatable, Comparable {
+    let id = UUID()
+    let value: T
     var next: ListNode?
 
-    init(id: String, value: Int, next: ListNode? = nil) {
-        self.id = id
+    init(value: T, next: ListNode? = nil) {
         self.value = value
         self.next = next
     }
 
-    convenience init(id: String) {
-        self.init(id: id, value: Int(id) ?? 0)
-    }
-
-    static func == (lhs: ListNode, rhs: ListNode) -> Bool {
+    static func == <T: Comparable>(lhs: ListNode<T>, rhs: ListNode<T>) -> Bool {
         return lhs.id == rhs.id
     }
 
-    static func < (lhs: ListNode, rhs: ListNode) -> Bool {
+    static func < <T: Comparable>(lhs: ListNode<T>, rhs: ListNode<T>) -> Bool {
         lhs.value < rhs.value
     }
+}
+
+extension ListNode<String>: CustomStringConvertible {
+    var description: String { value.description }
 }

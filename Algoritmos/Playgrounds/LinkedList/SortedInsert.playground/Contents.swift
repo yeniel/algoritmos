@@ -37,5 +37,5 @@ linkedList.sortedInsert(node: ListNode(id: "3"))
 linkedList.sortedInsert(node: ListNode(id: "1"))
 linkedList.sortedInsert(node: ListNode(id: "9"))
 
-print(linkedList.description)
+print(linkedList)
 print("Outout should be: 1, 3, 5, 7, 9, 10")

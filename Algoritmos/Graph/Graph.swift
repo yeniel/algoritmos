@@ -7,9 +7,21 @@
 
 import Foundation
 
-class Graph {
+class Graph: CustomStringConvertible {
     var nodes: [Node] = []
     var edges: [Edge] = []
+
+    var description: String {
+        var result = ""
+
+        result += "NODES\n"
+        nodes.forEach { result += $0.description + "\n" }
+
+        result += "EDGES\n"
+        edges.forEach { result += $0.description + "\n" }
+
+        return result
+    }
 
     func addNode(id: String, visited: Bool = false, edges: [Edge] = [], value: String = "") {
         nodes.append(Node(id: id, visited: visited, edges: edges, value: value))
@@ -63,7 +75,7 @@ class Graph {
     }
 }
 
-class Node: Equatable, Identifiable {
+class Node: Equatable, Identifiable, CustomStringConvertible {
     var id: String
     var edges: [Edge]
     var visited = false
@@ -83,7 +95,7 @@ class Node: Equatable, Identifiable {
 
         edges.forEach{ edgesString.append("\n    \($0.description)")}
 
-        return "{ Node, id: \(id), distance: \(distance) visited: \(visited) \(edgesString)}"
+        return "Node - {id: \(id), distance: \(distance) visited: \(visited) \(edgesString)}"
     }
 
     static func ==(lhs: Node, rhs: Node) -> Bool {
@@ -103,13 +115,13 @@ class Node: Equatable, Identifiable {
     }
 }
 
-class Edge {
+class Edge: CustomStringConvertible {
     var from: Node
     var to: Node
     var weight: Int
 
     var description : String {
-        return "{ Edge, from: \(from.id), to: \(to.id), weight: \(weight) }"
+        return "Edge - {from: \(from.id), to: \(to.id), weight: \(weight)}"
 
     }
 
