@@ -131,7 +131,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### Bridges
 
-| [Explanation](https://www.geeksforgeeks.org/bridge-in-a-graph/) | [Playground](Algoritmos/Playgrounds/Bridges.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/bridge-in-a-graph/) | [Playground](Algoritmos/Playgrounds/Graph/Bridges.playground/Contents.swift) |
 
 - A vertex in an undirected connected graph is an articulation point (or cut vertex) if removing it (and edges through it) disconnects the graph. Articulation points (Bridges) represent vulnerabilities in a connected network – single points whose failure would split the network into 2 or more components. They are useful for designing reliable networks. For a disconnected undirected graph, an articulation point is a vertex removal which increases the number of connected components.
 
