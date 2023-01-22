@@ -139,4 +139,4 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### Sorted Insert
 
-| [Explanation](https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/) | [Playground]((Algoritmos/Playgrounds/LinkedList/SortedInsert.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/) | [Playground](Algoritmos/Playgrounds/LinkedList/SortedInsert.playground/Contents.swift) |
