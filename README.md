@@ -23,7 +23,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ## Graph
 ### BFS
 
-| [Explanation](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) | [Playground](Algoritmos/Playgrounds/BFS.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) | [Playground](Algoritmos/Playgrounds/Graph/BFS.playground/Contents.swift) |
 
 - Encontrar el camino más corto entre 2 nodos, medido por el número de nodos conectados
 - Probar si un grafo de nodos es bipartito (si se puede dividir en 2 conjuntos)
@@ -42,7 +42,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### DFS
 
-| [Explanation](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) | [Playground](Algoritmos/Playgrounds/DFS.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) | [Playground](Algoritmos/Playgrounds/Graph/DFS.playground/Contents.swift) |
 
 - Encontrar nodos conectados en un grafo
 - Ordenamiento topológico en un grafo acíclico dirigido
@@ -59,7 +59,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### Dijkstra
 
-| [Explanation](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/) | [Playground](Algoritmos/Playgrounds/Dijkstra.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/) | [Playground](Algoritmos/Playgrounds/Graph/Dijkstra.playground/Contents.swift) |
 
 - Con el algoritmo de Dijkstra, puedes encontrar la ruta más corta o el camino más corto entre los nodos de un grafo. Específicamente, puedes encontrar el camino más corto desde un nodo (llamado el nodo de origen) a todos los otros nodos del grafo, generando un árbol del camino más corto.
 
@@ -67,7 +67,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### Floyd Warshall
 
-| [Explanation](https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/) | [Playground](Algoritmos/Playgrounds/FloydWarshall.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/) | [Playground](Algoritmos/Playgrounds/Graph/FloydWarshall.playground/Contents.swift) |
 
 - Camino mínimo en grafos dirigidos (algoritmo de Floyd).
 - Cierre transitivo en grafos dirigidos (algoritmo de Warshall). Es la formulación original del algoritmo de Warshall. El grafo es un grafo no ponderado y representado por una matriz booleana de adyacencia. Entonces la operación de adición es reemplazada por la conjunción lógica(AND) y la operación menor por la disyunción lógica (OR).
@@ -78,7 +78,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### Union-Find
 
-| [Explanation](https://www.geeksforgeeks.org/introduction-to-disjoint-set-data-structure-or-union-find-algorithm/) | [Playground](Algoritmos/Playgrounds/UnionFind.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/introduction-to-disjoint-set-data-structure-or-union-find-algorithm/) | [Playground](Algoritmos/Playgrounds/Graph/UnionFind.playground/Contents.swift) |
 
 - Implementando Algoritmo de Kruskal para encontrar el árbol de expansión mínimo de un graph.
 
@@ -86,7 +86,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### Prim
 
-| [Explanation](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/) | [Playground](Algoritmos/Playgrounds/Prim.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/) | [Playground](Algoritmos/Playgrounds/Graph/Prim.playground/Contents.swift) |
 
 - Ahorrar recursos, su aplicación más común es la implementación de cables de redes, de servidores, de postes de luz entre otros.
 
@@ -106,13 +106,13 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### Kruskal
 
-| [Explanation](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/) | [Playground](Algoritmos/Playgrounds/Kruskal.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/) | [Playground](Algoritmos/Playgrounds/Graph/Kruskal.playground/Contents.swift) |
 
 - Same as Prim
 
 ### Topological Sorting
 
-| [Explanation](https://www.geeksforgeeks.org/topological-sorting/) | [Playground](Algoritmos/Playgrounds/TopologicalSorting.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/topological-sorting/) | [Playground](Algoritmos/Playgrounds/Graph/TopologicalSorting.playground/Contents.swift) |
 
 - Topological Sorting is mainly used for scheduling jobs from the given dependencies among jobs. 
 - In computer science, applications of this type arise in:
@@ -125,7 +125,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### Boggle
 
-| [Explanation](https://www.geeksforgeeks.org/boggle-find-possible-words-board-characters/) | [Playground](Algoritmos/Playgrounds/Boggle.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/boggle-find-possible-words-board-characters/) | [Playground](Algoritmos/Playgrounds/Graph/Boggle.playground/Contents.swift) |
 
 - Find anagrams
 
@@ -139,4 +139,4 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### Sorted Insert
 
-| [Explanation](https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/) | [Playground]((Algoritmos/Playgrounds/SortedInsert.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/) | [Playground]((Algoritmos/Playgrounds/LinkedList/SortedInsert.playground/Contents.swift) |
