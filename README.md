@@ -18,7 +18,8 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 2. [Linked List](#linked-list)
 	1.	[Sorted Insert](#sorted-insert)
 	2.	[Delete](#delete)
-	3.	[Compare](#compare)	
+	3.	[Compare](#compare)
+	4.	[Sum](#sum)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -150,3 +151,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Compare
 
 | [Explanation](https://www.geeksforgeeks.org/compare-two-strings-represented-as-linked-lists/) | [Playground](Algoritmos/Playgrounds/LinkedList/Compare.playground/Contents.swift) |
+
+### Sum
+
+| [Explanation](https://www.geeksforgeeks.org/sum-of-two-linked-lists/) | [Playground](Algoritmos/Playgrounds/LinkedList/Sum.playground/Contents.swift) |

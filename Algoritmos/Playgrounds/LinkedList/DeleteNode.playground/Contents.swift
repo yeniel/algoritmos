@@ -37,11 +37,6 @@ extension LinkedList {
 
         return "Node deleted"
     }
-
-    func push(node newNode: ListNode<T>) {
-        newNode.next = head
-        head = newNode
-    }
 }
 
 let linkedList = LinkedList<Int>()
@@ -52,14 +47,14 @@ result = linkedList.deleteNode(withValue: 10)
 print(result)
 print("Output should be: Can't delete the node, the list is empty")
 
-linkedList.push(node: ListNode(value: 3))
-linkedList.push(node: ListNode(value: 2))
-linkedList.push(node: ListNode(value: 6))
-linkedList.push(node: ListNode(value: 5))
-linkedList.push(node: ListNode(value: 11))
-linkedList.push(node: ListNode(value: 10))
-linkedList.push(node: ListNode(value: 15))
-linkedList.push(node: ListNode(value: 12))
+linkedList.push(value: 3)
+linkedList.push(value: 2)
+linkedList.push(value: 6)
+linkedList.push(value: 5)
+linkedList.push(value: 11)
+linkedList.push(value: 10)
+linkedList.push(value: 15)
+linkedList.push(value: 12)
 
 print("\nDeleting node 10")
 result = linkedList.deleteNode(withValue: 10)

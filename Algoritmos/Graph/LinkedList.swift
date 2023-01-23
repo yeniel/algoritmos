@@ -10,6 +10,20 @@ import Foundation
 class LinkedList<T: Comparable> {
     var head: ListNode<T>?
 
+    var isEmpty: Bool { head == nil }
+
+    var count: Int {
+        var current = head
+        var counter = 0
+
+        while current != nil {
+            counter += 1
+            current = current?.next
+        }
+
+        return counter
+    }
+
     func append(value: T) {
         let node = ListNode(value: value)
 
@@ -24,6 +38,13 @@ class LinkedList<T: Comparable> {
         }
 
         current.next = node
+    }
+
+    func push(value: T) {
+        let newNode = ListNode(value: value)
+
+        newNode.next = head
+        head = newNode
     }
 }
 
@@ -59,6 +80,14 @@ class ListNode<T: Comparable>: Identifiable, Equatable, Comparable {
 
     static func < <T: Comparable>(lhs: ListNode<T>, rhs: ListNode<T>) -> Bool {
         lhs.value < rhs.value
+    }
+
+    func equal(to node: ListNode<T>) -> Bool {
+        return id == node.id
+    }
+
+    func notEqual(to node: ListNode<T>) -> Bool {
+        return id != node.id
     }
 }
 
