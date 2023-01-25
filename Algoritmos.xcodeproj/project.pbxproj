@@ -38,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		FE1224E72976C92800E2AD5D /* FloydWarshall.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FloydWarshall.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FEA94B952981596400ACA4A3 /* Reverse.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Reverse.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEC4B3D4297749EF0067124B /* UnionFind.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = UnionFind.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FECC28B329801B960003C991 /* Merge.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Merge.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FECEA08F297DD0920074F639 /* Compare.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Compare.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -194,6 +195,7 @@
 				FECEA08F297DD0920074F639 /* Compare.playground */,
 				FEE3B0CB297F019B00E1E5A2 /* Sum.playground */,
 				FECC28B329801B960003C991 /* Merge.playground */,
+				FEA94B952981596400ACA4A3 /* Reverse.playground */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
