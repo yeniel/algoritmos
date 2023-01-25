@@ -162,6 +162,6 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 | [Explanation](https://www.geeksforgeeks.org/merge-a-linked-list-into-another-linked-list-at-alternate-positions/) | [Playground](Algoritmos/Playgrounds/LinkedList/Merge.playground/Contents.swift) |
 
-### Merge
+### Reverse
 
 | [Explanation](https://www.geeksforgeeks.org/reverse-a-linked-list-in-groups-of-given-size/) | [Playground](Algoritmos/Playgrounds/LinkedList/Reverse.playground/Contents.swift) |
