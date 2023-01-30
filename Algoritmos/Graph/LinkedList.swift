@@ -46,6 +46,24 @@ class LinkedList<T: Comparable> {
         newNode.next = head
         head = newNode
     }
+
+    func exist(value: T) -> Bool {
+        var current = head
+
+        while current != nil {
+            if current?.value == value {
+                return true
+            }
+
+            current = current?.next
+        }
+
+        return false
+    }
+
+    func notExist(value: T) -> Bool {
+        !exist(value: value)
+    }
 }
 
 extension LinkedList: CustomStringConvertible where T: CustomStringConvertible {

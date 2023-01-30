@@ -22,6 +22,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	4.	[Sum](#sum)
 	5.	[Merge](#merge)
 	6.	[Reverse](#reverse)
+	7. 	[Union](#union)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -165,3 +166,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Reverse
 
 | [Explanation](https://www.geeksforgeeks.org/reverse-a-linked-list-in-groups-of-given-size/) | [Playground](Algoritmos/Playgrounds/LinkedList/Reverse.playground/Contents.swift) |
+
+### Union
+
+| [Explanation](https://www.geeksforgeeks.org/union-and-intersection-of-two-linked-lists/) | [Playground](Algoritmos/Playgrounds/LinkedList/Union.playground/Contents.swift) |
