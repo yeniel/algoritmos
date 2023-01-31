@@ -179,4 +179,4 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### Remove Loop
 
-| [Explanation](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/) | [Playground](Algoritmos/Playgrounds/LinkedList/Intersection.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/) | [Playground](Algoritmos/Playgrounds/LinkedList/RemoveLoop.playground/Contents.swift) |
