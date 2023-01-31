@@ -24,13 +24,14 @@ class LinkedList<T: Comparable> {
         return counter
     }
 
-    func append(value: T) {
+    @discardableResult
+    func append(value: T) -> ListNode<T> {
         let node = ListNode(value: value)
 
         guard var current = head else {
             head = node
 
-            return
+            return node
         }
 
         while let next = current.next {
@@ -38,6 +39,8 @@ class LinkedList<T: Comparable> {
         }
 
         current.next = node
+
+        return node
     }
 
     func push(value: T) {

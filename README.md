@@ -24,6 +24,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	6.	[Reverse](#reverse)
 	7. 	[Union](#union)
 	8.	[Intersection](#intersection)
+	9.	[Remove Loop](#remove-loop)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -175,3 +176,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Intersection
 
 | [Explanation](https://www.geeksforgeeks.org/union-and-intersection-of-two-linked-lists/) | [Playground](Algoritmos/Playgrounds/LinkedList/Intersection.playground/Contents.swift) |
+
+### Remove Loop
+
+| [Explanation](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/) | [Playground](Algoritmos/Playgrounds/LinkedList/Intersection.playground/Contents.swift) |
