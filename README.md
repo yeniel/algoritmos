@@ -26,6 +26,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	8.	[Intersection](#intersection)
 	9.	[Remove Loop](#remove-loop)
 	10.	[Merge Sort](#merge-sort)
+	11.	[Random Select](#random-select)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -185,3 +186,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Merge Sort
 
 | [Explanation](https://www.geeksforgeeks.org/merge-sort-for-linked-list/) | [Playground](Algoritmos/Playgrounds/LinkedList/MergeSort.playground/Contents.swift) |
+
+### Random Select
+
+| [Explanation](https://www.geeksforgeeks.org/select-a-random-node-from-a-singly-linked-list/) | [Playground](Algoritmos/Playgrounds/LinkedList/RandomSelect.playground/Contents.swift) |
