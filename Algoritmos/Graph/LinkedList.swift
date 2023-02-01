@@ -12,6 +12,8 @@ class LinkedList<T: Comparable> {
 
     var isEmpty: Bool { head == nil }
 
+    var min: T?
+
     var count: Int {
         var current = head
         var counter = 0
@@ -24,6 +26,10 @@ class LinkedList<T: Comparable> {
         return counter
     }
 
+    init(head: ListNode<T>? = nil) {
+        self.head = head
+    }
+    
     @discardableResult
     func append(value: T) -> ListNode<T> {
         let node = ListNode(value: value)
