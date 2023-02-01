@@ -48,6 +48,7 @@
 		FED4BB272979A72600CDB0F5 /* Kruskal.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Kruskal.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FED61A44297B025400612035 /* Boggle.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Boggle.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FED7322D2981A3C300B88BBF /* Union.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Union.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FED7449E298B031A00C726D6 /* LCS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LCS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDA3420297D951600F5D28F /* DeleteNode.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DeleteNode.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEE3B0CB297F019B00E1E5A2 /* Sum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEE8BFBB2975E8DD0017DFDC /* Algoritmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algoritmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +114,14 @@
 				FEE9E512297BF8B20042DAB2 /* Bridges.playground */,
 			);
 			path = Graph;
+			sourceTree = "<group>";
+		};
+		FED7449D298B02FB00C726D6 /* DynamicProgramming */ = {
+			isa = PBXGroup;
+			children = (
+				FED7449E298B031A00C726D6 /* LCS.playground */,
+			);
+			path = DynamicProgramming;
 			sourceTree = "<group>";
 		};
 		FEE8BFB22975E8DC0017DFDC = {
@@ -186,6 +195,7 @@
 		FEE8BFE92975EA510017DFDC /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				FED7449D298B02FB00C726D6 /* DynamicProgramming */,
 				FEF527F2297D5D27006B0D93 /* LinkedList */,
 				FED4BB282979A73400CDB0F5 /* Graph */,
 			);

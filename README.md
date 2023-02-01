@@ -27,6 +27,8 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	9.	[Remove Loop](#remove-loop)
 	10.	[Merge Sort](#merge-sort)
 	11.	[Random Select](#random-select)
+3. [Dynamic Programming](#dynamic-programming)
+	1.	[LCS](#lcs) - *Longest Common Subsequence*
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -190,3 +192,9 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Random Select
 
 | [Explanation](https://www.geeksforgeeks.org/select-a-random-node-from-a-singly-linked-list/) | [Playground](Algoritmos/Playgrounds/LinkedList/RandomSelect.playground/Contents.swift) |
+
+## Dynamic Programming
+
+### LCS
+
+| [Explanation](https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/LCS.playground/Contents.swift) |
