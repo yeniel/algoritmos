@@ -67,6 +67,7 @@
 		FEE8BFEE2975F1D60017DFDC /* Dijkstra.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dijkstra.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEE9E512297BF8B20042DAB2 /* Bridges.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bridges.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEEA147D2989BA800053F953 /* RemoveLoop.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RemoveLoop.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FEEA2C1C298C51A300B022DB /* LIS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LIS.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEEDB42929785D2D00B4D4BC /* Prim.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Prim.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEEDB42A297879EF00B4D4BC /* UndirectedGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndirectedGraph.swift; sourceTree = "<group>"; };
 		FEEE9514298872B000C61767 /* Intersection.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Intersection.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -120,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				FED7449E298B031A00C726D6 /* LCS.playground */,
+				FEEA2C1C298C51A300B022DB /* LIS.playground */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";

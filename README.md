@@ -29,6 +29,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	11.	[Random Select](#random-select)
 3. [Dynamic Programming](#dynamic-programming)
 	1.	[LCS](#lcs) - *Longest Common Subsequence*
+	2.	[LIS](#lis) - *Longest Increasing Subsequence*
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -198,3 +199,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### LCS
 
 | [Explanation](https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/LCS.playground/Contents.swift) |
+
+### LIS
+
+| [Explanation](https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/LIS.playground/Contents.swift) |

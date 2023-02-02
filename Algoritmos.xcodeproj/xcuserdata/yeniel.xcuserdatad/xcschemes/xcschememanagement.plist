@@ -35,7 +35,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>16</integer>
 		</dict>
 		<key>Boggle (Playground) 1.xcscheme</key>
 		<dict>
@@ -56,7 +56,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>15</integer>
 		</dict>
 		<key>Bridge (Playground) 1.xcscheme</key>
 		<dict>
@@ -98,7 +98,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>7</integer>
 		</dict>
 		<key>Compare (Playground) 1.xcscheme</key>
 		<dict>
@@ -119,7 +119,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>17</integer>
 		</dict>
 		<key>CompareStrings (Playground) 1.xcscheme</key>
 		<dict>
@@ -168,7 +168,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>19</integer>
+			<integer>22</integer>
 		</dict>
 		<key>DeleteNode (Playground) 1.xcscheme</key>
 		<dict>
@@ -189,7 +189,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>8</integer>
 		</dict>
 		<key>Dijkstra (Playground) 1.xcscheme</key>
 		<dict>
@@ -217,7 +217,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>17</integer>
+			<integer>14</integer>
 		</dict>
 		<key>FloydWarshall (Playground) 1.xcscheme</key>
 		<dict>
@@ -245,7 +245,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>6</integer>
 		</dict>
 		<key>Intersection (Playground) 1.xcscheme</key>
 		<dict>
@@ -266,7 +266,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>16</integer>
+			<integer>10</integer>
 		</dict>
 		<key>Kruskal (Playground) 1.xcscheme</key>
 		<dict>
@@ -308,7 +308,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>21</integer>
 		</dict>
 		<key>LCS (Playground) 1.xcscheme</key>
 		<dict>
@@ -336,7 +336,28 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>20</integer>
+			<integer>9</integer>
+		</dict>
+		<key>LIS (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>24</integer>
+		</dict>
+		<key>LIS (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>25</integer>
+		</dict>
+		<key>LIS (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>23</integer>
 		</dict>
 		<key>Merge (Playground) 1.xcscheme</key>
 		<dict>
@@ -357,7 +378,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>20</integer>
 		</dict>
 		<key>MergeSort (Playground) 1.xcscheme</key>
 		<dict>
@@ -378,7 +399,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>18</integer>
 		</dict>
 		<key>Prim (Playground) 1.xcscheme</key>
 		<dict>
@@ -399,7 +420,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>13</integer>
 		</dict>
 		<key>PrimMST (Playground) 1.xcscheme</key>
 		<dict>
@@ -441,7 +462,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>18</integer>
+			<integer>0</integer>
 		</dict>
 		<key>RemoveLoop (Playground) 1.xcscheme</key>
 		<dict>
@@ -462,7 +483,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>4</integer>
 		</dict>
 		<key>Reverse (Playground) 1.xcscheme</key>
 		<dict>
@@ -483,7 +504,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>2</integer>
 		</dict>
 		<key>SortedInsert (Playground) 1.xcscheme</key>
 		<dict>
@@ -504,7 +525,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>5</integer>
 		</dict>
 		<key>SortedMerge (Playground) 1.xcscheme</key>
 		<dict>
@@ -546,7 +567,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>11</integer>
 		</dict>
 		<key>TopologicalSorting (Playground) 1.xcscheme</key>
 		<dict>
@@ -567,7 +588,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>12</integer>
 		</dict>
 		<key>Union (Playground) 1.xcscheme</key>
 		<dict>
@@ -588,7 +609,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>3</integer>
 		</dict>
 		<key>UnionFind (Playground) 1.xcscheme</key>
 		<dict>
@@ -616,7 +637,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>19</integer>
 		</dict>
 	</dict>
 </dict>
