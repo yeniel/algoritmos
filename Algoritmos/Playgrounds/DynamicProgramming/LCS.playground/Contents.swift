@@ -19,11 +19,7 @@ func lcsSlow(string1: String, string2: String) -> Int {
 // Time Complexity : O(m*n) ignoring recursion stack space
 // Auxiliary Space: O(m*n)
 func lcsFast1(string1: String, string2: String) -> Int {
-    var lcsCounts: [[Int]] = []
-
-    for _ in 0...string1.count {
-        lcsCounts.append(Array(repeating: -1, count: string2.count + 1))
-    }
+    var lcsCounts: [[Int]] = buildDP(xCount: string1.count, yCount: string2.count, initial: -1)
 
     return lcsFast1Util(string1: string1, string2: string2, lcsCounts: &lcsCounts)
 }
@@ -54,11 +50,7 @@ func lcsFast1Util(string1: String, string2: String, lcsCounts: inout [[Int]]) ->
 // Time Complexity : O(m*n)
 // Auxiliary Space: O(m*n)
 func lcsFast2(string1: String, string2: String) -> Int {
-    var lcsCounts: [[Int]] = []
-
-    for _ in 0...string1.count {
-        lcsCounts.append(Array(repeating: 0, count: string2.count + 1))
-    }
+    var lcsCounts: [[Int]] = buildDP(xCount: string1.count, yCount: string2.count, initial: 0)
 
     for countS1 in 0...string1.count {
         for countS2 in 0...string2.count {
@@ -85,12 +77,12 @@ var lcs = 0
 lcs = lcsSlow(string1: string1, string2: string2)
 
 print(lcs)
-print("Output should be: 4")
+print("Output should be: 4\n")
 
 lcs = lcsFast1(string1: string1, string2: string2)
 
 print(lcs)
-print("Output should be: 4")
+print("Output should be: 4\n")
 
 lcs = lcsFast2(string1: string1, string2: string2)
 

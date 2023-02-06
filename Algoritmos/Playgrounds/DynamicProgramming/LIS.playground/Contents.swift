@@ -85,7 +85,7 @@ func lis3(array: [Int]) -> Int {
 // Time Complexity: O(n2).
 // Auxiliary Space: O(n2).
 func lis4(array: [Int]) -> Int {
-    var dp = Array(repeating: Array(repeating: -1, count: array.count + 1), count: array.count + 1)
+    var dp = buildDP(xCount: array.count, yCount: array.count, initial: -1)
 
     return lis4Util(index: 0, previousIndex: -1, array: array, dp: &dp)
 }
@@ -121,15 +121,15 @@ let array = [10, 22, 9, 33, 21, 50, 41, 60]
 
 lis = lis1(array: array)
 print(lis)
-print("Output should be: 5")
+print("Output should be: 5\n")
 
 lis = lis2(array: array)
 print(lis)
-print("Output should be: 5")
+print("Output should be: 5\n")
 
 lis = lis3(array: array)
 print(lis)
-print("Output should be: 5")
+print("Output should be: 5\n")
 
 lis = lis4(array: array)
 print(lis)
