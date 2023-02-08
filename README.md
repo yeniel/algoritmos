@@ -31,6 +31,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	1.	[LCS](#lcs) - *Longest Common Subsequence*
 	2.	[LIS](#lis) - *Longest Increasing Subsequence*
 	3.	[Edit Distance](#edit-distance)
+	4.	[Ways to Cover Distance](#ways-to-cover-distance)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -208,3 +209,5 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Edit Distance
 
 | [Explanation](https://www.geeksforgeeks.org/edit-distance-dp-5/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/EditDistance.playground/Contents.swift) |
+
+| [Explanation](https://www.geeksforgeeks.org/count-number-of-ways-to-cover-a-distance/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/WaysCoverDistance.playground/Contents.swift) |

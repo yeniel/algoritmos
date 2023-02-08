@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE0812532994498B004439E1 /* WaysCoverDistance.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = WaysCoverDistance.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FE1224E72976C92800E2AD5D /* FloydWarshall.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FloydWarshall.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEA1D1E8298AB188007066B1 /* MergeSort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MergeSort.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEA1D1E9298ACD70007066B1 /* RandomSelect.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RandomSelect.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -126,6 +127,7 @@
 				FED7449E298B031A00C726D6 /* LCS.playground */,
 				FEEA2C1C298C51A300B022DB /* LIS.playground */,
 				FEFBDA91298E65D20040627E /* EditDistance.playground */,
+				FE0812532994498B004439E1 /* WaysCoverDistance.playground */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
