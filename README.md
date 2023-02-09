@@ -33,6 +33,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	3.	[Edit Distance](#edit-distance)
 	4.	[Ways To Cover Distance](#ways-to-cover-distance)
 	5.	[Longest Path](#longest-path)
+	6.	[Subset Sum](#subset-sum)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -218,3 +219,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Longest Path
 
 | [Explanation](https://www.geeksforgeeks.org/find-the-longest-path-in-a-matrix-with-given-constraints/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/LongestPath.playground/Contents.swift) |
+
+### Subset Sum
+
+| [Explanation](https://www.geeksforgeeks.org/subset-sum-problem-dp-25/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/SubsetSum.playground/Contents.swift) |
