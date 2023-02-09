@@ -35,6 +35,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	5.	[Longest Path](#longest-path)
 	6.	[Subset Sum](#subset-sum)
 	7.	[Optimal Strategy](#optimal-strategy)
+	8.	[Knapsack](#knapsack)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -228,3 +229,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Optimal Strategy
 
 | [Explanation](https://www.geeksforgeeks.org/optimal-strategy-for-a-game-dp-31/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/OptimalStrategy.playground/Contents.swift) |
+
+### Knapsack
+
+| [Explanation](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/Knapsack.playground/Contents.swift) |
