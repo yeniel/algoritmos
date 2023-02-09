@@ -32,6 +32,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	2.	[LIS](#lis) - *Longest Increasing Subsequence*
 	3.	[Edit Distance](#edit-distance)
 	4.	[Ways To Cover Distance](#ways-to-cover-distance)
+	5.	[Longest Path](#longest-path)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -213,3 +214,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Ways To Cover Distance
 
 | [Explanation](https://www.geeksforgeeks.org/count-number-of-ways-to-cover-a-distance/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/WaysCoverDistance.playground/Contents.swift) |
+
+### Longest Path
+
+| [Explanation](https://www.geeksforgeeks.org/find-the-longest-path-in-a-matrix-with-given-constraints/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/LongestPath.playground/Contents.swift) |

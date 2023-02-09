@@ -44,6 +44,7 @@
 		FEA1D1E9298ACD70007066B1 /* RandomSelect.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RandomSelect.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEA94B952981596400ACA4A3 /* Reverse.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Reverse.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEC4B3D4297749EF0067124B /* UnionFind.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = UnionFind.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FECA17DB29950CC4003E578B /* LongestPath.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LongestPath.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FECC28B329801B960003C991 /* Merge.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Merge.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FECEA08F297DD0920074F639 /* Compare.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Compare.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FED456482979E9CF00C26B5D /* TopologicalSorting.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TopologicalSorting.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -128,6 +129,7 @@
 				FEEA2C1C298C51A300B022DB /* LIS.playground */,
 				FEFBDA91298E65D20040627E /* EditDistance.playground */,
 				FE0812532994498B004439E1 /* WaysCoverDistance.playground */,
+				FECA17DB29950CC4003E578B /* LongestPath.playground */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
