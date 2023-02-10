@@ -40,6 +40,8 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	10.	[Boolean Parenthesization](#boolean-parenthesization)
 4. [Sorting And Searching](#sorting-and-searching)
 	1.	[Binary Search](#binary-search)
+5. [Tree](#tree)
+	1.	[Minimum Depth](#minimum-depth)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -251,3 +253,9 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Binary Search
 
 | [Explanation](https://www.geeksforgeeks.org/binary-search/) | [Playground](Algoritmos/Playgrounds/SortingSearching/BinarySearch.playground/Contents.swift) |
+
+## Tree
+
+### Minimum Depth
+
+| [Explanation](https://www.geeksforgeeks.org/find-minimum-depth-of-a-binary-tree/) | [Playground](Algoritmos/Playgrounds/SortingSearching/MinimumDepth.playground/Contents.swift) |

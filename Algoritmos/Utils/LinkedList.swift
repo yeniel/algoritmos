@@ -102,7 +102,7 @@ class ListNode<T: Comparable>: Identifiable, Equatable, Comparable {
     }
 
     static func == <T: Comparable>(lhs: ListNode<T>, rhs: ListNode<T>) -> Bool {
-        return lhs.value == rhs.value
+        lhs.value == rhs.value
     }
 
     static func < <T: Comparable>(lhs: ListNode<T>, rhs: ListNode<T>) -> Bool {
@@ -110,11 +110,11 @@ class ListNode<T: Comparable>: Identifiable, Equatable, Comparable {
     }
 
     func equal(to node: ListNode<T>) -> Bool {
-        return id == node.id
+        id == node.id
     }
 
     func notEqual(to node: ListNode<T>) -> Bool {
-        return id != node.id
+        id != node.id
     }
 }
 

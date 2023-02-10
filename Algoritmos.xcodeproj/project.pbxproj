@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FEDD1257299674F600472945 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDD1256299674F600472945 /* Tree.swift */; };
 		FEE8BFBF2975E8DD0017DFDC /* AlgoritmosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE8BFBE2975E8DD0017DFDC /* AlgoritmosApp.swift */; };
 		FEE8BFC12975E8DD0017DFDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE8BFC02975E8DD0017DFDC /* ContentView.swift */; };
 		FEE8BFC32975E8DE0017DFDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE8BFC22975E8DE0017DFDC /* Assets.xcassets */; };
@@ -60,6 +61,8 @@
 		FEDD1251299647D800472945 /* Notes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Notes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDD125229965B3300472945 /* MinimumPartition.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MinimumPartition.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDD125429966B9500472945 /* BinarySearch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinarySearch.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FEDD1256299674F600472945 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		FEDD12582996783500472945 /* MinimumDepth.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MinimumDepth.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEE3B0CB297F019B00E1E5A2 /* Sum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEE8BFBB2975E8DD0017DFDC /* Algoritmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algoritmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE8BFBE2975E8DD0017DFDC /* AlgoritmosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoritmosApp.swift; sourceTree = "<group>"; };
@@ -154,6 +157,14 @@
 			path = SortingSearching;
 			sourceTree = "<group>";
 		};
+		FEDD1255299674ED00472945 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				FEDD12582996783500472945 /* MinimumDepth.playground */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
 		FEE8BFB22975E8DC0017DFDC = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +230,7 @@
 				FEEDB42A297879EF00B4D4BC /* UndirectedGraph.swift */,
 				FEF527F0297D5C53006B0D93 /* LinkedList.swift */,
 				FEFB95E92991AFA700EC470D /* DynamicProgramming.swift */,
+				FEDD1256299674F600472945 /* Tree.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -226,6 +238,7 @@
 		FEE8BFE92975EA510017DFDC /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				FEDD1255299674ED00472945 /* Tree */,
 				FEDD12532996692500472945 /* SortingSearching */,
 				FED7449D298B02FB00C726D6 /* DynamicProgramming */,
 				FEF527F2297D5D27006B0D93 /* LinkedList */,
@@ -383,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEDD1257299674F600472945 /* Tree.swift in Sources */,
 				FEE8BFEC2975EA960017DFDC /* Graph.swift in Sources */,
 				FEFB95EA2991AFA700EC470D /* DynamicProgramming.swift in Sources */,
 				FEEDB42B297879EF00B4D4BC /* UndirectedGraph.swift in Sources */,
