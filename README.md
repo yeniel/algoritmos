@@ -38,6 +38,8 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	8.	[Optimal Strategy](#optimal-strategy)
 	9.	[Knapsack](#knapsack)
 	10.	[Boolean Parenthesization](#boolean-parenthesization)
+4. [Sorting And Searching](#sorting-and-searching)
+	1.	[Binary Search](#binary-search)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -243,3 +245,9 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Boolean Parenthesization
 
 | [Explanation](https://www.geeksforgeeks.org/boolean-parenthesization-problem-dp-37/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/BooleanParenthesization.playground/Contents.swift) |
+
+## Sorting And Searching
+
+### Binary Search
+
+| [Explanation](https://www.geeksforgeeks.org/binary-search/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/BinarySearch.playground/Contents.swift) |

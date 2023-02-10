@@ -59,6 +59,7 @@
 		FEDD1250299642CC00472945 /* BooleanParenthesization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BooleanParenthesization.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDD1251299647D800472945 /* Notes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Notes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDD125229965B3300472945 /* MinimumPartition.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MinimumPartition.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FEDD125429966B9500472945 /* BinarySearch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinarySearch.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEE3B0CB297F019B00E1E5A2 /* Sum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEE8BFBB2975E8DD0017DFDC /* Algoritmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algoritmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE8BFBE2975E8DD0017DFDC /* AlgoritmosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoritmosApp.swift; sourceTree = "<group>"; };
@@ -145,6 +146,14 @@
 			path = DynamicProgramming;
 			sourceTree = "<group>";
 		};
+		FEDD12532996692500472945 /* SortingSearching */ = {
+			isa = PBXGroup;
+			children = (
+				FEDD125429966B9500472945 /* BinarySearch.playground */,
+			);
+			path = SortingSearching;
+			sourceTree = "<group>";
+		};
 		FEE8BFB22975E8DC0017DFDC = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +226,7 @@
 		FEE8BFE92975EA510017DFDC /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				FEDD12532996692500472945 /* SortingSearching */,
 				FED7449D298B02FB00C726D6 /* DynamicProgramming */,
 				FEF527F2297D5D27006B0D93 /* LinkedList */,
 				FED4BB282979A73400CDB0F5 /* Graph */,
