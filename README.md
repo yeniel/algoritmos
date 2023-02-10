@@ -258,4 +258,4 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### Minimum Depth
 
-| [Explanation](https://www.geeksforgeeks.org/find-minimum-depth-of-a-binary-tree/) | [Playground](Algoritmos/Playgrounds/SortingSearching/MinimumDepth.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/find-minimum-depth-of-a-binary-tree/) | [Playground](Algoritmos/Playgrounds/Tree/MinimumDepth.playground/Contents.swift) |
