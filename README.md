@@ -250,4 +250,4 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### Binary Search
 
-| [Explanation](https://www.geeksforgeeks.org/binary-search/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/BinarySearch.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/binary-search/) | [Playground](Algoritmos/Playgrounds/SortingSearching/BinarySearch.playground/Contents.swift) |
