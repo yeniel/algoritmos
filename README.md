@@ -31,11 +31,13 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	1.	[LCS](#lcs) - *Longest Common Subsequence*
 	2.	[LIS](#lis) - *Longest Increasing Subsequence*
 	3.	[Edit Distance](#edit-distance)
-	4.	[Ways To Cover Distance](#ways-to-cover-distance)
-	5.	[Longest Path](#longest-path)
-	6.	[Subset Sum](#subset-sum)
-	7.	[Optimal Strategy](#optimal-strategy)
-	8.	[Knapsack](#knapsack)
+	4.	[Minimum Partition](#minimum-partition)
+	5.	[Ways To Cover Distance](#ways-to-cover-distance)
+	6.	[Longest Path](#longest-path)
+	7.	[Subset Sum](#subset-sum)
+	8.	[Optimal Strategy](#optimal-strategy)
+	9.	[Knapsack](#knapsack)
+	10.	[Boolean Parenthesization](#boolean-parenthesization)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -214,6 +216,10 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 | [Explanation](https://www.geeksforgeeks.org/edit-distance-dp-5/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/EditDistance.playground/Contents.swift) |
 
+### Minimum Partition
+
+| [Explanation](https://www.geeksforgeeks.org/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/MinimumPartition.playground/Contents.swift) |
+
 ### Ways To Cover Distance
 
 | [Explanation](https://www.geeksforgeeks.org/count-number-of-ways-to-cover-a-distance/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/WaysCoverDistance.playground/Contents.swift) |
@@ -233,3 +239,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Knapsack
 
 | [Explanation](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/Knapsack.playground/Contents.swift) |
+
+### Boolean Parenthesization
+
+| [Explanation](https://www.geeksforgeeks.org/boolean-parenthesization-problem-dp-37/) | [Playground](Algoritmos/Playgrounds/DynamicProgramming/BooleanParenthesization.playground/Contents.swift) |
