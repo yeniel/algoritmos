@@ -49,6 +49,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 8. [String Array](#string-array)
 	1.	[Reverse with special characters](#reverse-with-special-characters)
 	2.	[Palindromic Partitions](#palindromic-partitions)
+	3.	[Triplets Sum](#triplets-sum)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -292,3 +293,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Palindromic Partitions
 
 | [Explanation](https://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/) | [Playground](Algoritmos/Playgrounds/StringArray/PalindromicPartitions.playground/Contents.swift) |
+
+### Triplets Sum
+
+| [Explanation](https://www.geeksforgeeks.org/count-triplets-with-sum-smaller-that-a-given-value/) | [Playground](Algoritmos/Playgrounds/StringArray/TripletsSum.playground/Contents.swift) |
