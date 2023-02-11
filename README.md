@@ -279,6 +279,6 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 | [Explanation](https://www.geeksforgeeks.org/reverse-a-string-without-affecting-special-characters/) | [Playground](Algoritmos/Playgrounds/StringArray/Reverse.playground/Contents.swift) |
 
-### Palindromic Paritions
+### Palindromic Partitions
 
 | [Explanation](https://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/) | [Playground](Algoritmos/Playgrounds/StringArray/PalindromicPartitions.playground/Contents.swift) |
