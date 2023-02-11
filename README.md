@@ -45,6 +45,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 5. [Tree](#tree)
 	1.	[Minimum Depth](#minimum-depth)
 	2.	[Maximum Path Sum](#maximum-path-sum)
+	3.	[Array is BST](#array-is-bst)
 8. [String Array](#string-array)
 	1.	[Reverse with special characters](#reverse-with-special-characters)
 	2.	[Palindromic Partitions](#palindromic-partitions)
@@ -277,6 +278,10 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Maximum Path Sum
 
 | [Explanation](https://www.geeksforgeeks.org/find-maximum-path-sum-in-a-binary-tree/) | [Playground](Algoritmos/Playgrounds/Tree/MaximumPathSum.playground/Contents.swift) |
+
+### Array is BST
+
+| [Explanation](https://www.geeksforgeeks.org/check-if-a-given-array-can-represent-preorder-traversal-of-binary-search-tree/) | [Playground](Algoritmos/Playgrounds/Tree/ArrayIsBST.playground/Contents.swift) |
 
 ## String Array
 

@@ -1,49 +1,85 @@
 <script>
+    // Javascript program to illustrate if a given array can represent
+    // a preorder traversal of a BST or not
 
-// Optimized javaScript implementation
-// of Bubble sort
-// An optimized version of Bubble Sort
-function bubbleSort(arr, n)
+    let preIndex = 0;
+
+    // We are actually not building the tree
+    function buildBST_helper(n, pre, min, max)
     {
-        var i, j, temp;
-        var swapped;
-        for (i = 0; i < n - 1; i++)
-        {
-            swapped = false;
-            for (j = 0; j < n - i - 1; j++)
-            {
-                if (arr[j] > arr[j + 1])
-                {
-                    // swap arr[j] and arr[j+1]
-                    temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                    swapped = true;
-                }
-            }
+        if (preIndex >= n)
+            return;
 
-            // IF no two elements were
-            // swapped by inner loop, then break
-            if (swapped == false)
-                break;
+        if (min <= pre[preIndex] && pre[preIndex] <= max) {
+            // build node
+            let rootData = pre[preIndex];
+            preIndex++;
+
+            // build left subtree
+            buildBST_helper(n, pre, min, rootData);
+
+            // build right subtree
+            buildBST_helper(n, pre, rootData, max);
         }
+        // else
+        // return NULL;
     }
 
-    // Function to print an array
-    function printArray(arr, size)
+    function canRepresentBST(arr, N)
     {
-        var i;
-        for (i = 0; i < size; i++)
-            document.write(arr[i] + " ");
-        document.writeln();
+        // code here
+        let min = Number.MIN_VALUE, max = Number.MAX_VALUE;
+
+        buildBST_helper(N, arr, min, max);
+
+        return preIndex == N;
     }
 
-    // Driver program
-        var arr = [ 64, 34, 25, 12, 22, 11, 90 ];
-        var n = arr.length;
-        bubbleSort(arr, n);
-        document.write("Sorted array: ");
-        printArray(arr, n);
+    let preorder1 = [ 2, 4, 3 ];
+    /*
+            2
+            \
+            4
+            /
+        3
 
-// This code is contributed shivanisinghss2110
+    */
+    let n1 = preorder1.length;
+
+    if (canRepresentBST(preorder1, n1))
+    document.write("</br>" + "preorder1 can represent BST");
+    else
+    document.write("</br>" + "preorder1 can not represent BST :(");
+
+    let preorder2 = [ 5, 3, 4, 1, 6, 10 ];
+    let n2 = preorder2.length;
+    /*
+                        5
+            /     \
+            3         1
+            \     / \
+            4 6 10
+
+    */
+    if (!canRepresentBST(preorder2, n2))
+    document.write("</br>" + "preorder2 can represent BST");
+    else
+    document.write("</br>" + "preorder2 can not represent BST :(");
+
+    let preorder3 = [ 5, 3, 4, 8, 6, 10 ];
+    let n3 = preorder3.length;
+    /*
+                        5
+            /     \
+            3         8
+            \     / \
+            4 6 10
+
+    */
+    if (canRepresentBST(preorder3, n3))
+    document.write("</br>" + "preorder3 can represent BST");
+    else
+    document.write("</br>" + "preorder3 can not represent BST :(");
+
+// This code is contributed by decode2207.
 </script>
