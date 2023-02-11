@@ -46,6 +46,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	2.	[Maximum Path Sum](#maximum-path-sum)
 8. [String Array](#string-array)
 	1.	[Reverse with special characters](#reverse-with-special-characters)
+	2.	[Palindromic Partitions](#palindromic-partitions)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -277,3 +278,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Reverse with special characters
 
 | [Explanation](https://www.geeksforgeeks.org/reverse-a-string-without-affecting-special-characters/) | [Playground](Algoritmos/Playgrounds/StringArray/Reverse.playground/Contents.swift) |
+
+### Palindromic Paritions
+
+| [Explanation](https://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/) | [Playground](Algoritmos/Playgrounds/StringArray/PalindromicPartitions.playground/Contents.swift) |
