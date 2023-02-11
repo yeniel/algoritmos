@@ -1,52 +1,29 @@
-function isAlphabet( x)
-{
-    return ( (x >= 'A' && x <= 'Z') ||
-             (x >= 'a' && x <= 'z') );
-}
-function swap(str,a,b)
-{
-    var c="";
-    for(var i=0;i<str.length;i++)
-    {
-        if(i==a)
-         c= c+ str[b];
-         else
-            if(i==b)
-                c=c+str[a];
-               else
-               c=c+str[i];
+function search(arr, l, h, key){
+    if (l > h)
+        return -1;
 
+    let mid = Math.floor((l + h) / 2);
+    if (arr[mid] == key)
+        return mid;
+
+    /* If arr[l...mid] is sorted */
+    if (arr[l] <= arr[mid]) {
+        /* As this subarray is sorted, we can quickly
+        check if key lies in half or other half */
+        if (key >= arr[l] && key <= arr[mid])
+            return search(arr, l, mid - 1, key);
+        /*If key not lies in first half subarray,
+           Divide other half  into two subarrays,
+           such that we can quickly check if key lies
+           in other half */
+        return search(arr, mid + 1, h, key);
     }
-    return c;
-   }
 
+    /* If arr[l..mid] first subarray is not sorted,
+    then arr[mid... h]
+    must be sorted subarray */
+    if (key >= arr[mid] && key <= arr[h])
+        return search(arr, mid + 1, h, key);
 
-function reverse( str)
-{
-    // Initialize left and right pointers
-    var r = str.length - 1, l = 0;
-
-    // Traverse string from both ends until
-    // 'l' and 'r'
-    while (l < r)
-    {
-        // Ignore special characters
-        if (!isAlphabet(str[l]))
-            l++;
-        else if(!isAlphabet(str[r]))
-            r--;
-
-        else // Both str[l] and str[r] are not spacial
-        {
-            str=swap(str,l, r);
-            l++;
-            r--;
-        }
-    }
-    document.write("Output string: "+ str +"<br>");
+    return search(arr, l, mid - 1, key);
 }
-
-
-    var str= "a!!!b.c.d,e'f,ghi";
-    document.write( "Input string: " + str +"<br>");
-    reverse(str);

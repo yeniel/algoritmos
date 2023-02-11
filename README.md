@@ -40,6 +40,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	10.	[Boolean Parenthesization](#boolean-parenthesization)
 4. [Sorting And Searching](#sorting-and-searching)
 	1.	[Binary Search](#binary-search)
+	2.	[Pivoted Binary Search](#pivoted-binary-search)
 5. [Tree](#tree)
 	1.	[Minimum Depth](#minimum-depth)
 8. [String Array](#string-array)
@@ -255,6 +256,10 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Binary Search
 
 | [Explanation](https://www.geeksforgeeks.org/binary-search/) | [Playground](Algoritmos/Playgrounds/SortingSearching/BinarySearch.playground/Contents.swift) |
+
+### Pivoted Binary Search
+
+| [Explanation](https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/) | [Playground](Algoritmos/Playgrounds/SortingSearching/PivotedBinarySearch.playground/Contents.swift) |
 
 ## Tree
 
