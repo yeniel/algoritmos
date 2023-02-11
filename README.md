@@ -42,7 +42,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	1.	[Binary Search](#binary-search)
 5. [Tree](#tree)
 	1.	[Minimum Depth](#minimum-depth)
-8. [String](#string)
+8. [String Array](#string-array)
 	1.	[Reverse with special characters](#reverse-with-special-characters)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
@@ -262,8 +262,8 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 | [Explanation](https://www.geeksforgeeks.org/find-minimum-depth-of-a-binary-tree/) | [Playground](Algoritmos/Playgrounds/Tree/MinimumDepth.playground/Contents.swift) |
 
-## String
+## String Array
 
 ### Reverse with special characters
 
-| [Explanation](https://www.geeksforgeeks.org/reverse-a-string-without-affecting-special-characters/) | [Playground](Algoritmos/Playgrounds/String/Reverse.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/reverse-a-string-without-affecting-special-characters/) | [Playground](Algoritmos/Playgrounds/StringArray/Reverse.playground/Contents.swift) |

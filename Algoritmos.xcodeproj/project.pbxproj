@@ -166,12 +166,12 @@
 			path = Tree;
 			sourceTree = "<group>";
 		};
-		FEDD1259299692E900472945 /* String */ = {
+		FEDD1259299692E900472945 /* StringArray */ = {
 			isa = PBXGroup;
 			children = (
 				FEDD125A2996931200472945 /* Reverse.playground */,
 			);
-			path = String;
+			path = StringArray;
 			sourceTree = "<group>";
 		};
 		FEE8BFB22975E8DC0017DFDC = {
@@ -247,7 +247,7 @@
 		FEE8BFE92975EA510017DFDC /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				FEDD1259299692E900472945 /* String */,
+				FEDD1259299692E900472945 /* StringArray */,
 				FEDD1255299674ED00472945 /* Tree */,
 				FEDD12532996692500472945 /* SortingSearching */,
 				FED7449D298B02FB00C726D6 /* DynamicProgramming */,
