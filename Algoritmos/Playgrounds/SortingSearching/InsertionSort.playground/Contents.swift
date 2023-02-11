@@ -1,11 +1,11 @@
 import UIKit
 
-extension Array where Element == Int {
+extension Array where Element: Comparable {
     // Time Complexity: O(N^2)
     // Auxiliary Space: O(1)
     mutating func insertionSort() {
         var j: Int
-        var key: Int
+        var key: Element
 
         for i in 1..<count {
             key = self[i]

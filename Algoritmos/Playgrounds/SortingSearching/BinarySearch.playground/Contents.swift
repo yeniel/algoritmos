@@ -1,13 +1,13 @@
 import UIKit
 
-extension Array where Element == Int {
+extension Array where Element: Comparable {
     // Time Complexity: O(log n)
     // Auxiliary Space: O(log n)
-    func binarySearch1(element: Int) -> Int {
+    func binarySearch1(element: Element) -> Int {
         return binarySearch1Util(left: 0, right: count - 1, element: element)
     }
 
-    private func binarySearch1Util(left: Int, right: Int, element: Int) -> Int {
+    private func binarySearch1Util(left: Int, right: Int, element: Element) -> Int {
         if right >= left {
             let middle = 1 + (right - left) / 2
 
@@ -27,7 +27,7 @@ extension Array where Element == Int {
 
     // Time Complexity: O (log n)
     // Auxiliary Space: O (1)
-    func binarySearch2(element: Int) -> Int {
+    func binarySearch2(element: Element) -> Int {
         var low = 0
         var high = count - 1
         var middle: Int

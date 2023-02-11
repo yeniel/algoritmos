@@ -1,27 +1,27 @@
 import UIKit
 
-extension Array where Element == Int {
+extension Array where Element: Comparable {
     // Time Complexity: O(log N) Binary Search requires log n comparisons to find the element.
     // Auxiliary Complexity: O(1)
-    func pivotedBinarySearch1(key: Int) -> Int {
+    func pivotedBinarySearch1(element: Element) -> Int {
         let pivot = findPivot(low: 0, high: count - 1)
 
         if pivot == -1 {
-            return binarySearch(low: 0, high: count - 1, element: key)
+            return binarySearch(low: 0, high: count - 1, element: element)
         }
 
-        if self[pivot] == key {
+        if self[pivot] == element {
             return pivot
         }
 
-        if self[0] <= key {
-            return binarySearch(low: 0, high: pivot - 1, element: key)
+        if self[0] <= element {
+            return binarySearch(low: 0, high: pivot - 1, element: element)
         }
 
-        return binarySearch(low: pivot + 1, high: count - 1, element: key)
+        return binarySearch(low: pivot + 1, high: count - 1, element: element)
     }
 
-    private func binarySearch(low: Int, high: Int, element: Int) -> Int {
+    private func binarySearch(low: Int, high: Int, element: Element) -> Int {
         if high < low {
             return -1
         }
@@ -67,45 +67,45 @@ extension Array where Element == Int {
 
     // Time Complexity: O(log N). Binary Search requires log n comparisons to find the element. So time complexity is O(log n).
     // Auxiliary Space: O(1). As no extra space is required.
-    func pivotedBinarySearch2(low: Int, high: Int, key: Int) -> Int {
+    func pivotedBinarySearch2(low: Int, high: Int, element: Element) -> Int {
         if low > high {
             return -1
         }
 
         let middle = (low + high) / 2
 
-        if self[middle] == key {
+        if self[middle] == element {
             return middle
         }
 
         if self[low] <= self[middle] {
-            if key >= self[low], key <= self[middle] {
-                return pivotedBinarySearch2(low: low, high: middle - 1, key: key)
+            if element >= self[low], element <= self[middle] {
+                return pivotedBinarySearch2(low: low, high: middle - 1, element: element)
             }
 
-            return pivotedBinarySearch2(low: middle + 1, high: high, key: key)
+            return pivotedBinarySearch2(low: middle + 1, high: high, element: element)
         }
 
-        if key >= self[middle], key <= self[high] {
-            return pivotedBinarySearch2(low: middle + 1, high: high, key: key)
+        if element >= self[middle], element <= self[high] {
+            return pivotedBinarySearch2(low: middle + 1, high: high, element: element)
         }
 
-        return pivotedBinarySearch2(low: low, high: middle - 1, key: key)
+        return pivotedBinarySearch2(low: low, high: middle - 1, element: element)
     }
 }
 
 var array: [Int]
-var key: Int = 3
+var element: Int = 3
 var result: Int
 
 array = [5, 6, 7, 8, 9, 10, 1, 2, 3]
-result = array.pivotedBinarySearch1(key: key)
+result = array.pivotedBinarySearch1(element: element)
 
 print(result)
 print("Output should be: 8\n")
 
 array = [4, 5, 6, 7, 8, 9, 1, 2, 3]
-result = array.pivotedBinarySearch2(low: 0, high: array.count - 1, key: key)
+result = array.pivotedBinarySearch2(low: 0, high: array.count - 1, element: element)
 
 print(result)
 print("Output should be: 8")

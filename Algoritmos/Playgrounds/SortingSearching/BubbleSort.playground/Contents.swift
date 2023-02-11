@@ -1,6 +1,6 @@
 import UIKit
 
-extension Array where Element == Int {
+extension Array where Element: Comparable {
     // Time Complexity: O(N2)
     // Auxiliary Space: O(1)
     mutating func bubbleSort() {
