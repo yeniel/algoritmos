@@ -142,6 +142,27 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BubbleSort (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>42</integer>
+		</dict>
+		<key>BubbleSort (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>43</integer>
+		</dict>
+		<key>BubbleSort (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>41</integer>
+		</dict>
 		<key>Compare (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>

@@ -41,6 +41,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 4. [Sorting And Searching](#sorting-and-searching)
 	1.	[Binary Search](#binary-search)
 	2.	[Pivoted Binary Search](#pivoted-binary-search)
+	3.	[Bubble Sort](#bubble-sort)
 5. [Tree](#tree)
 	1.	[Minimum Depth](#minimum-depth)
 	2.	[Maximum Path Sum](#maximum-path-sum)
@@ -262,6 +263,10 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Pivoted Binary Search
 
 | [Explanation](https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/) | [Playground](Algoritmos/Playgrounds/SortingSearching/PivotedBinarySearch.playground/Contents.swift) |
+
+### Bubble Sort
+
+| [Explanation](https://www.geeksforgeeks.org/bubble-sort/) | [Playground](Algoritmos/Playgrounds/SortingSearching/BubbleSort.playground/Contents.swift) |
 
 ## Tree
 
