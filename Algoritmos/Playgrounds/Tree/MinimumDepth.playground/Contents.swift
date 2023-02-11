@@ -24,7 +24,7 @@ extension Tree {
             return 1 + minimumDepth1Util(root: root.left)
         }
 
-        return 1 + min(minimumDepth1Util(root: left), minimumDepth1Util(root: right))
+        return 1 + Swift.min(minimumDepth1Util(root: left), minimumDepth1Util(root: right))
     }
 
     // Time Complexity: O(n), where n is the number of nodes in the given binary tree. This is due to the fact that we are visiting each node once.

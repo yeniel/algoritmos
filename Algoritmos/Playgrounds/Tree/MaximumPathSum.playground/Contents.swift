@@ -28,7 +28,7 @@ extension Tree where T: Numeric {
     }
 }
 
-let tree = Tree<Int>(min: Int.min, neutral: 0)
+let tree = Tree<Int>()
 
 tree.root = TreeNode(value: 10)
 tree.root?.left = TreeNode(value: 2)

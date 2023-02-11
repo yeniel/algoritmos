@@ -25,11 +25,17 @@ class Tree<T: Comparable> {
 
 extension Tree: CustomStringConvertible where T: CustomStringConvertible {
     var description: String {
-        guard var current = root else {
+        guard var _ = root else {
             return "Empty"
         }
 
         return ""
+    }
+}
+
+extension Tree where T == Int {
+    convenience init() {
+        self.init(min: Int.min, neutral: 0)
     }
 }
 
@@ -38,6 +44,12 @@ class TreeNode<T: Comparable>: Identifiable, Equatable, Comparable {
     let value: T
     var left: TreeNode?
     var right: TreeNode?
+
+    var isLeaf: Bool {
+        left == nil && right == nil
+    }
+
+    var isNotLeaf: Bool { !isLeaf }
 
     init(value: T, left: TreeNode? = nil, right: TreeNode? = nil) {
         self.value = value
