@@ -1,83 +1,52 @@
-class Node
+function isAlphabet( x)
 {
-
-    // Utility function to create a new tree Node
-    constructor(data)
-    {
-        this.data = data;
-        this.left = this.right = null;
-    }
+    return ( (x >= 'A' && x <= 'Z') ||
+             (x >= 'a' && x <= 'z') );
 }
-
-class qItem
+function swap(str,a,b)
 {
-    constructor(node,depth)
+    var c="";
+    for(var i=0;i<str.length;i++)
     {
-        this.node = node;
-        this.depth = depth;
+        if(i==a)
+         c= c+ str[b];
+         else
+            if(i==b)
+                c=c+str[a];
+               else
+               c=c+str[i];
+
     }
-}
+    return c;
+   }
 
-function minDepth(root)
+
+function reverse( str)
 {
+    // Initialize left and right pointers
+    var r = str.length - 1, l = 0;
 
-    // Corner Case
-    if (root == null)
-        return 0;
-
-    // Create an empty queue for
-    // level order traversal
-    let q = [];
-
-    // Enqueue Root and initialize depth as 1
-    let qi = new qItem(root, 1);
-    q.push(qi);
-
-    // Do level order traversal
-    while (q.length != 0)
+    // Traverse string from both ends until
+    // 'l' and 'r'
+    while (l < r)
     {
+        // Ignore special characters
+        if (!isAlphabet(str[l]))
+            l++;
+        else if(!isAlphabet(str[r]))
+            r--;
 
-        // Remove the front queue item
-        qi = q.shift();
-
-        // Get details of the remove item
-        let node = qi.node;
-        let depth = qi.depth;
-
-        // If this is the first leaf node seen so far
-        // Then return its depth as answer
-        if (node.left == null && node.right == null)
-            return depth;
-
-        // If left subtree is not null,
-        // add it to queue
-        if (node.left != null)
+        else // Both str[l] and str[r] are not spacial
         {
-            qi.node = node.left;
-            qi.depth = depth + 1;
-            q.push(qi);
-        }
-
-        // If right subtree is not null,
-        // add it to queue
-        if (node.right != null)
-        {
-            qi.node = node.right;
-            qi.depth = depth + 1;
-            q.push(qi);
+            str=swap(str,l, r);
+            l++;
+            r--;
         }
     }
-    return 0;
+    document.write("Output string: "+ str +"<br>");
 }
 
-// Driver Code
 
-// Let us create binary tree shown
-// in above diagram
-let root = new Node(1);
-root.left = new Node(2);
-root.right = new Node(3);
-root.left.left = new Node(4);
-root.left.right = new Node(5);
-
-document.write(minDepth(root));
+    var str= "a!!!b.c.d,e'f,ghi";
+    document.write( "Input string: " + str +"<br>");
+    reverse(str);

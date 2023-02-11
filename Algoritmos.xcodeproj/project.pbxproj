@@ -63,6 +63,7 @@
 		FEDD125429966B9500472945 /* BinarySearch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinarySearch.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDD1256299674F600472945 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		FEDD12582996783500472945 /* MinimumDepth.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MinimumDepth.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FEDD125A2996931200472945 /* Reverse.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Reverse.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEE3B0CB297F019B00E1E5A2 /* Sum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEE8BFBB2975E8DD0017DFDC /* Algoritmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algoritmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE8BFBE2975E8DD0017DFDC /* AlgoritmosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoritmosApp.swift; sourceTree = "<group>"; };
@@ -165,6 +166,14 @@
 			path = Tree;
 			sourceTree = "<group>";
 		};
+		FEDD1259299692E900472945 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				FEDD125A2996931200472945 /* Reverse.playground */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 		FEE8BFB22975E8DC0017DFDC = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +247,7 @@
 		FEE8BFE92975EA510017DFDC /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				FEDD1259299692E900472945 /* String */,
 				FEDD1255299674ED00472945 /* Tree */,
 				FEDD12532996692500472945 /* SortingSearching */,
 				FED7449D298B02FB00C726D6 /* DynamicProgramming */,
