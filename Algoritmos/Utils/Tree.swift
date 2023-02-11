@@ -12,8 +12,14 @@ class Tree<T: Comparable> {
 
     var isEmpty: Bool { root == nil }
 
-    init(root: TreeNode<T>? = nil) {
+    var min: T
+
+    var neutral: T
+
+    init(root: TreeNode<T>? = nil, min: T, neutral: T) {
         self.root = root
+        self.min = min
+        self.neutral = neutral
     }
 }
 

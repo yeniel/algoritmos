@@ -43,6 +43,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	2.	[Pivoted Binary Search](#pivoted-binary-search)
 5. [Tree](#tree)
 	1.	[Minimum Depth](#minimum-depth)
+	2.	[Maximum Path Sum](#maximum-path-sum)
 8. [String Array](#string-array)
 	1.	[Reverse with special characters](#reverse-with-special-characters)
 
@@ -266,6 +267,10 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Minimum Depth
 
 | [Explanation](https://www.geeksforgeeks.org/find-minimum-depth-of-a-binary-tree/) | [Playground](Algoritmos/Playgrounds/Tree/MinimumDepth.playground/Contents.swift) |
+
+### Maximum Path Sum
+
+| [Explanation](https://www.geeksforgeeks.org/find-maximum-path-sum-in-a-binary-tree/) | [Playground](Algoritmos/Playgrounds/Tree/MaximumPathSum.playground/Contents.swift) |
 
 ## String Array
 
