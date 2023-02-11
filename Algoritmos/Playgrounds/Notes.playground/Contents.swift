@@ -1,85 +1,51 @@
 <script>
-    // Javascript program to illustrate if a given array can represent
-    // a preorder traversal of a BST or not
+// A Simple Javascript program to count triplets with sum smaller
+// than a given value
+    let arr = [5, 1, 3, 4, 7];
 
-    let preIndex = 0;
-
-    // We are actually not building the tree
-    function buildBST_helper(n, pre, min, max)
+    function countTriplets(n,sum)
     {
-        if (preIndex >= n)
-            return;
 
-        if (min <= pre[preIndex] && pre[preIndex] <= max) {
-            // build node
-            let rootData = pre[preIndex];
-            preIndex++;
+        // Sort input array
+        arr.sort(function(a,b){return b-a});
 
-            // build left subtree
-            buildBST_helper(n, pre, min, rootData);
+        // Initialize result
+        let ans = 0;
 
-            // build right subtree
-            buildBST_helper(n, pre, rootData, max);
+        // Every iteration of loop counts triplet with
+        // first element as arr[i].
+        for (let i = 0; i < n - 2; i++)
+        {
+
+            // Initialize other two elements as corner elements
+            // of subarray arr[j+1..k]
+            let j = i + 1, k = n - 1;
+
+            // Use Meet in the Middle concept
+            while (j < k)
+            {
+                // If sum of current triplet is more or equal,
+                // move right corner to look for smaller values
+                if (arr[i] + arr[j] + arr[k] >= sum)
+                    k--;
+
+                // Else move left corner
+                else
+                {
+
+                    // This is important. For current i and j, there
+                    // can be total k-j third elements.
+                    ans += (k - j);
+                    j++;
+                }
+            }
         }
-        // else
-        // return NULL;
+        return ans;
     }
 
-    function canRepresentBST(arr, N)
-    {
-        // code here
-        let min = Number.MIN_VALUE, max = Number.MAX_VALUE;
+    // Driver method to test the above function
+    let sum = 12;
+    document.write(countTriplets(arr.length, sum));
 
-        buildBST_helper(N, arr, min, max);
-
-        return preIndex == N;
-    }
-
-    let preorder1 = [ 2, 4, 3 ];
-    /*
-            2
-            \
-            4
-            /
-        3
-
-    */
-    let n1 = preorder1.length;
-
-    if (canRepresentBST(preorder1, n1))
-    document.write("</br>" + "preorder1 can represent BST");
-    else
-    document.write("</br>" + "preorder1 can not represent BST :(");
-
-    let preorder2 = [ 5, 3, 4, 1, 6, 10 ];
-    let n2 = preorder2.length;
-    /*
-                        5
-            /     \
-            3         1
-            \     / \
-            4 6 10
-
-    */
-    if (!canRepresentBST(preorder2, n2))
-    document.write("</br>" + "preorder2 can represent BST");
-    else
-    document.write("</br>" + "preorder2 can not represent BST :(");
-
-    let preorder3 = [ 5, 3, 4, 8, 6, 10 ];
-    let n3 = preorder3.length;
-    /*
-                        5
-            /     \
-            3         8
-            \     / \
-            4 6 10
-
-    */
-    if (canRepresentBST(preorder3, n3))
-    document.write("</br>" + "preorder3 can represent BST");
-    else
-    document.write("</br>" + "preorder3 can not represent BST :(");
-
-// This code is contributed by decode2207.
+    // This code is contributed by rag2127
 </script>
