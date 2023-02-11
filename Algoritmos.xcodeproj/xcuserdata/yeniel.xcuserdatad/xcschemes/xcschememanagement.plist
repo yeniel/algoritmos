@@ -373,6 +373,27 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>InsertionSort (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>51</integer>
+		</dict>
+		<key>InsertionSort (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>52</integer>
+		</dict>
+		<key>InsertionSort (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>50</integer>
+		</dict>
 		<key>Intersection (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>

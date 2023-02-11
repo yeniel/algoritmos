@@ -1,51 +1,43 @@
 <script>
-// A Simple Javascript program to count triplets with sum smaller
-// than a given value
-    let arr = [5, 1, 3, 4, 7];
+// Javascript program for insertion sort
 
-    function countTriplets(n,sum)
+// Function to sort an array using insertion sort
+function insertionSort(arr, n)
+{
+    let i, key, j;
+    for (i = 1; i < n; i++)
     {
+        key = arr[i];
+        j = i - 1;
 
-        // Sort input array
-        arr.sort(function(a,b){return b-a});
-
-        // Initialize result
-        let ans = 0;
-
-        // Every iteration of loop counts triplet with
-        // first element as arr[i].
-        for (let i = 0; i < n - 2; i++)
+        /* Move elements of arr[0..i-1], that are
+        greater than key, to one position ahead
+        of their current position */
+        while (j >= 0 && arr[j] > key)
         {
-
-            // Initialize other two elements as corner elements
-            // of subarray arr[j+1..k]
-            let j = i + 1, k = n - 1;
-
-            // Use Meet in the Middle concept
-            while (j < k)
-            {
-                // If sum of current triplet is more or equal,
-                // move right corner to look for smaller values
-                if (arr[i] + arr[j] + arr[k] >= sum)
-                    k--;
-
-                // Else move left corner
-                else
-                {
-
-                    // This is important. For current i and j, there
-                    // can be total k-j third elements.
-                    ans += (k - j);
-                    j++;
-                }
-            }
+            arr[j + 1] = arr[j];
+            j = j - 1;
         }
-        return ans;
+        arr[j + 1] = key;
     }
+}
 
-    // Driver method to test the above function
-    let sum = 12;
-    document.write(countTriplets(arr.length, sum));
+// A utility function to print an array of size n
+function printArray(arr, n)
+{
+    let i;
+    for (i = 0; i < n; i++)
+        document.write(arr[i] + " ");
+    document.write("<br>");
+}
 
-    // This code is contributed by rag2127
+// Driver code
+    let arr = [12, 11, 13, 5, 6 ];
+    let n = arr.length;
+
+    insertionSort(arr, n);
+    printArray(arr, n);
+
+// This code is contributed by Mayank Tyagi
+
 </script>
