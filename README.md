@@ -25,7 +25,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	7. 	[Union](#union)
 	8.	[Intersection](#intersection)
 	9.	[Remove Loop](#remove-loop)
-	10.	[Merge Sort](#merge-sort)
+	10.	[Merge Sort Linked List](#merge-sort-linked-list)
 	11.	[Random Select](#random-select)
 3. [Dynamic Programming](#dynamic-programming)
 	1.	[LCS](#lcs) - *Longest Common Subsequence*
@@ -210,7 +210,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 | [Explanation](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/) | [Playground](Algoritmos/Playgrounds/LinkedList/RemoveLoop.playground/Contents.swift) |
 
-### Merge Sort
+### Merge Sort Linked List
 
 | [Explanation](https://www.geeksforgeeks.org/merge-sort-for-linked-list/) | [Playground](Algoritmos/Playgrounds/LinkedList/MergeSort.playground/Contents.swift) |
 
@@ -276,11 +276,11 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### Insertion Sort
 
-| [Explanation](https://www.geeksforgeeks.org/merge-sort/) | [Playground](Algoritmos/Playgrounds/SortingSearching/MergeSort.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/insertion-sort/) | [Playground](Algoritmos/Playgrounds/SortingSearching/InsertionSort.playground/Contents.swift) |
 
 ### Merge Sort
 
-| [Explanation](https://www.geeksforgeeks.org/insertion-sort/) | [Playground](Algoritmos/Playgrounds/SortingSearching/InsertionSort.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/merge-sort/) | [Playground](Algoritmos/Playgrounds/SortingSearching/MergeSort.playground/Contents.swift) |
 
 ## Tree
 
