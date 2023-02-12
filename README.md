@@ -43,6 +43,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	2.	[Pivoted Binary Search](#pivoted-binary-search)
 	3.	[Bubble Sort](#bubble-sort)
 	4.	[Insertion Sort](#insertion-sort)
+	5.	[Merge Sort](#merge-sort)
 5. [Tree](#tree)
 	1.	[Minimum Depth](#minimum-depth)
 	2.	[Maximum Path Sum](#maximum-path-sum)
@@ -274,6 +275,10 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 | [Explanation](https://www.geeksforgeeks.org/bubble-sort/) | [Playground](Algoritmos/Playgrounds/SortingSearching/BubbleSort.playground/Contents.swift) |
 
 ### Insertion Sort
+
+| [Explanation](https://www.geeksforgeeks.org/merge-sort/) | [Playground](Algoritmos/Playgrounds/SortingSearching/MergeSort.playground/Contents.swift) |
+
+### Merge Sort
 
 | [Explanation](https://www.geeksforgeeks.org/insertion-sort/) | [Playground](Algoritmos/Playgrounds/SortingSearching/InsertionSort.playground/Contents.swift) |
 

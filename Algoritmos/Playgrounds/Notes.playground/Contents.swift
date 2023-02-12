@@ -1,57 +1,98 @@
 <script>
 
-// JavaScript program to sort an array
-// in Zig-Zag form
+// JavaScript program for Merge Sort
 
-// Program for zig-zag conversion of array
-function zigZag(arr, n)
+// Merges two subarrays of arr[].
+// First subarray is arr[l..m]
+// Second subarray is arr[m+1..r]
+function merge(arr, l, m, r)
 {
+    var n1 = m - l + 1;
+    var n2 = r - m;
 
-    // Flag true indicates relation "<"
-    // is expected, else ">" is expected.
-    // The first expected relation is "<"
-    let flag = true;
+    // Create temp arrays
+    var L = new Array(n1);
+    var R = new Array(n2);
 
-    for(let i = 0; i <= n - 2; i++)
-    {
+    // Copy data to temp arrays L[] and R[]
+    for (var i = 0; i < n1; i++)
+        L[i] = arr[l + i];
+    for (var j = 0; j < n2; j++)
+        R[j] = arr[m + 1 + j];
 
-        // "<" relation expected
-        if (flag)
-        {
+    // Merge the temp arrays back into arr[l..r]
 
-            // If we have a situation like A > B > C,
-            // we get A > C < B by swapping B and C
-            if (arr[i] > arr[i + 1])
-                temp = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i + 1] = temp;
+    // Initial index of first subarray
+    var i = 0;
+
+    // Initial index of second subarray
+    var j = 0;
+
+    // Initial index of merged subarray
+    var k = l;
+
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
+            arr[k] = L[i];
+            i++;
         }
-
-        // ">" relation expected
-        else
-        {
-
-            // If we have a situation like A < B < C,
-            // we get A < C > B by swapping B and C
-            if (arr[i] < arr[i + 1])
-                temp = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i + 1] = temp;
+        else {
+            arr[k] = R[j];
+            j++;
         }
+        k++;
+    }
 
-        // Flip flag
-        flag = !flag;
+    // Copy the remaining elements of
+    // L[], if there are any
+    while (i < n1) {
+        arr[k] = L[i];
+        i++;
+        k++;
+    }
+
+    // Copy the remaining elements of
+    // R[], if there are any
+    while (j < n2) {
+        arr[k] = R[j];
+        j++;
+        k++;
     }
 }
 
-// Driver code
-let arr = [ 4, 3, 7, 8, 6, 2, 1 ];
-let n = arr.length;
-zigZag(arr, n);
+// l is for left index and r is
+// right index of the sub-array
+// of arr to be sorted */
+function mergeSort(arr,l, r){
+    if(l>=r){
+        return;//returns recursively
+    }
+    var m =l+ parseInt((r-l)/2);
+    mergeSort(arr,l,m);
+    mergeSort(arr,m+1,r);
+    merge(arr,l,m,r);
+}
 
-for(let i = 0; i < n; i++)
-    document.write(arr[i] + " ");
+// UTILITY FUNCTIONS
+// Function to print an array
+function printArray( A, size)
+{
+    for (var i = 0; i < size; i++)
+    document.write( A[i] + " ");
+}
 
-// This code is contributed by Surbhi Tyagi.
+
+var arr = [ 12, 11, 13, 5, 6, 7 ];
+    var arr_size = arr.length;
+
+    document.write( "Given array is <br>");
+    printArray(arr, arr_size);
+
+    mergeSort(arr, 0, arr_size - 1);
+
+    document.write( "<br>Sorted array is <br>");
+    printArray(arr, arr_size);
+
+// This code is contributed by SoumikMondal
 
 </script>
