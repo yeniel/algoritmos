@@ -12,7 +12,7 @@ extension Array where Element: Comparable {
     }
 
     // Time complexity: O(N)
-    // Auxiliary Space: O(1) 
+    // Auxiliary Space: O(1)
     mutating func zigZag2() {
         var flag = true
 
