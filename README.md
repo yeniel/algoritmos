@@ -55,6 +55,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	2.	[Palindromic Partitions](#palindromic-partitions)
 	3.	[Triplets Sum](#triplets-sum)
 	4.	[ZigZag](#zigzag)
+	5.	[Alternate Sorted](#alternate-sorted)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -322,3 +323,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### ZigZag
 
 | [Explanation](https://www.geeksforgeeks.org/convert-array-into-zig-zag-fashion/) | [Playground](Algoritmos/Playgrounds/StringArray/ZigZag.playground/Contents.swift) |
+
+### Alternate Sorted
+
+| [Explanation](https://github.com/yeniel/algoritmos#bottom-view) | [Playground](Algoritmos/Playgrounds/StringArray/AlternateSortedArray.playground/Contents.swift) |
