@@ -29,7 +29,19 @@ extension Tree: CustomStringConvertible where T: CustomStringConvertible {
             return "Empty"
         }
 
-        return ""
+        var inOrderDescription = ""
+
+        inOrder(node: root, description: &inOrderDescription)
+
+        return String(inOrderDescription.dropLast(3))
+    }
+
+    private func inOrder(node: TreeNode<T>?, description: inout String) {
+        if let node = node {
+            inOrder(node: node.left, description: &description)
+            description += node.value.description + " - "
+            inOrder(node: node.right, description: &description)
+        }
     }
 }
 

@@ -1,80 +1,82 @@
 <script>
-// Javascript implementation of QuickSort
 
+    // JavaScript program to remove nodes on
+    // root to leaf paths of length < k
 
-// A utility function to swap two elements
-function swap(arr, i, j) {
-    let temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-}
-
-/* This function takes last element as pivot, places
-the pivot element at its correct position in sorted
-array, and places all smaller (smaller than pivot)
-to left of pivot and all greater elements to right
-of pivot */
-function partition(arr, low, high) {
-
-    // pivot
-    let pivot = arr[high];
-
-    // Index of smaller element and
-    // indicates the right position
-    // of pivot found so far
-    let i = (low - 1);
-
-    for (let j = low; j <= high - 1; j++) {
-
-        // If current element is smaller
-        // than the pivot
-        if (arr[j] < pivot) {
-
-            // Increment index of
-            // smaller element
-            i++;
-            swap(arr, i, j);
+    class Node
+    {
+        constructor(item) {
+        this.left = null;
+        this.right = null;
+        this.data = item;
         }
     }
-    swap(arr, i + 1, high);
-    return (i + 1);
-}
 
-/* The main function that implements QuickSort
-        arr[] --> Array to be sorted,
-        low --> Starting index,
-        high --> Ending index
-*/
-function quickSort(arr, low, high) {
-    if (low < high) {
+    let root;
 
-        // pi is partitioning index, arr[p]
-        // is now at right place
-        let pi = partition(arr, low, high);
+    // Utility method that actually removes the nodes which are not
+    // on the pathLen >= k. This method can change the root as well.
+    function removeShortPathNodesUtil(node, level, k)
+    {
+        //Base condition
+        if (node == null)
+            return null;
 
-        // Separately sort elements before
-        // partition and after partition
-        quickSort(arr, low, pi - 1);
-        quickSort(arr, pi + 1, high);
+        // Traverse the tree in postorder fashion so that if a leaf
+        // node path length is shorter than k, then that node and
+        // all of its descendants till the node which are not
+        // on some other path are removed.
+        node.left = removeShortPathNodesUtil(node.left, level + 1, k);
+        node.right = removeShortPathNodesUtil(node.right, level + 1, k);
+
+        // If root is a leaf node and it's level is less than k then
+        // remove this node.
+        // This goes up and check for the ancestor nodes also for the
+        // same condition till it finds a node which is a part of other
+        // path(s) too.
+        if (node.left == null && node.right == null && level < k)
+            return null;
+
+        // Return root;
+        return node;
     }
-}
 
-// Function to print an array
-function printArray(arr, size) {
-    for (let i = 0; i < size; i++)
-        document.write(arr[i] + " ");
+    // Method which calls the utility method to remove the short path
+    // nodes.
+    function removeShortPathNodes(node, k)
+    {
+        let pathLen = 0;
+        return removeShortPathNodesUtil(node, 1, k);
+    }
 
-    document.write("<br>");
-}
+    //Method to print the tree in inorder fashion.
+    function printInorder(node)
+    {
+        if (node != null)
+        {
+            printInorder(node.left);
+            document.write(node.data + " ");
+            printInorder(node.right);
+        }
+    }
 
-// Driver Code
+    let k = 4;
+    root = new Node(1);
+    root.left = new Node(2);
+    root.right = new Node(3);
+    root.left.left = new Node(4);
+    root.left.right = new Node(5);
+    root.left.left.left = new Node(7);
+    root.right.right = new Node(6);
+    root.right.right.left = new Node(8);
+    document.write("The inorder traversal of Original tree is : " +
+    "</br>");
+    printInorder(root);
+    let res = removeShortPathNodes(root, k);
+    document.write("</br>");
+    document.write("The inorder traversal of Modified tree is : " +
+    "</br>");
+    printInorder(res);
 
-let arr = [10, 7, 8, 9, 1, 5];
-let n = arr.length;
-
-quickSort(arr, 0, n - 1);
-document.write("Sorted array: <br>");
-printArray(arr, n);
-
-// This code is contributed by Saurabh Jaiswal
 </script>
+

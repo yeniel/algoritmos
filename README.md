@@ -53,6 +53,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	4.	[Full Binary Tree](#full-binary-tree)
 	5.	[Bottom View](#bottom-view)
 	6.	[Top View](#top-view)
+	7.	[Remove Short Path Nodes](#remove-short-path-nodes)
 8. [String Array](#string-array)
 	1.	[Reverse with special characters](#reverse-with-special-characters)
 	2.	[Palindromic Partitions](#palindromic-partitions)
@@ -321,6 +322,10 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Top View
 
 | [Explanation](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/) | [Playground](Algoritmos/Playgrounds/Tree/TopView.playground/Contents.swift) |
+
+### Remove Short Path Nodes
+
+| [Explanation](https://www.geeksforgeeks.org/remove-nodes-root-leaf-paths-length-k/) | [Playground](Algoritmos/Playgrounds/Tree/TopView.playground/Contents.swift) |
 
 ## String Array
 
