@@ -325,7 +325,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### Remove Short Path Nodes
 
-| [Explanation](https://www.geeksforgeeks.org/remove-nodes-root-leaf-paths-length-k/) | [Playground](Algoritmos/Playgrounds/Tree/TopView.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/remove-nodes-root-leaf-paths-length-k/) | [Playground](Algoritmos/Playgrounds/Tree/RemoveShortPathNodes.playground/Contents.swift) |
 
 ## String Array
 
