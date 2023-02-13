@@ -45,6 +45,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	4.	[Insertion Sort](#insertion-sort)
 	5.	[Merge Sort](#merge-sort)
 	6.	[Heap Sort](#heap-sort)
+	7.	[Quick Sort](#quick-sort)
 5. [Tree](#tree)
 	1.	[Minimum Depth](#minimum-depth)
 	2.	[Maximum Path Sum](#maximum-path-sum)
@@ -290,6 +291,10 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Heap Sort
 
 | [Explanation](https://www.geeksforgeeks.org/heap-sort/) | [Playground](Algoritmos/Playgrounds/SortingSearching/HeapSort.playground/Contents.swift) |
+
+### Quick Sort
+
+| [Explanation](https://www.geeksforgeeks.org/quick-sort/) | [Playground](Algoritmos/Playgrounds/SortingSearching/QuickSort.playground/Contents.swift) |
 
 ## Tree
 

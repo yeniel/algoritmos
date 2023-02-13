@@ -1,67 +1,80 @@
 <script>
+// Javascript implementation of QuickSort
 
-    // Function to check if the
-    // Pythagorean triplet exists or not
-    function checkTriplet(arr , n) {
-        var maximum = 0;
 
-        // Find the maximum element
-        for (i = 0; i < n; i++) {
-            maximum = Math.max(maximum, arr[i]);
+// A utility function to swap two elements
+function swap(arr, i, j) {
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+}
+
+/* This function takes last element as pivot, places
+the pivot element at its correct position in sorted
+array, and places all smaller (smaller than pivot)
+to left of pivot and all greater elements to right
+of pivot */
+function partition(arr, low, high) {
+
+    // pivot
+    let pivot = arr[high];
+
+    // Index of smaller element and
+    // indicates the right position
+    // of pivot found so far
+    let i = (low - 1);
+
+    for (let j = low; j <= high - 1; j++) {
+
+        // If current element is smaller
+        // than the pivot
+        if (arr[j] < pivot) {
+
+            // Increment index of
+            // smaller element
+            i++;
+            swap(arr, i, j);
         }
-
-        // Hashing array
-        var hash = Array(maximum + 1).fill(0);
-
-        // Increase the count of array elements
-        // in hash table
-        for (i = 0; i < n; i++)
-            hash[arr[i]]++;
-
-        // Iterate for all possible a
-        for (i = 1; i < maximum + 1; i++) {
-
-            // If a is not there
-            if (hash[i] == 0)
-                continue;
-
-            // Iterate for all possible b
-            for (j = 1; j < maximum + 1; j++) {
-
-                // If a and b are same and there is only one a
-                // or if there is no b in original array
-                if ((i == j && hash[i] == 1) || hash[j] == 0)
-                    continue;
-
-                // Find c
-                var val = parseInt( Math.sqrt(i * i + j * j));
-
-                // If c^2 is not a perfect square
-                if ((val * val) != (i * i + j * j))
-                    continue;
-
-                // If c exceeds the maximum value
-                if (val > maximum)
-                    continue;
-
-                // If there exists c in the original array,
-                // we have the triplet
-                if (hash[val] == 1) {
-                    return true;
-                }
-            }
-        }
-        return false;
     }
+    swap(arr, i + 1, high);
+    return (i + 1);
+}
 
-    // Driver Code
-        var arr = [ 3, 2, 4, 6, 5 ];
-        var n = arr.length;
-        if (checkTriplet(arr, n))
-            document.write("Yes");
-        else
-            document.write("No");
+/* The main function that implements QuickSort
+        arr[] --> Array to be sorted,
+        low --> Starting index,
+        high --> Ending index
+*/
+function quickSort(arr, low, high) {
+    if (low < high) {
 
-// This code is contributed by gauravrajput1
+        // pi is partitioning index, arr[p]
+        // is now at right place
+        let pi = partition(arr, low, high);
 
+        // Separately sort elements before
+        // partition and after partition
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
+    }
+}
+
+// Function to print an array
+function printArray(arr, size) {
+    for (let i = 0; i < size; i++)
+        document.write(arr[i] + " ");
+
+    document.write("<br>");
+}
+
+// Driver Code
+
+let arr = [10, 7, 8, 9, 1, 5];
+let n = arr.length;
+
+quickSort(arr, 0, n - 1);
+document.write("Sorted array: <br>");
+printArray(arr, n);
+
+// This code is contributed by Saurabh Jaiswal
 </script>
