@@ -1,73 +1,70 @@
-<script>
-    /*
-    * Function to generates and prints all sorted arrays from alternate elements of
-    * 'A[i..m-1]' and 'B[j..n-1]' If 'flag' is true, then current element is to be
-    * included from A otherwise from B. 'len' is the index in output array C. We
-    * print output array each time before including a character from A only if
-    * length of output array is greater than 0. We try than all possible
-    * combinations
-    */
-    function generateUtil(A , B , C , i , j , m , n , len, flag) {
-        if (flag) // Include valid element from A
-        {
-            // Print output if there is at least one 'B' in output array 'C'
-            if (len != 0)
-                printArr(C, len + 1);
+// JavaScript program for implementation
+// of Heap Sort
 
-            // Recur for all elements of A after current index
-            for (var k = i; k < m; k++) {
-                if (len == 0) {
-                    /*
-                    * this block works for the very first call to include the first element in the
-                    * output array
-                    */
-                    C[len] = A[k];
+    function sort( arr)
+    {
+        var N = arr.length;
 
-                    // don't increment lem as B is included yet
-                    generateUtil(A, B, C, k + 1, j, m, n, len, !flag);
-                }
+        // Build heap (rearrange array)
+        for (var i = Math.floor(N / 2) - 1; i >= 0; i--)
+            heapify(arr, N, i);
 
-                /* include valid element from A and recur */
-                else if (A[k] > C[len]) {
-                    C[len + 1] = A[k];
-                    generateUtil(A, B, C, k + 1, j, m, n, len + 1, !flag);
-                }
-            }
-        }
+        // One by one extract an element from heap
+        for (var i = N - 1; i > 0; i--) {
+            // Move current root to end
+            var temp = arr[0];
+            arr[0] = arr[i];
+            arr[i] = temp;
 
-        /* Include valid element from B and recur */
-        else {
-            for (var l = j; l < n; l++) {
-                if (B[l] > C[len]) {
-                    C[len + 1] = B[l];
-                    generateUtil(A, B, C, i, l + 1, m, n, len + 1, !flag);
-                }
-            }
+            // call max heapify on the reduced heap
+            heapify(arr, i, 0);
         }
     }
 
-    /* Wrapper function */
-    function generate(A , B , m , n) {
-        var C = Array(m + n).fill(0);
+    // To heapify a subtree rooted with node i which is
+    // an index in arr[]. n is size of heap
+    function heapify(arr, N, i)
+    {
+        var largest = i; // Initialize largest as root
+        var l = 2 * i + 1; // left = 2*i + 1
+        var r = 2 * i + 2; // right = 2*i + 2
 
-        /* output array */
-        generateUtil(A, B, C, 0, 0, m, n, 0, true);
+        // If left child is larger than root
+        if (l < N && arr[l] > arr[largest])
+            largest = l;
+
+        // If right child is larger than largest so far
+        if (r < N && arr[r] > arr[largest])
+            largest = r;
+
+        // If largest is not root
+        if (largest != i) {
+            var swap = arr[i];
+            arr[i] = arr[largest];
+            arr[largest] = swap;
+
+            // Recursively heapify the affected sub-tree
+            heapify(arr, N, largest);
+        }
     }
 
-    // A utility function to print an array
-    function printArr(arr , n) {
-        for (i = 0; i < n; i++)
+    /* A utility function to print array of size n */
+    function printArray(arr)
+    {
+        var N = arr.length;
+        for (var i = 0; i < N; ++i)
             document.write(arr[i] + " ");
-        document.write("<br/>");
+
     }
 
 
+    var arr = `
+    var N = arr.length;
 
-        var A = [ 10, 15, 25 ];
-        var B = [ 5, 20, 30 ];
-        var n = A.length;
-        var m = B.length;
-        generate(A, B, n, m);
+    sort(arr);
 
-// This code contributed by gauravrajput1
-</script>
+    document.write( "Sorted array is");
+    printArray(arr, N);
+
+
+// This code is contributed by SoumikMondal
