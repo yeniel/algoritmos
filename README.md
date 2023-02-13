@@ -326,4 +326,4 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 ### Alternate Sorted
 
-| [Explanation](https://github.com/yeniel/algoritmos#bottom-view) | [Playground](Algoritmos/Playgrounds/StringArray/AlternateSortedArray.playground/Contents.swift) |
+| [Explanation](https://www.geeksforgeeks.org/generate-all-possible-sorted-arrays-from-alternate-elements-of-two-given-arrays/) | [Playground](Algoritmos/Playgrounds/StringArray/AlternateSortedArray.playground/Contents.swift) |
