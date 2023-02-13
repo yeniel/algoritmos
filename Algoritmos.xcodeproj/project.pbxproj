@@ -100,6 +100,7 @@
 		FEF527F3297D5D45006B0D93 /* SortedInsert.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SortedInsert.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEFB95E92991AFA700EC470D /* DynamicProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicProgramming.swift; sourceTree = "<group>"; };
 		FEFBDA91298E65D20040627E /* EditDistance.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EditDistance.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FEFEAFBD299A8B28005917EA /* AlternateSortedArray.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AlternateSortedArray.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +193,7 @@
 				FEDD125D2997FE8600472945 /* PalindromicPartitions.playground */,
 				FEDD126029982A0700472945 /* TripletsSum.playground */,
 				FEDD12632998541300472945 /* ZigZag.playground */,
+				FEFEAFBD299A8B28005917EA /* AlternateSortedArray.playground */,
 			);
 			path = StringArray;
 			sourceTree = "<group>";
