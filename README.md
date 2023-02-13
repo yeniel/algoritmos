@@ -58,6 +58,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	3.	[Triplets Sum](#triplets-sum)
 	4.	[ZigZag](#zigzag)
 	5.	[Alternate Sorted](#alternate-sorted)
+	6.	[Pythagorean Triplet](#pythagorean-triplet)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -337,3 +338,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Alternate Sorted
 
 | [Explanation](https://www.geeksforgeeks.org/generate-all-possible-sorted-arrays-from-alternate-elements-of-two-given-arrays/) | [Playground](Algoritmos/Playgrounds/StringArray/AlternateSortedArray.playground/Contents.swift) |
+
+### Pythagorean Triplet
+
+| [Explanation](https://www.geeksforgeeks.org/find-pythagorean-triplet-in-an-unsorted-array/) | [Playground](Algoritmos/Playgrounds/StringArray/PythagoreanTriplet.playground/Contents.swift) |

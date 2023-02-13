@@ -59,6 +59,7 @@
 		FEDA3420297D951600F5D28F /* DeleteNode.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DeleteNode.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDCE92F299AA31E0061681A /* HeapSort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HeapSort.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDCE930299AD2D40061681A /* TopView.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TopView.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FEDCE931299ADCDE0061681A /* PythagoreanTriplet.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PythagoreanTriplet.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDD1250299642CC00472945 /* BooleanParenthesization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BooleanParenthesization.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDD1251299647D800472945 /* Notes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Notes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDD125229965B3300472945 /* MinimumPartition.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MinimumPartition.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -198,6 +199,7 @@
 				FEDD126029982A0700472945 /* TripletsSum.playground */,
 				FEDD12632998541300472945 /* ZigZag.playground */,
 				FEFEAFBD299A8B28005917EA /* AlternateSortedArray.playground */,
+				FEDCE931299ADCDE0061681A /* PythagoreanTriplet.playground */,
 			);
 			path = StringArray;
 			sourceTree = "<group>";
