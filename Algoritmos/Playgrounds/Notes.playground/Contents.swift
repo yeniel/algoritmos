@@ -1,98 +1,47 @@
-<script>
+// Node class
+class Node {
+constructor(key) {
+    this.data = key;
+    this.hd = Infinity;
+    this.left = null;
+    this.right = null;
+}
+}
 
-// JavaScript program for Merge Sort
+function printBottomView(root) {
+    if (!root) return; //if root is NULL
+    let hash = new Map(); // <vertical_index , root->data>
+    let leftmost = 0; // to store the leftmost index so that we move from left to right
+    let q = new Array(); // pair<Node*,vertical Index> for level order traversal.
+    q.push([root, 0]); // push the root and 0 vertical index
 
-// Merges two subarrays of arr[].
-// First subarray is arr[l..m]
-// Second subarray is arr[m+1..r]
-function merge(arr, l, m, r)
-{
-    var n1 = m - l + 1;
-    var n2 = r - m;
-
-    // Create temp arrays
-    var L = new Array(n1);
-    var R = new Array(n2);
-
-    // Copy data to temp arrays L[] and R[]
-    for (var i = 0; i < n1; i++)
-        L[i] = arr[l + i];
-    for (var j = 0; j < n2; j++)
-        R[j] = arr[m + 1 + j];
-
-    // Merge the temp arrays back into arr[l..r]
-
-    // Initial index of first subarray
-    var i = 0;
-
-    // Initial index of second subarray
-    var j = 0;
-
-    // Initial index of merged subarray
-    var k = l;
-
-    while (i < n1 && j < n2) {
-        if (L[i] <= R[j]) {
-            arr[k] = L[i];
-            i++;
+    while (q.length) {
+        let top = q.shift();
+        let temp = top[0], ind = top[1];
+        hash.set(ind, temp.data); // store the latest vertical_index(key) -> root->data(value)
+        leftmost = Math.min(ind, leftmost); // have the leftmost vertical index
+        if (temp.left) q.push([temp.left, ind - 1]); // check if any node of left then go in negative direction
+        if (temp.right) q.push([temp.right, ind + 1]); //check if any node of left then go in positive direction
+    }
+    for (let i = leftmost; i < hash.size; i++) {
+        if (hash.has(i)) {
+        //Traverse each value in hash from leftmost to
+        //positive side till key is available
+        process.stdout.write(hash.get(i) + ' ');
         }
-        else {
-            arr[k] = R[j];
-            j++;
-        }
-        k++;
-    }
-
-    // Copy the remaining elements of
-    // L[], if there are any
-    while (i < n1) {
-        arr[k] = L[i];
-        i++;
-        k++;
-    }
-
-    // Copy the remaining elements of
-    // R[], if there are any
-    while (j < n2) {
-        arr[k] = R[j];
-        j++;
-        k++;
     }
 }
 
-// l is for left index and r is
-// right index of the sub-array
-// of arr to be sorted */
-function mergeSort(arr,l, r){
-    if(l>=r){
-        return;//returns recursively
-    }
-    var m =l+ parseInt((r-l)/2);
-    mergeSort(arr,l,m);
-    mergeSort(arr,m+1,r);
-    merge(arr,l,m,r);
-}
 
-// UTILITY FUNCTIONS
-// Function to print an array
-function printArray( A, size)
-{
-    for (var i = 0; i < size; i++)
-    document.write( A[i] + " ");
-}
-
-
-var arr = [ 12, 11, 13, 5, 6, 7 ];
-    var arr_size = arr.length;
-
-    document.write( "Given array is <br>");
-    printArray(arr, arr_size);
-
-    mergeSort(arr, 0, arr_size - 1);
-
-    document.write( "<br>Sorted array is <br>");
-    printArray(arr, arr_size);
-
-// This code is contributed by SoumikMondal
-
-</script>
+// Driver code
+let root = new Node(20);
+root.left = new Node(8);
+root.right = new Node(22);
+root.left.left = new Node(5);
+root.left.right = new Node(3);
+root.right.left = new Node(4);
+root.right.right = new Node(25);
+root.left.right.left = new Node(10);
+root.left.right.right = new Node(14);
+console.log("Bottom view of the given binary tree:");
+printBottomView(root);

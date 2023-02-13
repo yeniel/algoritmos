@@ -75,6 +75,7 @@
 		FEDD12632998541300472945 /* ZigZag.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ZigZag.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEE3B0CB297F019B00E1E5A2 /* Sum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEE47BC129999E84007B6F31 /* MergeSort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MergeSort.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FEE47BC22999AC18007B6F31 /* BottomView.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BottomView.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEE8BFBB2975E8DD0017DFDC /* Algoritmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algoritmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE8BFBE2975E8DD0017DFDC /* AlgoritmosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoritmosApp.swift; sourceTree = "<group>"; };
 		FEE8BFC02975E8DD0017DFDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -179,6 +180,7 @@
 				FEDD125C2997EB0C00472945 /* MaximumPathSum.playground */,
 				FEDD125F299825BF00472945 /* ArrayIsBST.playground */,
 				FEDD12622998310500472945 /* FullBinaryTree.playground */,
+				FEE47BC22999AC18007B6F31 /* BottomView.playground */,
 			);
 			path = Tree;
 			sourceTree = "<group>";

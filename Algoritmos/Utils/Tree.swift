@@ -44,6 +44,7 @@ class TreeNode<T: Comparable>: Identifiable, Equatable, Comparable {
     let value: T
     var left: TreeNode?
     var right: TreeNode?
+    var horizontalDistance: Int
 
     var isLeaf: Bool {
         left == nil && right == nil
@@ -51,10 +52,11 @@ class TreeNode<T: Comparable>: Identifiable, Equatable, Comparable {
 
     var isNotLeaf: Bool { !isLeaf }
 
-    init(value: T, left: TreeNode? = nil, right: TreeNode? = nil) {
+    init(value: T, left: TreeNode? = nil, right: TreeNode? = nil, horizontalDistance: Int? = 0) {
         self.value = value
         self.left = left
         self.right = right
+        self.horizontalDistance = horizontalDistance ?? 0
     }
 
     static func == <T: Comparable>(lhs: TreeNode<T>, rhs: TreeNode<T>) -> Bool {
