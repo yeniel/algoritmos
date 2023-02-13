@@ -1,70 +1,69 @@
-// JavaScript program for implementation
-// of Heap Sort
+// JavaScript program for the above approach
+class Node{
+    constructor(data){
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+}
 
-    function sort( arr)
-    {
-        var N = arr.length;
+class QueueObj{
+    constructor(node, hd){
+        this.node = node;
+        this.hd = hd;
+    }
+}
 
-        // Build heap (rearrange array)
-        for (var i = Math.floor(N / 2) - 1; i >= 0; i--)
-            heapify(arr, N, i);
+function topView(root){
+    if(root == null) return;
 
-        // One by one extract an element from heap
-        for (var i = N - 1; i > 0; i--) {
-            // Move current root to end
-            var temp = arr[0];
-            arr[0] = arr[i];
-            arr[i] = temp;
+    let q = [];
+    let mp = new Map();
+    let mn = 0;
+    let mx = 0;
+    // Level Order Traversal
+    q.push(new QueueObj(root, 0));
+    while(q.length != 0){
+        let curr = q.shift();
 
-            // call max heapify on the reduced heap
-            heapify(arr, i, 0);
+        // only include in map if this is the
+        // first node of this specific
+        // horizontal distance
+        if(mp[curr.hd] == null){
+            mp[curr.hd] = curr.node.data;
+        }
+
+        if(curr.node.left != null){
+            // min can be found only in left side due to
+            // "-1" minimum horizontal distance of any
+            // node from root
+            mn = Math.min(mn, curr.hd-1);
+            q.push(new QueueObj(curr.node.left, curr.hd-1));
+        }
+
+        if(curr.node.right != null){
+            // max can be found only in right side due to
+            // "+1" maximum horizontal distance of any
+            // node from root
+            mx = Math.max(mx, curr.hd+1);
+            q.push(new QueueObj(curr.node.right, curr.hd+1));
         }
     }
-
-    // To heapify a subtree rooted with node i which is
-    // an index in arr[]. n is size of heap
-    function heapify(arr, N, i)
-    {
-        var largest = i; // Initialize largest as root
-        var l = 2 * i + 1; // left = 2*i + 1
-        var r = 2 * i + 2; // right = 2*i + 2
-
-        // If left child is larger than root
-        if (l < N && arr[l] > arr[largest])
-            largest = l;
-
-        // If right child is larger than largest so far
-        if (r < N && arr[r] > arr[largest])
-            largest = r;
-
-        // If largest is not root
-        if (largest != i) {
-            var swap = arr[i];
-            arr[i] = arr[largest];
-            arr[largest] = swap;
-
-            // Recursively heapify the affected sub-tree
-            heapify(arr, N, largest);
-        }
+    // traversal of (horizontal distance from rooo)
+    // minimum to maximum
+    while(mn <= mx){
+        console.log(mp[mn]);
+        mn++;
     }
+}
 
-    /* A utility function to print array of size n */
-    function printArray(arr)
-    {
-        var N = arr.length;
-        for (var i = 0; i < N; ++i)
-            document.write(arr[i] + " ");
+let root = new Node(1);
+root.left = new Node(2);
+root.right = new Node(3);
+root.left.right = new Node(4);
+root.left.right.right = new Node(5);
+root.left.right.right.right = new Node(6);
+console.log("Following are nodes in top view of Binary Tree");
+topView(root);
 
-    }
-
-
-    var arr = `
-    var N = arr.length;
-
-    sort(arr);
-
-    document.write( "Sorted array is");
-    printArray(arr, N);
-
-
-// This code is contributed by SoumikMondal
+// This code is contributed by Yash Agarwal(yashagarwal2852002).

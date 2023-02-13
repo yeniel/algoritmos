@@ -51,6 +51,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	3.	[Array is BST](#array-is-bst)
 	4.	[Full Binary Tree](#full-binary-tree)
 	5.	[Bottom View](#bottom-view)
+	6.	[Top View](#top-view)
 8. [String Array](#string-array)
 	1.	[Reverse with special characters](#reverse-with-special-characters)
 	2.	[Palindromic Partitions](#palindromic-partitions)
@@ -310,6 +311,10 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Bottom View
 
 | [Explanation](https://www.geeksforgeeks.org/bottom-view-binary-tree/) | [Playground](Algoritmos/Playgrounds/Tree/BottomView.playground/Contents.swift) |
+
+### Top View
+
+| [Explanation](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/) | [Playground](Algoritmos/Playgrounds/Tree/TopView.playground/Contents.swift) |
 
 ## String Array
 
