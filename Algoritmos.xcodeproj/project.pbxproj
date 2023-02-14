@@ -62,6 +62,7 @@
 		FEDCE931299ADCDE0061681A /* PythagoreanTriplet.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PythagoreanTriplet.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDCE932299AFA540061681A /* QuickSort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = QuickSort.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDCE933299AFE8F0061681A /* RemoveShortPathNodes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RemoveShortPathNodes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FEDCE934299B05AA0061681A /* LongestContiguousSubArray.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LongestContiguousSubArray.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDD1250299642CC00472945 /* BooleanParenthesization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BooleanParenthesization.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDD1251299647D800472945 /* Notes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Notes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEDD125229965B3300472945 /* MinimumPartition.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MinimumPartition.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -204,6 +205,7 @@
 				FEDD12632998541300472945 /* ZigZag.playground */,
 				FEFEAFBD299A8B28005917EA /* AlternateSortedArray.playground */,
 				FEDCE931299ADCDE0061681A /* PythagoreanTriplet.playground */,
+				FEDCE934299B05AA0061681A /* LongestContiguousSubArray.playground */,
 			);
 			path = StringArray;
 			sourceTree = "<group>";

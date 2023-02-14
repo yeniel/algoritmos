@@ -61,6 +61,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	4.	[ZigZag](#zigzag)
 	5.	[Alternate Sorted](#alternate-sorted)
 	6.	[Pythagorean Triplet](#pythagorean-triplet)
+	7.	[Longest Contiguous SubArray](#longest-contiguous-subarray)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -352,3 +353,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Pythagorean Triplet
 
 | [Explanation](https://www.geeksforgeeks.org/find-pythagorean-triplet-in-an-unsorted-array/) | [Playground](Algoritmos/Playgrounds/StringArray/PythagoreanTriplet.playground/Contents.swift) |
+
+### Longest Contiguous SubArray
+
+| [Explanation](https://www.geeksforgeeks.org/length-largest-subarray-contiguous-elements-set-1/) | [Playground](Algoritmos/Playgrounds/StringArray/LongestContiguousSubArray.playground/Contents.swift) |
