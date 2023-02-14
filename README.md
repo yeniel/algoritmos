@@ -55,6 +55,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	5.	[Bottom View](#bottom-view)
 	6.	[Top View](#top-view)
 	7.	[Remove Short Path Nodes](#remove-short-path-nodes)
+	8.	[LCA](#lca) - *Lowest Common Ancestor*
 8. [String Array](#string-array)
 	1.	[Reverse with special characters](#reverse-with-special-characters)
 	2.	[Palindromic Partitions](#palindromic-partitions)
@@ -332,6 +333,10 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Remove Short Path Nodes
 
 | [Explanation](https://www.geeksforgeeks.org/remove-nodes-root-leaf-paths-length-k/) | [Playground](Algoritmos/Playgrounds/Tree/RemoveShortPathNodes.playground/Contents.swift) |
+
+### Lowest Common Ancestor
+
+| [Explanation](https://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-search-tree/) | [Playground](Algoritmos/Playgrounds/Tree/LCA.playground/Contents.swift) |
 
 ## String Array
 

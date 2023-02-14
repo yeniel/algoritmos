@@ -1,59 +1,73 @@
 <script>
-// Javascript program to implement Interpolation Search
 
-// If x is present in arr[0..n-1], then returns
-// index of it, else returns -1.
+// Recursive Javascript program to
+// print lca of two nodes
 
-function interpolationSearch(arr, lo, hi, x){
-let pos;
-
-// Since array is sorted, an element present
-// in array must be in range defined by corner
-
-if (lo <= hi && x >= arr[lo] && x <= arr[hi]) {
-
-    // Probing the position with keeping
-    // uniform distribution in mind.
-    pos = lo + Math.floor(
-        (
-            (hi - lo) / (arr[hi] - arr[lo])
-        ) * (x - arr[lo])
-    );;
-
-    // Condition of target found
-        if (arr[pos] == x){
-        return pos;
-        }
-
-        // If x is larger, x is in right sub array
-        if (arr[pos] < x){
-        return interpolationSearch(arr, pos + 1, hi, x);
-        }
-
-        // If x is smaller, x is in left sub array
-        if (arr[pos] > x){
-        return interpolationSearch(arr, lo, pos - 1, x);
-        }
+// A binary tree node
+class Node
+{
+    constructor(item)
+    {
+        this.data = item;
+        this.left = null;
+        this.right = null;
     }
-    return -1;
 }
 
-// Driver Code
-let arr = [10, 12, 13, 16, 18, 19, 20, 21,
-        22, 23, 24, 33, 35, 42, 47];
+var root = null;
 
-let n = arr.length;
+/* Function to find LCA of n1 and n2.
+The function assumes that both
+n1 and n2 are present in BST */
+function lca(root, n1, n2)
+{
+    while (root != null)
+    {
 
-// Element to be searched
-let x = 18
-let index = interpolationSearch(arr, 0, n - 1, x);
+        // If both n1 and n2 are smaller than
+        // root, then LCA lies in left
+        if (root.data > n1 && root.data > n2)
+            root = root.left;
 
-// If element was found
-if (index != -1){
-document.write(`Element found at index ${index}`)
-}else{
-document.write("Element not found");
+        // If both n1 and n2 are greater than
+        // root, then LCA lies in right
+        else if (root.data < n1 && root.data < n2)
+            root = root.right;
+
+        else break;
+    }
+    return root;
 }
 
-// This code is contributed by _saurabh_jaiswal
+// Driver code
+
+// Let us construct the BST shown
+// in the above figure
+root = new Node(20);
+root.left = new Node(8);
+root.right = new Node(22);
+root.left.left = new Node(4);
+root.left.right = new Node(12);
+root.left.right.left = new Node(10);
+root.left.right.right = new Node(14);
+
+var n1 = 10, n2 = 14;
+var t = lca(root, n1, n2);
+document.write("LCA of " + n1 + " and " + n2 +
+            " is " + t.data + "<br>");
+
+n1 = 14;
+n2 = 8;
+t = lca(root, n1, n2);
+document.write("LCA of " + n1 + " and " + n2 +
+            " is " + t.data+ "<br>");
+
+n1 = 10;
+n2 = 22;
+t = lca(root, n1, n2);
+document.write("LCA of " + n1 + " and " + n2 +
+            " is " + t.data+ "<br>");
+
+// This code is contributed by rrrtnx
+
 </script>
