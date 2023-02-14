@@ -334,7 +334,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 | [Explanation](https://www.geeksforgeeks.org/remove-nodes-root-leaf-paths-length-k/) | [Playground](Algoritmos/Playgrounds/Tree/RemoveShortPathNodes.playground/Contents.swift) |
 
-### Lowest Common Ancestor
+### LCA
 
 | [Explanation](https://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-search-tree/) | [Playground](Algoritmos/Playgrounds/Tree/LCA.playground/Contents.swift) |
 
