@@ -1129,6 +1129,27 @@
 			<key>orderHint</key>
 			<integer>41</integer>
 		</dict>
+		<key>SmallestSubsetSum (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>61</integer>
+		</dict>
+		<key>SmallestSubsetSum (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>62</integer>
+		</dict>
+		<key>SmallestSubsetSum (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>60</integer>
+		</dict>
 		<key>SortedInsert (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>

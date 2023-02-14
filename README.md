@@ -64,6 +64,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	5.	[Alternate Sorted](#alternate-sorted)
 	6.	[Pythagorean Triplet](#pythagorean-triplet)
 	7.	[Longest Contiguous SubArray](#longest-contiguous-subarray)
+	8.	[Smallest Subset Sum](#smallest-subset-sum)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -367,3 +368,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Longest Contiguous SubArray
 
 | [Explanation](https://www.geeksforgeeks.org/length-largest-subarray-contiguous-elements-set-1/) | [Playground](Algoritmos/Playgrounds/StringArray/LongestContiguousSubArray.playground/Contents.swift) |
+
+### Smallest Subset Sum
+
+| [Explanation](https://www.geeksforgeeks.org/find-smallest-value-represented-sum-subset-given-array/) | [Playground](Algoritmos/Playgrounds/StringArray/SmallestSubsetSum.playground/Contents.swift) |

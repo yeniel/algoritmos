@@ -1,73 +1,38 @@
 <script>
+// javascript program to find the smallest positive value that cannot be
+// represented as sum of subsets of a given sorted array
 
-// Recursive Javascript program to
-// print lca of two nodes
-
-// A binary tree node
-class Node
-{
-    constructor(item)
+    // Returns the smallest number that cannot be represented as sum
+    // of subset of elements from set represented by sorted array arr[0..n-1]
+    function findSmallest(arr , n)
     {
-        this.data = item;
-        this.left = null;
-        this.right = null;
+        var res = 1; // Initialize result
+
+        // Traverse the array and increment 'res' if arr[i] is
+        // smaller than or equal to 'res'.
+        for (i = 0; i < n && arr[i] <= res; i++)
+            res = res + arr[i];
+
+        return res;
     }
-}
 
-var root = null;
+    // Driver program to test above functions
 
-/* Function to find LCA of n1 and n2.
-The function assumes that both
-n1 and n2 are present in BST */
-function lca(root, n1, n2)
-{
-    while (root != null)
-    {
+        var arr1 = [ 1, 3, 4, 5 ];
+        var n1 = arr1.length;
+        document.write(findSmallest(arr1, n1)+"<br/>");
 
-        // If both n1 and n2 are smaller than
-        // root, then LCA lies in left
-        if (root.data > n1 && root.data > n2)
-            root = root.left;
+        var arr2 = [ 1, 2, 6, 10, 11, 15 ];
+        var n2 = arr2.length;
+        document.write(findSmallest(arr2, n2)+"<br/>");
 
-        // If both n1 and n2 are greater than
-        // root, then LCA lies in right
-        else if (root.data < n1 && root.data < n2)
-            root = root.right;
+        var arr3 = [ 1, 1, 1, 1 ];
+        var n3 = arr3.length;
+        document.write(findSmallest(arr3, n3)+"<br/>");
 
-        else break;
-    }
-    return root;
-}
+        var arr4 = [ 1, 1, 3, 4 ];
+        var n4 = arr4.length;
+        document.write(findSmallest(arr4, n4)+"<br/>");
 
-// Driver code
-
-// Let us construct the BST shown
-// in the above figure
-root = new Node(20);
-root.left = new Node(8);
-root.right = new Node(22);
-root.left.left = new Node(4);
-root.left.right = new Node(12);
-root.left.right.left = new Node(10);
-root.left.right.right = new Node(14);
-
-var n1 = 10, n2 = 14;
-var t = lca(root, n1, n2);
-document.write("LCA of " + n1 + " and " + n2 +
-            " is " + t.data + "<br>");
-
-n1 = 14;
-n2 = 8;
-t = lca(root, n1, n2);
-document.write("LCA of " + n1 + " and " + n2 +
-            " is " + t.data+ "<br>");
-
-n1 = 10;
-n2 = 22;
-t = lca(root, n1, n2);
-document.write("LCA of " + n1 + " and " + n2 +
-            " is " + t.data+ "<br>");
-
-// This code is contributed by rrrtnx
-
+// This code is contributed by aashish1995
 </script>
