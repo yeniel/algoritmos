@@ -1,38 +1,82 @@
 <script>
-// javascript program to find the smallest positive value that cannot be
-// represented as sum of subsets of a given sorted array
 
-    // Returns the smallest number that cannot be represented as sum
-    // of subset of elements from set represented by sorted array arr[0..n-1]
-    function findSmallest(arr , n)
-    {
-        var res = 1; // Initialize result
+// JavaScript program to find k'th smallest element in expected
+// linear time
 
-        // Traverse the array and increment 'res' if arr[i] is
-        // smaller than or equal to 'res'.
-        for (i = 0; i < n && arr[i] <= res; i++)
-            res = res + arr[i];
 
-        return res;
-    }
+// This function returns k'th smallest element in arr[l..r]
+// using QuickSort based method. ASSUMPTION: ALL ELEMENTS
+// IN ARR[] ARE DISTINCT
+function kthSmallest(arr,l,r,k)
+{
+    // If k is smaller than number of elements in array
+        if (k > 0 && k <= r - l + 1)
+        {
+            // Partition the array around a random element and
+            // get position of pivot element in sorted array
+            let pos = randomPartition(arr, l, r);
 
-    // Driver program to test above functions
+            // If position is same as k
+            if (pos-l == k-1)
+                return arr[pos];
 
-        var arr1 = [ 1, 3, 4, 5 ];
-        var n1 = arr1.length;
-        document.write(findSmallest(arr1, n1)+"<br/>");
+            // If position is more, recur for left subarray
+            if (pos-l > k-1)
+                return kthSmallest(arr, l, pos-1, k);
 
-        var arr2 = [ 1, 2, 6, 10, 11, 15 ];
-        var n2 = arr2.length;
-        document.write(findSmallest(arr2, n2)+"<br/>");
+            // Else recur for right subarray
+            return kthSmallest(arr, pos+1, r, k-pos+l-1);
+        }
 
-        var arr3 = [ 1, 1, 1, 1 ];
-        var n3 = arr3.length;
-        document.write(findSmallest(arr3, n3)+"<br/>");
+        // If k is more than number of elements in array
+        return Integer.MAX_VALUE;
+}
 
-        var arr4 = [ 1, 1, 3, 4 ];
-        var n4 = arr4.length;
-        document.write(findSmallest(arr4, n4)+"<br/>");
+// Utility method to swap arr[i] and arr[j]
+function swap(arr,i,j)
+{
+    let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+}
 
-// This code is contributed by aashish1995
+// Standard partition process of QuickSort(). It considers
+// the last element as pivot and moves all smaller element
+// to left of it and greater elements to right. This function
+// is used by randomPartition()
+function partition(arr,l,r)
+{
+    let x = arr[r], i = l;
+        for (let j = l; j <= r - 1; j++)
+        {
+            if (arr[j] <= x)
+            {
+                swap(arr, i, j);
+                i++;
+            }
+        }
+        swap(arr, i, r);
+        return i;
+}
+
+// Picks a random pivot element between l and r and
+// partitions arr[l..r] arount the randomly picked
+// element using partition()
+function randomPartition(arr,l,r)
+{
+        let n = r-l+1;
+        let pivot = Math.floor((Math.random()) * (n-1));
+        swap(arr, l + pivot, r);
+        return partition(arr, l, r);
+}
+
+let arr=[12, 3, 5, 7, 4, 19, 26];
+let n = arr.length,k = 3;
+document.write("K'th smallest element is "+
+kthSmallest(arr, 0, n-1, k));
+
+
+
+// This code is contributed by rag2127
+
 </script>

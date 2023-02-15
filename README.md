@@ -47,6 +47,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	6.	[Heap Sort](#heap-sort)
 	7.	[Quick Sort](#quick-sort)
 	8.	[Interpolation Search](#interpolation-search)
+	9.	[Ordinal Smallest](#ordinal-smallest)
 5. [Tree](#tree)
 	1.	[Minimum Depth](#minimum-depth)
 	2.	[Maximum Path Sum](#maximum-path-sum)
@@ -304,6 +305,10 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Interpolation Search
 
 | [Explanation](https://www.geeksforgeeks.org/interpolation-search/) | [Playground](Algoritmos/Playgrounds/SortingSearching/InterpolationSearch.playground/Contents.swift) |
+
+### Ordinal Smallest
+
+| [Explanation](https://www.geeksforgeeks.org/kth-smallest-largest-element-in-unsorted-array-expected-linear-time/) | [Playground](Algoritmos/Playgrounds/SortingSearching/OrdinalSmallest.playground/Contents.swift) |
 
 ## Tree
 

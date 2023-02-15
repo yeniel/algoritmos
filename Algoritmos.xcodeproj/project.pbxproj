@@ -109,6 +109,7 @@
 		FEFCA705299C397500AE0E09 /* InterpolationSearch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = InterpolationSearch.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEFCA706299C3E5000AE0E09 /* LCA.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LCA.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEFCA707299C48FF00AE0E09 /* SmallestSubsetSum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SmallestSubsetSum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FEFCA708299C510E00AE0E09 /* OrdinalSmallest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OrdinalSmallest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEFEAFBD299A8B28005917EA /* AlternateSortedArray.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AlternateSortedArray.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -182,6 +183,7 @@
 				FEDCE92F299AA31E0061681A /* HeapSort.playground */,
 				FEDCE932299AFA540061681A /* QuickSort.playground */,
 				FEFCA705299C397500AE0E09 /* InterpolationSearch.playground */,
+				FEFCA708299C510E00AE0E09 /* OrdinalSmallest.playground */,
 			);
 			path = SortingSearching;
 			sourceTree = "<group>";
