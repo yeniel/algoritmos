@@ -48,6 +48,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	7.	[Quick Sort](#quick-sort)
 	8.	[Interpolation Search](#interpolation-search)
 	9.	[Ordinal Smallest](#ordinal-smallest)
+	10.	[Closest Pair Sum](#closest-pair-sum)
 5. [Tree](#tree)
 	1.	[Minimum Depth](#minimum-depth)
 	2.	[Maximum Path Sum](#maximum-path-sum)
@@ -311,6 +312,10 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Ordinal Smallest
 
 | [Explanation](https://www.geeksforgeeks.org/kth-smallest-largest-element-in-unsorted-array-expected-linear-time/) | [Playground](Algoritmos/Playgrounds/SortingSearching/OrdinalSmallest.playground/Contents.swift) |
+
+### Closest Pair Sum
+
+| [Explanation](https://www.geeksforgeeks.org/given-sorted-array-number-x-find-pair-array-whose-sum-closest-x/) | [Playground](Algoritmos/Playgrounds/SortingSearching/ClosestPairSum.playground/Contents.swift) |
 
 ## Tree
 
