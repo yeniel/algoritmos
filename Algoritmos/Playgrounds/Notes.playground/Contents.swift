@@ -1,102 +1,57 @@
 <script>
+// O(n) solution for finding smallest subarray with sum
+// greater than x
 
-const MAX = 100
+// Returns length of smallest subarray with sum greater than
+// x. If there is no subarray with given sum, then returns
+// n+1
+function smallestSubWithSum(arr, n, x)
+{
+    // Initialize current sum and minimum length
+    let curr_sum = 0, min_len = n + 1;
 
-// class for a tree node
-class Node{
-    constructor(){
-        this.key = ' '
-        this.left = null
-        this.right = null
+    // Initialize starting and ending indexes
+    let start = 0, end = 0;
+    while (end < n) {
+        // Keep adding array elements while current sum
+        // is smaller than or equal to x
+        while (curr_sum <= x && end < n)
+            curr_sum += arr[end++];
+
+        // If current sum becomes greater than x.
+        while (curr_sum > x && start < n) {
+            // Update minimum length if needed
+            if (end - start < min_len)
+                min_len = end - start;
+
+            // remove starting elements
+            curr_sum -= arr[start++];
+        }
     }
+    return min_len;
 }
 
-// A utility function to create a new BST node
-function newNode(item){
-    temp = new Node()
-    temp.key = item
-    return temp
-}
+/* Driver program to test above function */
+let arr1 = [ 1, 4, 45, 6, 10, 19 ];
+let x = 51;
+let n1 = arr1.length;
+let res1 = smallestSubWithSum(arr1, n1, x);
+(res1 == n1 + 1) ? document.write("Not possible<br>")
+    : document.write(res1 + "<br>");
 
-// A utility function to store inorder traversal of tree rooted
-// with root in an array arr[]. Note that i is passed as reference
-function storeInorder(root, i){
-    if (root == null)
-        return '$'
-    res = storeInorder(root.left, i)
-    res += root.key
-    res += storeInorder(root.right, i)
-    return res
-}
+let arr2 = [ 1, 10, 5, 2, 7 ];
+let n2 = arr2.length;
+x = 9;
+let res2 = smallestSubWithSum(arr2, n2, x);
+(res2 == n2 + 1) ? document.write("Not possible<br>")
+    : document.write(res2 + "<br>");
 
-// A utility function to store preorder traversal of tree rooted
-// with root in an array arr[]. Note that i is passed as reference
-function storePreOrder(root, i){
-    if (root == null)
-        return '$'
-    res = root.key
-    res += storePreOrder(root.left, i)
-    res += storePreOrder(root.right, i)
-    return res
-}
+let arr3 = [ 1, 11, 100, 1, 0, 200, 3, 2, 1, 250 ];
+let n3 = arr3.length;
+x = 280;
+let res3 = smallestSubWithSum(arr3, n3, x);
+(res3 == n3 + 1) ? document.write("Not possible<br>")
+    : document.write(res3 + "<br>");
 
-// This function returns true if S is a subtree of T, otherwise false
-function isSubtree(T, S){
-    // base cases
-    if (S == null)
-        return true
-    if (T == null)
-        return false
-
-    // Store Inorder traversals of T and S in inT[0..m-1]
-    // and inS[0..n-1] respectively
-    let m = 0
-    let n = 0
-    let inT = storeInorder(T, m)
-    let inS = storeInorder(S, n)
-
-    // If inS[] is not a substring of inT[], return false
-    res = true
-    if(inT.indexOf(inT) !== -1)
-        res = true
-    else
-        res = false
-    if(res == false)
-        return res
-
-    // Store Preorder traversals of T and S in preT[0..m-1]
-    // and preS[0..n-1] respectively
-    m = 0
-    n = 0
-    let preT = storePreOrder(T, m)
-    let preS = storePreOrder(S, n)
-
-    // If preS[] is not a substring of preT[], return false
-    // Else return true
-    if(preT.indexOf(preS) !== -1)
-        return true
-    else
-        return false
-}
-
-// Driver program to test above function
-
-let T = new newNode('a')
-T.left = new newNode('b')
-T.right = new newNode('d')
-T.left.left = new newNode('c')
-T.right.right = new newNode('e')
-
-let S = new newNode('a')
-S.left = new newNode('b')
-S.left.left = new newNode('c')
-S.right = new newNode('d')
-
-if (isSubtree(T, S))
-    document.write("Yes: S is a subtree of T","</br>")
-else
-    document.write("No: S is NOT a subtree of T","</br>")
-
-// This code is contributed by shinjanpatra
-
+    // This code is contributed by subham348.
 </script>
