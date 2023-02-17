@@ -57,6 +57,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	6.	[Top View](#top-view)
 	7.	[Remove Short Path Nodes](#remove-short-path-nodes)
 	8.	[LCA](#lca) - *Lowest Common Ancestor*
+	9.	[SubTree](#subtree)
 8. [String Array](#string-array)
 	1.	[Reverse with special characters](#reverse-with-special-characters)
 	2.	[Palindromic Partitions](#palindromic-partitions)
@@ -343,6 +344,10 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### LCA
 
 | [Explanation](https://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-search-tree/) | [Playground](Algoritmos/Playgrounds/Tree/LCA.playground/Contents.swift) |
+
+### SubTree
+
+| [Explanation](https://www.geeksforgeeks.org/check-binary-tree-subtree-another-binary-tree-set-2/) | [Playground](Algoritmos/Playgrounds/Tree/SubTree.playground/Contents.swift) |
 
 ## String Array
 

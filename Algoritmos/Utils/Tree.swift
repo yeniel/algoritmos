@@ -51,6 +51,12 @@ extension Tree where T == Int {
     }
 }
 
+extension Tree where T == String {
+    convenience init() {
+        self.init(min: "", neutral: "")
+    }
+}
+
 class TreeNode<T: Comparable>: Identifiable, Equatable, Comparable {
     let id = UUID()
     let value: T

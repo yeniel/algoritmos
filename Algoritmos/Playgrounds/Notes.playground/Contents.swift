@@ -1,82 +1,102 @@
 <script>
 
-// JavaScript program to find k'th smallest element in expected
-// linear time
+const MAX = 100
 
-
-// This function returns k'th smallest element in arr[l..r]
-// using QuickSort based method. ASSUMPTION: ALL ELEMENTS
-// IN ARR[] ARE DISTINCT
-function kthSmallest(arr,l,r,k)
-{
-    // If k is smaller than number of elements in array
-        if (k > 0 && k <= r - l + 1)
-        {
-            // Partition the array around a random element and
-            // get position of pivot element in sorted array
-            let pos = randomPartition(arr, l, r);
-
-            // If position is same as k
-            if (pos-l == k-1)
-                return arr[pos];
-
-            // If position is more, recur for left subarray
-            if (pos-l > k-1)
-                return kthSmallest(arr, l, pos-1, k);
-
-            // Else recur for right subarray
-            return kthSmallest(arr, pos+1, r, k-pos+l-1);
-        }
-
-        // If k is more than number of elements in array
-        return Integer.MAX_VALUE;
+// class for a tree node
+class Node{
+    constructor(){
+        this.key = ' '
+        this.left = null
+        this.right = null
+    }
 }
 
-// Utility method to swap arr[i] and arr[j]
-function swap(arr,i,j)
-{
-    let temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+// A utility function to create a new BST node
+function newNode(item){
+    temp = new Node()
+    temp.key = item
+    return temp
 }
 
-// Standard partition process of QuickSort(). It considers
-// the last element as pivot and moves all smaller element
-// to left of it and greater elements to right. This function
-// is used by randomPartition()
-function partition(arr,l,r)
-{
-    let x = arr[r], i = l;
-        for (let j = l; j <= r - 1; j++)
-        {
-            if (arr[j] <= x)
-            {
-                swap(arr, i, j);
-                i++;
-            }
-        }
-        swap(arr, i, r);
-        return i;
+// A utility function to store inorder traversal of tree rooted
+// with root in an array arr[]. Note that i is passed as reference
+function storeInorder(root, i){
+    if (root == null)
+        return '$'
+    res = storeInorder(root.left, i)
+    res += root.key
+    res += storeInorder(root.right, i)
+    return res
 }
 
-// Picks a random pivot element between l and r and
-// partitions arr[l..r] arount the randomly picked
-// element using partition()
-function randomPartition(arr,l,r)
-{
-        let n = r-l+1;
-        let pivot = Math.floor((Math.random()) * (n-1));
-        swap(arr, l + pivot, r);
-        return partition(arr, l, r);
+// A utility function to store preorder traversal of tree rooted
+// with root in an array arr[]. Note that i is passed as reference
+function storePreOrder(root, i){
+    if (root == null)
+        return '$'
+    res = root.key
+    res += storePreOrder(root.left, i)
+    res += storePreOrder(root.right, i)
+    return res
 }
 
-let arr=[12, 3, 5, 7, 4, 19, 26];
-let n = arr.length,k = 3;
-document.write("K'th smallest element is "+
-kthSmallest(arr, 0, n-1, k));
+// This function returns true if S is a subtree of T, otherwise false
+function isSubtree(T, S){
+    // base cases
+    if (S == null)
+        return true
+    if (T == null)
+        return false
 
+    // Store Inorder traversals of T and S in inT[0..m-1]
+    // and inS[0..n-1] respectively
+    let m = 0
+    let n = 0
+    let inT = storeInorder(T, m)
+    let inS = storeInorder(S, n)
 
+    // If inS[] is not a substring of inT[], return false
+    res = true
+    if(inT.indexOf(inT) !== -1)
+        res = true
+    else
+        res = false
+    if(res == false)
+        return res
 
-// This code is contributed by rag2127
+    // Store Preorder traversals of T and S in preT[0..m-1]
+    // and preS[0..n-1] respectively
+    m = 0
+    n = 0
+    let preT = storePreOrder(T, m)
+    let preS = storePreOrder(S, n)
+
+    // If preS[] is not a substring of preT[], return false
+    // Else return true
+    if(preT.indexOf(preS) !== -1)
+        return true
+    else
+        return false
+}
+
+// Driver program to test above function
+
+let T = new newNode('a')
+T.left = new newNode('b')
+T.right = new newNode('d')
+T.left.left = new newNode('c')
+T.right.right = new newNode('e')
+
+let S = new newNode('a')
+S.left = new newNode('b')
+S.left.left = new newNode('c')
+S.right = new newNode('d')
+
+if (isSubtree(T, S))
+    document.write("Yes: S is a subtree of T","</br>")
+else
+    document.write("No: S is NOT a subtree of T","</br>")
+
+// This code is contributed by shinjanpatra
 
 </script>
