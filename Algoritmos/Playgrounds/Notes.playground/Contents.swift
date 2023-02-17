@@ -1,56 +1,87 @@
 <script>
-
-// JavaScript program to find pair
-// with sum closest to x
-
-
-    // Prints the pair with sum closest to x
-    function printClosest(arr,n,x)
-    {
-    // To store indexes of result pair
-        let res_l=0, res_r=0;
-
-        // Initialize left and right indexes
-        // and difference between
-        // pair sum and x
-        let l = 0, r = n-1, diff = Number.MAX_VALUE;
-
-        // While there are elements
-        // between l and r
-        while (r > l)
-        {
-            // Check if this pair is closer
-            // than the closest pair so far
-            if (Math.abs(arr[l] +
-                arr[r] - x) < diff)
-            {
-            res_l = l;
-            res_r = r;
-            diff = Math.abs(arr[l] + arr[r] - x);
+// javascript program to reverse
+// alternate levels of a tree
+    class Node {
+            constructor(val) {
+                this.key = val;
+                this.left = null;
+                this.right = null;
             }
+        }
+    function preorder(root1, root2 , lvl)
+    {
 
-            // If this pair has more sum,
-            // move to smaller values.
-            if (arr[l] + arr[r] > x)
-            r--;
-            else // Move to larger values
-            l++;
+        // Base cases
+        if (root1 == null || root2 == null)
+            return;
+
+        // Swap subtrees if level is even
+        if (lvl % 2 == 0) {
+            var t = root1.key;
+            root1.key = root2.key;
+            root2.key = t;
         }
 
-    document.write(
-    " The closest pair is "+arr[res_l]+" and "+ arr[res_r]
-    );
-}
+        // Recur for left and right subtrees
+        // (Note : left of root1
+        // is passed and right of root2 in first
+        // call and opposite
+        // in second call.
+        preorder(root1.left, root2.right, lvl + 1);
+        preorder(root1.right, root2.left, lvl + 1);
+    }
 
+    // This function calls preorder()
+    // for left and right
+    // children of root
+    function reverseAlternate(root) {
+        preorder(root.left, root.right, 0);
+    }
 
-    // Driver program to test above function
+    // Inorder traversal (used to
+    // print initial and
+    // modified trees)
+    function printInorder(root) {
+        if (root == null)
+            return;
+        printInorder(root.left);
+        document.write(root.key + " ");
+        printInorder(root.right);
+    }
 
-        let arr = [10, 22, 28, 29, 30, 40], x = 54;
-        let n = arr.length;
-        printClosest(arr, n, x);
+    // A utility function to create a new node
+    function newNode(key) {
+var temp = new Node();
+        temp.left = temp.right = null;
+        temp.key = key;
+        return temp;
+    }
 
+    // Driver program to test above functions
 
+var root = newNode('a');
+        root.left = newNode('b');
+        root.right = newNode('c');
+        root.left.left = newNode('d');
+        root.left.right = newNode('e');
+        root.right.left = newNode('f');
+        root.right.right = newNode('g');
+        root.left.left.left = newNode('h');
+        root.left.left.right = newNode('i');
+        root.left.right.left = newNode('j');
+        root.left.right.right = newNode('k');
+        root.right.left.left = newNode('l');
+        root.right.left.right = newNode('m');
+        root.right.right.left = newNode('n');
+        root.right.right.right = newNode('o');
 
-// This code is contributed by sravan kumar
+        document.write("Inorder Traversal of given tree<br\>");
+        printInorder(root);
 
+        reverseAlternate(root);
+
+        document.write("<br\><br\>Inorder Traversal of modified tree<br\>");
+        printInorder(root);
+
+// This code is contributed by umadevi9616
 </script>

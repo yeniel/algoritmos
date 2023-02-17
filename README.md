@@ -59,6 +59,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	7.	[Remove Short Path Nodes](#remove-short-path-nodes)
 	8.	[LCA](#lca) - *Lowest Common Ancestor*
 	9.	[SubTree](#subtree)
+	10.	[Reverse Alternate Levels](#reverse-alternate-levels)
 8. [String Array](#string-array)
 	1.	[Reverse with special characters](#reverse-with-special-characters)
 	2.	[Palindromic Partitions](#palindromic-partitions)
@@ -354,6 +355,10 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### SubTree
 
 | [Explanation](https://www.geeksforgeeks.org/check-binary-tree-subtree-another-binary-tree-set-2/) | [Playground](Algoritmos/Playgrounds/Tree/SubTree.playground/Contents.swift) |
+
+### Reverse Alternate Levels
+
+| [Explanation](https://www.geeksforgeeks.org/reverse-alternate-levels-binary-tree/) | [Playground](Algoritmos/Playgrounds/Tree/ReverseAlternateLevels.playground/Contents.swift) |
 
 ## String Array
 

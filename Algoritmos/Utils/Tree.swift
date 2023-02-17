@@ -29,19 +29,20 @@ extension Tree: CustomStringConvertible where T: CustomStringConvertible {
             return "Empty"
         }
 
-        var inOrderDescription = ""
-
-        inOrder(node: root, description: &inOrderDescription)
-
-        return String(inOrderDescription.dropLast(3))
+        return String(inOrderDescription(node: root).dropLast(3))
     }
 
-    private func inOrder(node: TreeNode<T>?, description: inout String) {
-        if let node = node {
-            inOrder(node: node.left, description: &description)
-            description += node.value.description + " - "
-            inOrder(node: node.right, description: &description)
+    private func inOrderDescription(node: TreeNode<T>?) -> String {
+        guard let node = node else {
+            return ""
         }
+
+        var result = inOrderDescription(node: node.left)
+
+        result += node.value.description + " - "
+        result += inOrderDescription(node: node.right)
+
+        return result
     }
 }
 
@@ -59,7 +60,7 @@ extension Tree where T == String {
 
 class TreeNode<T: Comparable>: Identifiable, Equatable, Comparable {
     let id = UUID()
-    let value: T
+    var value: T
     var left: TreeNode?
     var right: TreeNode?
     var horizontalDistance: Int

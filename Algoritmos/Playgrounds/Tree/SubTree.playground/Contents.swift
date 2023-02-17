@@ -18,11 +18,6 @@ extension Tree where T: CustomStringConvertible {
         let subTreePreOrder = subTree.preOrder()
         let selfPreOrder = preOrder()
 
-        print(subTreeInOrder)
-        print(selfInOrder)
-        print(subTreePreOrder)
-        print(selfPreOrder)
-
         return selfPreOrder.contains(subTreePreOrder)
     }
 
