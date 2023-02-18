@@ -70,6 +70,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 	7.	[Longest Contiguous SubArray](#longest-contiguous-subarray)
 	8.	[Smallest Sum Not In Subset](#smallest-sum-not-in-subset)
 	9.	[Smallest Subset Of Sum](#smallest-subset-of-sum)
+	10.	[Max Profit](#max-profit)
 
 [Prim vs Kruskal](https://www.geeksforgeeks.org/difference-between-prims-and-kruskals-algorithm-for-mst/)
 
@@ -397,3 +398,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 ### Smallest Subset Of Sum
 
 | [Explanation](https://www.geeksforgeeks.org/minimum-length-subarray-sum-greater-given-value/) | [Playground](Algoritmos/Playgrounds/StringArray/SmallestSubsetOfSum.playground/Contents.swift) |
+
+### Max Profit
+
+| [Explanation](https://www.geeksforgeeks.org/stock-buy-sell/) | [Playground](Algoritmos/Playgrounds/StringArray/MaxProfit.playground/Contents.swift) |
